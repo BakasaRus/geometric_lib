@@ -1,24 +1,24 @@
 def area(a):
     '''
-    Возвращает значение площадиaq квадрата
+    Returns the area of a square
 
-        Параметры:
-            a (int/float): величина стороны квадрата
+        Options:
+            a (int/float): square side size
 
-        Возвращаемое значение:
-            a * a (int/float): величина площади квадрата
+        Return value:
+            a * a (int/float): square area size
     '''
     return a * a
 
 
 def perimeter(a):
     '''
-        Возвращает значение периметра квадрата
+    Returns the perimeter of a square
 
-            Параметры:
-                a (int/float): величина стороны квадрата
+        Options:
+            a (int/float): square side size
 
-            Возвращаемое значение:
-                4 * a (int/float): величина периметра квадрата
+        Return value:
+            4 * a (int/float): square perimeter size
     '''
     return 4 * a
