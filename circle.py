@@ -3,25 +3,25 @@ import math
 
 def area(r):
     '''
-    Возвращает значение площади окружности
+    Returns the area of a circle
 
-        Параметры:
-            r (int/float): величина радиуса окружности
+        Options:
+            r (int/float): circle radius value
 
-        Возвращаемое значение:
-            math.pi * r * r (int/float): величина площади окружности
+        Return value:
+            math.pi * r * r (int/float): area of a circle
     '''
     return math.pi * r * r
 
 
 def perimeter(r):
     '''
-    Возвращает значение периметра окружности
+    Returns the perimeter of a circle
 
-        Параметры:
-            r (int/float): величина радиуса окружности
+        Options:
+            r (int/float): circle radius value
 
-        Возвращаемое значение:
-            math.pi * r * r (int/float): величина периметра окружности
+        Return value:
+            math.pi * r * r (int/float): perimeter of a circle
     '''
     return 2 * math.pi * r
