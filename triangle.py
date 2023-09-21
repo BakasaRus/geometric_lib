@@ -1,27 +1,27 @@
 def area(a, h):
     '''
-    Возвращает значение площади треугольника
+    Returns the area of a triangle
 
-        Параметры:
-            a (int/float): величина стороны треугольника, к которой проведена высота \n
-            h (int/float): величина высоты треугольника
+        Options:
+            a (int/float): size of the side of the triangle to which the height is build \n
+            h (int/float): height of triangle
 
-        Возвращаемое значение:
-            a * h / 2 (int/float): величина площади треугольника
+        Return value:
+            a * h / 2 (int/float): area of the triangle
     '''
     return a * h / 2
 
 
 def perimeter(a, b, c):
     '''
-    Возвращает значение периметра треугольника
+    Returns the perimeter of a triangle
 
-        Параметры:
-            a (int/float): величина первой стороны треугольника
-            b (int/float): величина второй стороны треугольника
-            c (int/float): величина третьей стороны треугольника
+        Options:
+            a (int/float): size of the first side of the triangle
+            b (int/float): size of the second side of the triangle
+            c (int/float): size of the third side of the triangle
 
-        Возвращаемое значение:
-            a + b + c (int/float): величина периметра треугольника
+        Return value:
+            a + b + c (int/float): perimeter of the triangle
     '''
     return a + b + c
