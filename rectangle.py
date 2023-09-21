@@ -1,26 +1,26 @@
 def area(a, b):
     '''
-    Возвращает значение площади прямоугольника
+    Returns the area of a rectangle
 
-        Параметры:
-            a (int/float): величина стороны прямоугольника (первая сторона) \n
-            b (int/float): величина стороны прямоугольника (смежная первой стороне)
+        Options:
+            a (int/float): size of the side of the rectangle (first side) \n
+            b (int/float): size of the side of the rectangle (adjacent to the first side)
 
-        Возвращаемое значение:
-            a * b (int/float): величина площади прямоугольника
+        Return value:
+            a * b (int/float): area of the rectangle
     '''
     return a * b
 
 
 def perimeter(a, b):
     '''
-        Возвращает значение периметра прямоугольника
+    Returns the perimeter of a rectangle
 
-            Параметры:
-                a (int/float): величина стороны прямоугольника (первая сторона) \n
-                b (int/float): величина стороны прямоугольника (смежная первой стороне)
+            Options:
+                a (int/float): size of the side of the rectangle (first side) \n
+                b (int/float): size of the side of the rectangle (adjacent to the first side)
 
-            Возвращаемое значение:
-                (a + b) * 2 (int/float): величина периметра прямоугольника
+            Return value:
+                (a + b) * 2 (int/float):perimeter of a rectangle
     '''
     return (a + b) * 2
