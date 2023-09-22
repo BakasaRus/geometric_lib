@@ -99,7 +99,8 @@ Output: 12
 
 Project change history with commit hashes:
 ```console
-d3aa156c5f9f8b69eb059767391324bc17452e02 (HEAD -> lab-2) added documentation for triangle.py
+90da1b6f1e2f9d4783ea5e0c08cf2dbfef808c5e (HEAD -> main, origin/main, origin/HEAD, lab-2) updated README.md
+d3aa156c5f9f8b69eb059767391324bc17452e02 added documentation for triangle.py
 63fb83b670a9e99d862298443fa19dd347a54999 added documentation for square.py
 dc69d3e8d55a94249735e4e8f7963f56d7fd5fa0 added documentation for rectangle.py
 5e071d9059e49f7ec28b7a5abc34c9d4901ac307 added documentation for circle.py
