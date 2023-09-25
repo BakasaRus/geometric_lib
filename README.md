@@ -24,13 +24,13 @@
 - Circle
     def area(5) = 25 * pi
     def perimetr(5) = 10 * pi
--Square
+- Square
     def area(5) = 25
     def perimetr(5) = 20;
--Rectangle
+- Rectangle
     def area(5,6) = 30
     def perimetr(5,6) = 22
--Triangle
+- Triangle
     def area(5,6) = 15
     def perimetr(5,6,7) = 18
 
