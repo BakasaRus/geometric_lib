@@ -2,21 +2,16 @@
 
 ## Math functions
 
-### Circle:
-* `def area` Receives *radius* of the circle and returns area.
-* `def perimeter` Receives *radius* of the circle and returns perimeter.
-
-### Rectangle:
-* `def area` Receives *sides lenght* and returns area of the rectangle.
-* `def perimeter` Receives *sides lenght* and returns perimeter of the rectangle.
-
-### Square:
-* `def area` Receives *sides lenght* and returns area of the square.
-* `def perimeter` Receives *sides lenght* and returns perimeter of the square.
-
-### Triangle:   
-* `def area` Receives *side lenght and height* of the triangle and returns area.
-* `def perimeter` Receives *sides lenght* of the triangle and returns perimeter.
+### Area:
+- `Circle` -  Receives *radius* of the circle and returns area.
+- `Rectangle` - Receives *sides lenght* and returns area of the rectangle.
+- `Square` - Receives *sides lenght* and returns area of the square.
+- `Triangle` - Receives *side lenght and height* of the triangle and returns area.
+### Perimetr:
+- `Circle` -  Receives *radius* of the circle and returns perimeter.
+- `Rectangle` - Receives *sides lenght* and returns perimeter of the rectangle.
+- `Square` - Receives *sides lenght* and returns perimeter of the square.
+- `Triangle` - Receives *sides lenght* of the triangle and returns perimeter.
 
 
 ## Examples:
