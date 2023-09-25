@@ -22,17 +22,17 @@
 ## Examples:
 
 - Circle
-    def area(5) = 25 * pi
-    def perimetr(5) = 10 * pi
+    > def area(5) = 25 * pi
+    > def perimetr(5) = 10 * pi
 - Square
-    def area(5) = 25
-    def perimetr(5) = 20;
+    > def area(5) = 25
+    > def perimetr(5) = 20;
 - Rectangle
-    def area(5,6) = 30
-    def perimetr(5,6) = 22
+    > def area(5,6) = 30
+    > def perimetr(5,6) = 22
 - Triangle
-    def area(5,6) = 15
-    def perimetr(5,6,7) = 18
+    > def area(5,6) = 15
+    > def perimetr(5,6,7) = 18
 
 ## Last commits:
 
