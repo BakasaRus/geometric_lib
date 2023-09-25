@@ -63,3 +63,4 @@ Library uses functions providing several geometric formulas.
     e.g. : perimeter(2, 5, 6)
 
 ## Commit history
+![Alt text](image-1.png)
