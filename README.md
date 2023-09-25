@@ -1,4 +1,4 @@
-#geometric lib
+# geometric lib
 
 ## Math functions
 
