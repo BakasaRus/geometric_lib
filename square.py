@@ -1,7 +1,7 @@
 
 def area(a):
     '''
-    Calculates area for rectangle
+    Calculates area for square
     
     Parameters: a (int/float): side
     Return value: a * a (int/float): area
