@@ -16,7 +16,7 @@ def perimeter(r):
     Calculate perimeter for circle
     
     Parameters: r (int/float): radius
-    Return value: math.pi * r * r (int/float): perimeters
+    Return value: 2 * math.pi * r (int/float): perimeter
     '''
     return 2 * math.pi * r
 
