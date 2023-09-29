@@ -1,9 +1,9 @@
-def area(a, h): 
-    '''Принимает сторону треугольника а и высоту h
-       Возвращает площадь треугольника'''
+def area(a, h):
+    '''Takse a - base of the triangle and h - height of the triangle, 
+       returns area of the triangle'''
     return a * h / 2 
 
 def perimeter(a, b, c): 
-    '''Принимает стороны треугольника a, b, c
-       Возвращает периметр треугольника'''
+    '''Takes a, b, c - sides of the triangle,
+       returns perimeter of the triangle'''
     return a + b + c 

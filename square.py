@@ -1,9 +1,9 @@
 
 def area(a):
-    '''Принимает сторону квадрата а, возвращает площадь квадрата'''
+    '''Takse a - side of the square, returns area of the square'''
     return a * a
 
 
 def perimeter(a):
-    '''Принимает сторону квадрата а, возвращает периметр квадрата'''
+    '''Takes a - side of the square, returns perimeter of the square'''
     return 4 * a
