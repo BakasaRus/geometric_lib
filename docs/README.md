@@ -1,4 +1,5 @@
 # Math formulas
+Current project provides user to calculate an area and perimeter of circle, triangle, rectangle. square.
 ## Area
 - Circle: S = πR²
 - Rectangle: S = ab
@@ -52,7 +53,8 @@ _Example:_ \
 \- perimeter(3, 4, 5) -> 12
 
 ## Git commit history
-* 2fd31d1 (HEAD -> lab2_408847, origin/lab2_408847) remove pdf instruction
+* 9d0e2dd (HEAD -> lab2_408847, origin/lab2_408847) add git history
+* 2fd31d1 remove pdf instruction
 * 30002b5 refactor readme
 * 30a3b98 refactor readme
 * fe1b456 refactor readme
