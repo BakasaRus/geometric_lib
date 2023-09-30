@@ -12,9 +12,9 @@
 - Triangle: P = a + b + c
 
 ## Circle functions
-- Square: area(r) \n
-Takes the radius of a circle, returns the area of ​​the circle of the given radius \n
-_Example:_ \n
+- Square: area(r) \
+Takes the radius of a circle, returns the area of ​​the circle of the given radius \
+_Example:_ \
 area(3) returns 9π
 - Perimetr: perimeter(r)
 Takes the radius of a circle, returns the perimeter of ​​the circle of the given radius
