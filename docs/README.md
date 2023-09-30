@@ -1,3 +1,6 @@
+# Project description
+ This project is aimed at working with ___geometric shapes and performing operations on them.___
+
 # Functions for working with geometric objects
 
 ## Circle
