@@ -13,7 +13,7 @@
 
 ## Circle functions
 - Square: area(r) \
-    Takes the radius of a circle, returns the area of ​​the circle of the given radius \
+\- Takes the radius of a circle, returns the area of ​​the circle of the given radius \
 _Example:_ \
     area(3) -> 9π
 - Perimetr: perimeter(r)
