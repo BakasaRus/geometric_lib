@@ -50,3 +50,13 @@ _Example:_ \
 \- Takes the side length and height of a triangle, returns the perimeter of ​​the corresponding triangle \
 _Example:_ \
 \- perimeter(3, 4, 5) -> 12
+
+## Git commit history
+* 2fd31d1 (HEAD -> lab2_408847, origin/lab2_408847) remove pdf instruction
+* 30002b5 refactor readme
+* 30a3b98 refactor readme
+* fe1b456 refactor readme
+* 968a3e6 refactor readme
+* a36c169 refactor readme
+* c90c49d refactor readme
+* 0bd3695 commented functions
