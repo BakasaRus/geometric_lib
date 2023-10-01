@@ -1,10 +1,12 @@
-# Math formulas
-## Area
-- Circle: S = πR²
-- Rectangle: S = ab
-- Square: S = a²
+# geometric_lib
+#### Библиотека предоставляет базовые функции для вычисления площади и периметра некоторых геометрических фигур
 
-## Perimeter
-- Circle: P = 2πR
-- Rectangle: P = 2a + 2b
-- Square: P = 4a
+### Модули библиотеки:
+* [Документация circle.py](./circle.md)
+* [Документация square.py](./square.md)
+* [Документация rectangle.py](./rectandle.md)
+* [Документация triangle.py](./triangle.md)
+
+### История изменений:
+* [История коммитов](./changelog.md)
+
