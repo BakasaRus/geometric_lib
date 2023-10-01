@@ -40,3 +40,10 @@ Takes the length of the side of triangle and the lenght of height, returns area 
 ### perimeter(a)
 Takes the lenghts of the three sides of triangle, returns perimeter of the triangle
 > perimeter(3, 4, 5) -> 12
+# Git commit history
+- 26a4766 (HEAD -> lab2_409093, origin/lab2_409093) docs: update docs catalog
+- 495e6b7 docs: add comments to the functions
+- 7773f59 (origin/main, origin/HEAD, main) fix: fix a perimeter calculation error
+- ef4f9ff feat: add rectangle.py file
+- d078c8d L-03: Docs added
+- 8ba9aeb L-03: Circle and square added
