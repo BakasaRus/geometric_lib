@@ -50,7 +50,7 @@ _Example:_ \
 _Example:_ \
 `perimeter(3) -> 12`
 
-## Circle functions
+## Triangle functions
 - Square: `area(a, h)` \
 \- Takes the side length and height of a triangle, returns the area of ​​the corresponding triangle \
 _Example:_ \
