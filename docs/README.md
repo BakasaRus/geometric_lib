@@ -37,11 +37,12 @@ Takes the lenght of the side of square, returns perimeter of the square
 ### area(a, h)
 Takes the length of the side of triangle and the lenght of height, returns area of the triangle
 > area(2, 3) -> 3
-### perimeter(a)
+### perimeter(a, b, c)
 Takes the lenghts of the three sides of triangle, returns perimeter of the triangle
 > perimeter(3, 4, 5) -> 12
 # Git commit history
-- 26a4766 (HEAD -> lab2_409093, origin/lab2_409093) docs: update docs catalog
+- 49138a1 (HEAD -> lab2_409093, origin/lab2_409093) docs: add git commit history
+- 26a4766 docs: update docs catalog
 - 495e6b7 docs: add comments to the functions
 - 7773f59 (origin/main, origin/HEAD, main) fix: fix a perimeter calculation error
 - ef4f9ff feat: add rectangle.py file
