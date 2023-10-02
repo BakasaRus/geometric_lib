@@ -89,15 +89,11 @@ Allows you to calculate the area and perimeter of primitive geometric shapes (ci
     ```
 
 ## Commit history (from old to new)
-1. `commit 8ba9aeb3cea847b63a91ac378a2a6db758682460`  
-  Adds circle and square.
-2. `commit d078c8d9ee6155f3cb0e577d28d337b791de28e2`  
-  Adds docs.
-3. `commit 25a1142ee881b4a33824b67c0f42dc9174c4b49b`  
-  Adds rectangle.
-4. `commit 386f7bd288c265e218cac2745d04059c6d1cb882`  
-  Fixes wrong rectangle perimeter calculation.
-5. `commit d392c50fee00acddd05a6f6395b320970814508c`  
-  Adds docstrings to all functions of circle, rectangle, square, triangle.
-6. `commit 9911095736925cd3cc21a01e52350067c79adc05`  
-  Adds docs/docs.md - file that contains all documentation for project.
+| Hash | Author | Time | Message                 |
+| --- | --- | --- |-------------------------|
+| 8ba9aeb | rinnothing | Fri Sep 22 11:59:50 2023 +0300 | Adds circle and square. |
+| d078c8d | rinnothing | Fri Sep 22 10:34:21 2023 +0300 | Adds docs. |
+| 25a1142 | rinnothing | Mon Sep 4 15:38:19 2023 +0300 | Adds rectangle. |
+| 386f7bd | rinnothing | Mon Sep 4 15:30:37 2023 +0300 | Fixes wrong rectangle perimeter calculation. |
+| d392c50 | rinnothing | Thu Mar 4 14:55:29 2021 +0300 | Adds docstrings to all functions of circle, rectangle, square, triangle. |
+| 9911095 | rinnothing | Thu Mar 4 14:54:08 2021 +0300 | Adds docs/docs.md - file that contains all documentation for project. |
