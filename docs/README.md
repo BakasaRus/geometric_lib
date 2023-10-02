@@ -63,4 +63,4 @@
 * `8ba9aeb` L-03: Circle and square added
 
 ### Notes from the author
-  > If you liked the project, you can [email](artsv058@gmail.com) me
+  > If you liked the project, you can [email](mailto:artsv058@gmail.com) me
