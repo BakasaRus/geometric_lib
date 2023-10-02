@@ -2,6 +2,22 @@
 ## General description of the project
 > Geometric Lib is a project designed to work with various geometric shapes on a plane. For example, it can be used to calculate the area and perimeter of such shapes as a circle, triangle, square and rectangle.
 
+## Links to sections
+1. Go to the section [Description of functions](https://github.com/KatyaGalak/Fork_GalakEkaterina/tree/lab_2#general-description-of-the-project)
+    - [Circle](https://github.com/KatyaGalak/Fork_GalakEkaterina/tree/lab_2#circle)
+        - [Function](https://github.com/KatyaGalak/Fork_GalakEkaterina/tree/lab_2#function)
+        - [Examples](https://github.com/KatyaGalak/Fork_GalakEkaterina/tree/lab_2#examples)
+    - [Rectangle](https://github.com/KatyaGalak/Fork_GalakEkaterina/tree/lab_2#circle)
+        - [Function](https://github.com/KatyaGalak/Fork_GalakEkaterina/tree/lab_2#function-1)
+        - [Examples](https://github.com/KatyaGalak/Fork_GalakEkaterina/tree/lab_2#examples-1)
+    - [Square](https://github.com/KatyaGalak/Fork_GalakEkaterina/tree/lab_2#square) 
+        - [Function](https://github.com/KatyaGalak/Fork_GalakEkaterina/tree/lab_2#function-2)
+        - [Examples](https://github.com/KatyaGalak/Fork_GalakEkaterina/tree/lab_2#examples-2)
+    - [Triangle](https://github.com/KatyaGalak/Fork_GalakEkaterina/tree/lab_2#triangle)
+        - [Function](https://github.com/KatyaGalak/Fork_GalakEkaterina/tree/lab_2#function-3)
+        - [Examples](https://github.com/KatyaGalak/Fork_GalakEkaterina/tree/lab_2#examples-3)
+2. Go to the section [Project modification history](https://github.com/KatyaGalak/Fork_GalakEkaterina/tree/lab_2#project-modification-history)
+
 ## Description of functions
 - ## _Circle_
     - ### Function
