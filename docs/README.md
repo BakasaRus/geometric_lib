@@ -1,16 +1,15 @@
 # Common solution explanation
 ## Area
-- Circle: S = πR²
-- Rectangle: S = ab
-- Square: S = a²
-- Triangle: S = a * h / 2
+ - Circle: $S = \pi R^{2}$
+ - Rectangle: $S = ab$
+ - Square: $S = a^{2}$
+ - Triangle: $S = \frac{ah}{2}$
 
 ## Perimeter
-- Circle: P = 2πR
-- Rectangle: P = 2a + 2b
-- Square: P = 4a
-- Triangle: P = a + b + c
-
+ - Circle: $P = 2\pi R$
+ - Rectangle: $P = 2a + 2b$
+ - Square: $P = 4a$
+ - Triangle: $P = a + b + c$
 # Function explanation
 ## 1. circle
 ### area(r)
