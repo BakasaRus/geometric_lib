@@ -71,7 +71,7 @@ b = area(1) # b = 12,57
 |----------|----------|----------|
 | area |  (float) | объем сферы |
 ```python
-def perimeter(r)->float:
+def volume(r)->float:
     return 4.0 * r**2 * math.pi
 
 a = volume(3) # a = 113,09
@@ -90,7 +90,7 @@ b = volume(1) # b = 4,19
 |----------|----------|----------|
 | area |  (float) | площадь квадрата |
 ```python
-def perimeter(r)->float:
+def area(r)->float:
     return a * a
 
 a = area(3) # a = 9
