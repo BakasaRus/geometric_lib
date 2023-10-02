@@ -23,7 +23,7 @@
 area(1) # =3.141592653589793
 area(2.5) # =19.634954084936208
 ```
-- `perimeter(float)` *- (f1loat) returns the perimeter of a circle by its radius*
+- `perimeter(float)` *- (float) returns the perimeter of a circle by its radius*
 
     call examples:
 ```python
@@ -95,3 +95,9 @@ perimeter(2, 3.5, 4) # = 9.5
 4. commit 3dcd9f
 
     new file triangle.py and correct mistake in rectangle.py
+5. commit f7a95b
+
+    adding documentation to the project
+6. commit 418113
+
+    docs changes
