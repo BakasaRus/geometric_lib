@@ -6,69 +6,85 @@ Allows you to calculate the area and perimeter of primitive geometric shapes (ci
 - `circle.py`
   - `def area(r)`  
     Calculates the area of a circle given its radius.
-    ```
-    area(1)
+    ```py
+    import circle
+    
+    print(circle.area(1))
     #3.141592653589793
-    area(5)
+    print(circle.area(5))
     #78.53981633974483  
     ``` 
   - `def perimeter(r)`  
     Calculates the perimeter of a circle given its radius.
-    ```
-    perimeter(1)
+    ```py
+    import circle
+    
+    print(circle.perimeter(1))
     #6.283185307179586
-    perimeter(5)
+    print(circle.perimeter(5))
     #31.41592653589793
     ```
 - `rectangle.py`
   - `def area(a, b)`  
     Calculates the area of a rectangle given its sides lengths.
-    ```
-    area(1, 2)
+    ```py
+    import rectangle
+    
+    print(rectangle.area(1, 2))
     #2
-    area(5, 7)
+    print(rectangle.area(5, 7))
     #35
     ```
   - `def perimeter(a, b)`  
     Calculates the perimeter of a rectangle given its sides lengths.
-    ```
-    perimeter(1, 2)
+    ```py
+    import rectangle
+    
+    print(rectangle.perimeter(1, 2))
     #6
-    perimeter(5, 7)
+    print(rectangle.perimeter(5, 7))
     #24
     ```
 - `square.py`
   - `def area(a)`
     Calculates the area of a square given its sides lengths.  
-    ```
-    area(1)
+    ```py
+    import square
+    
+    print(square.area(1))
     #1
-    area(5)
+    print(square.area(5))
     #25
     ```
   - `def perimeter(a)`  
     Calculates the perimeter of a square given its sides lengths.
-    ```
-    perimeter(1)
+    ```py
+    import square
+    
+    print(square.perimeter(1))
     #4
-    perimeter(5)
+    print(square.perimeter(5))
     #20
     ```
 - `triangle.py`
   - `def area(a, h)`  
     Calculates the area of a triangle given the length of its side and height to the side.
-    ```
-    area(1, 1)
+    ```py
+    import triangle
+    
+    print(triangle.area(1, 1))
     #0.5
-    area(10, 5)
+    print(triangle.area(10, 5))
     #25
     ```
   - `def area(a, b, c)`  
     Calculates the perimeter of a triangle given the lengths of its sides.
-    ```
-    perimeter(1, 1, 1)
+    ```py
+    import triangle
+    
+    print(triangle.perimeter(1, 1, 1))
     #3
-    perimeter(3, 4, 5)
+    print(triangle.perimeter(3, 4, 5))
     #12
     ```
 
