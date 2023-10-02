@@ -2,21 +2,21 @@
 This project contains Python scripts, which can calculate area and perimeter of some shapes. Currently supported shapes are: circle, rectangle, square, triangle. For circle perimeter is circumference length. Calculations are performed by the following formulas:
 
 ## Area
-- Circle: S = πR²
-- Rectangle: S = ab
-- Square: S = a²
-- Triangle: S = ah/2
+- Circle: $S = πR²$
+- Rectangle: $S = ab$
+- Square: $S = a²$
+- Triangle: $S = ah/2$
 
 ## Perimeter
-- Circle: P = 2πR
-- Rectangle: P = 2(a+b)
-- Square: P = 4a
-- Triangle: abc
+- Circle: $P = 2πR$
+- Rectangle: $P = 2(a+b)$
+- Square: $P = 4a$
+- Triangle: $abc$
 
 For every shape there is *SHAPE*.py file, which contains `area` and `perimeter` functions. They're always receive real number argument(s) and return real number result
 
 ## Examples
-```
+```python
 # calculate circle area
 import circle
 circle.area(1) # 1 is radius, result is 3.1415926...
