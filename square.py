@@ -1,5 +1,5 @@
 
-def area(a):
+def area(a: float) -> float:
     """
     Calculates the area of the square
     :param a: side of the square
@@ -8,7 +8,7 @@ def area(a):
     return a * a
 
 
-def perimeter(a):
+def perimeter(a: float) -> float:
     """
     Calculates the perimeter of the square
     :param a: side of the square

@@ -1,7 +1,7 @@
 import math
 
 
-def area(r):
+def area(r: float) -> float:
     """
     Calculates the area of the circle through the radius
     :param r: radius
@@ -10,7 +10,7 @@ def area(r):
     return math.pi * r * r
 
 
-def perimeter(r):
+def perimeter(r: float) -> float:
     """
     Calculates the perimeter of the circle through the radius
     :param r: radius
