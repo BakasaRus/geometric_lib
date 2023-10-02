@@ -5,17 +5,17 @@
 ### Area
 
 
-- Circle: $$S = \pi R^2$$
-- Rectangle: $$S = ab$$
-- Square: $$S = a^2$$
-- Triangle: $$S = \frac{1}{2} ah$$
+- Circle: $S = \pi R^2$
+- Rectangle: $S = ab$
+- Square: $S = a^2$
+- Triangle: $S = \frac{1}{2} ah$
 
 ### Perimeter
 
-- Circle: $$P = 2\pi R$$
-- Rectangle: $$P = 2a + 2b$$
-- Square: $$P = 4a$$
-- Triangle: $$P = a + b + c$$
+- Circle: $P = 2\pi R$
+- Rectangle: $P = 2a + 2b$
+- Square: $P = 4a$
+- Triangle: $P = a + b + c$
 
 ## Function descriptions
 
