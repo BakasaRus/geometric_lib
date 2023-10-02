@@ -26,4 +26,14 @@ h (float): height
 
 
 ## Examples
-Examples are same for all parts of project. See [examples for circles](circle.md)
+```python
+import triangle
+
+a = triangle.area(5, 10) # a contains area of circle with radius 10
+print(a)
+# >> 25
+
+p = triangle.perimeter(10, 10, 5) # a contains perimeter of circle with radius 5
+print(p)
+# >> 25
+```

@@ -25,4 +25,14 @@ a (float): first side
 b (float): second side
 
 ## Examples
-Examples are same for all parts of project. See [examples for circles](circle.md)
+```python
+import rectangle
+
+a = rectangle.area(5, 10) # a contains area of circle with radius 10
+print(a)
+# >> 50
+
+p = rectangle.perimeter(10, 5) # a contains perimeter of circle with radius 5
+print(p)
+# >> 30
+```
