@@ -1,3 +1,4 @@
+import math
 
 def area(r):
     """
@@ -8,8 +9,8 @@ def area(r):
             Возвращаемое значение:
                     area (float): поверхности сферы с радиусом r
     """
-    pi = 3.14159265
-    return 4.0 * r**2 * pi
+    
+    return 4.0 * r**2 * math.pi
 
 def volume(r):
     """
