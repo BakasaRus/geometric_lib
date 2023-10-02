@@ -1,4 +1,5 @@
-# Contens
+# Contents
+
 - [Math formulas](#math-formulas)
   - [Area](#area)
   - [Perimeter](#perimeter)
@@ -6,6 +7,7 @@
 - [Circle](#circle)
 - [Triangle](#triangle)
 - [Square](#square)
+
 # Math formulas
 
 ## Area
