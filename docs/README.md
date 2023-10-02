@@ -25,24 +25,36 @@
 
 ## Usage examples
 * **Circle**
-  >def area(5) -> 25 * pi
-  >
-  >def perimetr(5) -> 10 * pi
+  ```python
+  import circle
+  
+  print(circle.area(5))  # Prints ~75
+  print(circle.perimeter(5)) # Prints ~31
+  ```
 
 * **Rectangle**
-  >def area(2, 3) -> 6
-  > 
-  >def perimetr(2, 3) -> 10
+  ```python
+  import rectangle
+  
+  print(rectangle.area(2, 3))  # Prints 6
+  print(rectangle.perimeter(2, 3)) # Prints 10
+  ```
 
 * **Square**
-  >def area(5) -> 25
-  > 
-  >def perimetr(5) -> 20
+  ```python
+  import square
+  
+  print(square.area(5))  # Prints 25
+  print(square.perimeter(5)) # Prints 20
+  ```
 
 * **Triangle**
-    >def area(6, 3) -> 9
-    >
-    >def perimetr(3, 4, 5) -> 12
+  ```python
+  import triangle
+  
+  print(triangle.area(2, 3))  # Prints 3
+  print(triangle.perimeter(3, 4, 5)) # Prints 12
+  ```
 
 ## Last commits:
 * `55015fb` (HEAD -> main, origin/main, origin/HEAD) bug fixed
@@ -50,4 +62,5 @@
 * `d078c8d` L-03: Docs added
 * `8ba9aeb` L-03: Circle and square added
 
-
+### Notes from the author
+  > If you liked the project, you can [email](artsv058@gmail.com) me
