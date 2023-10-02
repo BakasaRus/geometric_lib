@@ -34,7 +34,7 @@ perimeter of circle, triangle, rectangle. square.**
 from circle import area
 
 >>> print(area(3))
-9π
+28.274333882308138
 ```
 
 - Perimeter: `perimeter(r)` \
@@ -45,7 +45,7 @@ from circle import area
 from circle import perimeter
 
 >>> print(perimeter(3))
-6π
+18.84955592153876
 ```
 
 ## Rectangle functions
@@ -76,7 +76,7 @@ from rectangle import perimeter
 
 - Square: `area(a)` \
   \- Takes the side length of a square, returns the area of ​​the corresponding square \
-  _Example:_ 
+  _Example:_
 
 ```
 from square import area
@@ -87,7 +87,7 @@ from square import area
 
 - Perimeter: `perimeter(a)` \
   \- Takes the side length of a square, returns the perimeter of ​​the corresponding square \
-  _Example:_ 
+  _Example:_
 
 ```
 from square import perimeter
