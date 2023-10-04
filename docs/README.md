@@ -1,14 +1,27 @@
 # Geometric lib
 Library uses functions providing several geometric formulas.
+1. [Area](#area)
+2. [Perimeter](#perimeter)
+3. [Function description](#functions-description)
+    
+    -[circle.py](#circlepy)
+
+    -[rectangle.py](#rectanglepy)
+
+    -[square.py](#squarepy)
+
+    -[triangle.py](#trianglepy)
+
+4. [Commit history](#commit-history)
 ## Area
-- Circle: S = πR²
-- Rectangle: S = ab
-- Square: S = a²
+- Circle: $S = \pi R^2$
+- Rectangle: $S = ab$
+- Square: $S = a^2$
 
 ## Perimeter
-- Circle: P = 2πR
-- Rectangle: P = 2a + 2b
-- Square: P = 4a
+- Circle: $P = 2πR$
+- Rectangle: $P = 2a + 2b$
+- Square: $P = 4a$
 
 ## Functions description
 ### circle.py
@@ -79,4 +92,10 @@ Library uses functions providing several geometric formulas.
     ```
 
 ## Commit history
-![Alt text](image-1.png)
+| Hash     | Branch    |Message   |
+| ---------|-----------|----------|
+|2ebf664   |lab2, origin/lab2      |add image with commits|
+|43821c2   |docs       |add function description|
+|6572d73   |docs       |add in Readme|
+|e72285d   |main       |add Readme.md|
+|3c768bf   |main       |func description|
