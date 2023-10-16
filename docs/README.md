@@ -69,7 +69,7 @@ print(triangle.area(1, 3))
 - perimeter: Принимает стороны треугольника $a$, $b$ и $c$, возвращает периметр треугольника
 ```python
 import triangle
-print(triangle.perimeter(5, 2)) 
+print(triangle.perimeter(5, 2, 4)) 
 ```
 
 ## *История проекта*
