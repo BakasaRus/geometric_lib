@@ -8,7 +8,7 @@ import triangle
 
 
 class TestGeometricMethods(unittest.TestCase):
-	kDigitsOfPrecision = 13
+	kDigitsOfPrecision = 14
 	def test_circumference_length(self):
 		self.assertAlmostEqual(circle.perimeter(0.5), 3.1415926535897932, TestGeometricMethods.kDigitsOfPrecision)
 		self.assertAlmostEqual(circle.perimeter(0), 0, TestGeometricMethods.kDigitsOfPrecision)
@@ -27,7 +27,7 @@ class TestGeometricMethods(unittest.TestCase):
 	def test_square_area(self):
 		self.assertAlmostEqual(square.area(1.3), 1.69, TestGeometricMethods.kDigitsOfPrecision)
 		self.assertAlmostEqual(square.area(0), 0, TestGeometricMethods.kDigitsOfPrecision)
-		self.assertAlmostEqual(square.area(6.11), 37.3321, TestGeometricMethods.kDigitsOfPrecision)
+		self.assertAlmostEqual(square.area(6.13785746), 37.6732941992776516, TestGeometricMethods.kDigitsOfPrecision)
 
 	def test_rectangle_perimeter(self):
 		self.assertAlmostEqual(rectangle.perimeter(1, 2.28), 6.56, TestGeometricMethods.kDigitsOfPrecision)
