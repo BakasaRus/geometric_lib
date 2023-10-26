@@ -8,6 +8,13 @@ def area(a):
             Возвращаемое значение:
                 S (float): площадь квадрата
     '''
+    
+    if type(a) not in [int, float]:
+        raise TypeError("Стороны должны быть рациональными числами")
+
+    if a < 0:
+        raise ValueError("Стороны должны быть положительными") 
+    
     return a * a
 
 
@@ -20,4 +27,11 @@ def perimeter(a):
             Возвращаемое значение:
                 P (float): периметр квадрата
     '''
+
+    if type(a) not in [int, float]:
+        raise TypeError("Стороны должны быть рациональными числами")
+
+    if a < 0:
+        raise ValueError("Стороны должны быть положительными") 
+    
     return 4 * a

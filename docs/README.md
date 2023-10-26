@@ -79,8 +79,13 @@ perimeter(1, 1, 1) # =3
 perimeter(2, 3.5, 4) # = 9.5
 ```
 
+# Testing
+The project contains a set of unit tests in the unit_tests folder
 
-
+You can test the functions with the command
+```
+python -m unittest
+```
 
 # Comits
 1. commit 8ba9ae
@@ -101,3 +106,7 @@ perimeter(2, 3.5, 4) # = 9.5
 6. commit 418113
 
     docs changes
+
+7. commit 8fadc3
+
+    docs changes2

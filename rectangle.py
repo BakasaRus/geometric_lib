@@ -8,6 +8,13 @@ def area(a, b):
             Возвращаемое значение:
                 S (float): площадь прямоугольника
     '''
+
+    if (type(a) not in [int, float]) or (type(b) not in [int, float]):
+        raise TypeError("Стороны должны быть рациональными числами")
+
+    if a < 0 or b < 0:
+        raise ValueError("Стороны должны быть положительными") 
+
     return a * b 
 
 def perimeter(a, b):
@@ -20,4 +27,11 @@ def perimeter(a, b):
             Возвращаемое значение:
                 P (float): периметр прямоугольника
     '''
+
+    if (type(a) not in [int, float]) or (type(b) not in [int, float]):
+        raise TypeError("Стороны должны быть рациональными числами")
+
+    if a < 0 or b < 0:
+        raise ValueError("Стороны должны быть положительными") 
+    
     return 2 * a + 2 * b

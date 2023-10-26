@@ -10,6 +10,12 @@ def area(r):
             Возвращаемое значение:
                 S (float): площадь круга
     '''
+    if type(r) not in [int, float]:
+        raise TypeError("Радиус должен быть рациональным")
+
+    if r < 0:
+        raise ValueError("Радиус должен быть положительным") 
+    
     return math.pi * r * r
 
 
@@ -22,4 +28,11 @@ def perimeter(r):
             Возвращаемое значение:
                 P (float): радиус круга
     '''
+
+    if type(r) not in [int, float]:
+        raise TypeError("Радиус должен быть рациональным")
+
+    if r < 0:
+        raise ValueError("Радиус должен быть положительным") 
+    
     return 2 * math.pi * r
