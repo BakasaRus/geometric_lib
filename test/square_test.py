@@ -3,7 +3,9 @@ import square
 
 
 class SquareTestCase(unittest.TestCase):
-
+    """Provides tests for square module
+       Tests contains check for area and perimeter functions
+    """
     def test_area_first(self):
         res = square.area(10)
         self.assertEqual(100, res)

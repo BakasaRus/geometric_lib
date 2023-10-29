@@ -3,6 +3,11 @@ import unittest
 
 
 def suite():
+    """Return instance of TestSuite which contains tests
+
+    :rtype: TestSuite
+    :return: instance of TestSuite
+    """
     suite_test = unittest.TestSuite()
 
     suite_rectangle = unittest.TestLoader().loadTestsFromTestCase(RectangleTestCase)

@@ -3,6 +3,9 @@ import rectangle
 
 
 class RectangleTestCase(unittest.TestCase):
+    """Provides tests for rectangle module
+       Tests contains check for area and perimeter functions
+    """
 
     def test_area_first(self):
         res = rectangle.area(10, 15)

@@ -3,7 +3,9 @@ import circle
 
 
 class CircleTestCase(unittest.TestCase):
-
+    """Provides tests for circle module
+       Tests contains check for area and perimeter functions
+    """
     def test_area_first(self):
         res = circle.area(10)
         self.assertEqual(314.1592653589793, res)

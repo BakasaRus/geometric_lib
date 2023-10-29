@@ -3,7 +3,9 @@ import triangle
 
 
 class TriangleTestCase(unittest.TestCase):
-
+    """Provides tests for triangle module
+       Tests contains check for area and perimeter functions
+    """
     def test_area_first(self):
         res = triangle.area(10, 20)
         self.assertEqual(100, res)
