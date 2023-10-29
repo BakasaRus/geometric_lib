@@ -10,6 +10,7 @@
 - rectangle.py
 - square.py
 - triangle.py
+- tests.py
 
 ### circle.py
 
@@ -34,6 +35,7 @@ def perimeter(r):
 Данный модуль содержит функции для работы с таким объектом, как прямоугольник.
 
 Функция ```area(a, b)``` принимает на вход стороны прямоугольника и возвращает его площадь:
+
 ```py
 def area(a, b):
     return a * b 
@@ -82,6 +84,12 @@ def perimeter(a, b, c):
     return a + b + c
 ```
 
+## tests.py
+
+Данный модуль содержит 4 класса, наследуемых от TestCase, с unit-тестами для модулей circle.py, rectangle.py, square.py и triangle.py.
+
+Каждый модуль состоит из нескольких блоков тестов, каждый из которых направлен на проверку правильности работы каждой функции блока и возможных вариантов входных данных (вырожденный случай, малые числа, большие числа).
+
 ## История изменения проекта
 
 1. Добавление модулей circle.py и square.py (commit: 8ba9aeb).
@@ -93,3 +101,5 @@ def perimeter(a, b, c):
 7. Добавление документации к rectangle.py (commit: e3648dd).
 8. Добавление документации к square.py (commit: 529cf88).
 9. Добавление документации к triangle.py (commit: 3859da4).
+10. Изменение документации к circle.py, rectangle.py, square.py, triangle.py (commit: 8978b7c).
+11. Добавлен файл tests.py с документацией (commit: f85e6fc).
