@@ -18,4 +18,4 @@ def perimeter(a, b):
 
     :returns (float): perimeter of the rectangle
     """
-    return a + b
+    return (a + b) * 2
