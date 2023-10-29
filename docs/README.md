@@ -103,6 +103,8 @@ print(S) # out: 9
 ```
 # Project history
 
+- *f7a8b22* feat: add .gitignore
+- *55eb197* docs: fix bugs in README.md
 - *f202900* docs: docs/README.md solution description with examples added
 - *1408e96* feat: add comments
 - *928f172* bag in file triagnle.py fixed
