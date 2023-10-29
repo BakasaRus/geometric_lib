@@ -170,6 +170,9 @@ print(sq_perimeter) # 20
 
 ## Modification history
 
+- _13ea531_ __docs__: Add doc string for testing classes/modules
+- _6704671_ __feat__: Add package test
+- _62cf568_ __feat__: Add tests modules
 - _0b1f9af_ __docs__: Add docstring for functions in triangle.py
 - _7e6c02b_ __docs__: Add docstring for functions in square.py
 - _fbb1a17_ __docs__: Add docstring for functions in rectangle.py
