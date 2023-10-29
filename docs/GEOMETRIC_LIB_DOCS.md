@@ -103,3 +103,4 @@ def perimeter(a, b, c):
 9. Добавление документации к triangle.py (commit: 3859da4).
 10. Изменение документации к circle.py, rectangle.py, square.py, triangle.py (commit: 8978b7c).
 11. Добавлен файл tests.py с документацией (commit: f85e6fc).
+12. Изменение файла tests.py (commit: 97e22f0)
