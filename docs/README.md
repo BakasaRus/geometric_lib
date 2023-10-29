@@ -88,3 +88,6 @@
 
 ### fix rectangle.py perimeter and add triangle.py <br> commit: `e880353`
 ![fix rectangle.py perimeter and add triangle.py](e880353.png)
+
+## 3. Added unit tests
+### add unit test for all modules
