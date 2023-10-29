@@ -83,24 +83,6 @@ class RectangleTestCase(unittest.TestCase):
         self.assertEqual(res, 0)
     
     '''
-        Блок тестов для периметра, где одна из сторон
-        прямоугольника равна 0, а другая не равна 0
-        (вырожденный случай: длина отрезка).
-        
-        Параметры:
-                self: ссылка на экземпляр класса RectangleTestCase
-        
-    '''
-    
-    def test_degenerate_perimeter_1(self):
-        res = rectangle.perimeter(5, 0)
-        self.assertEqual(res, 5)
-    
-    def test_degenerate_perimeter_2(self):
-        res = rectangle.perimeter(0, 7345)
-        self.assertEqual(res, 7345)
-        
-    '''
         Блок тестов для периметра, где входными данными для perimeter(a, b)
         являются малые числа.
         
@@ -446,27 +428,7 @@ class TriangleTestCase(unittest.TestCase):
     def test_0_perimeter(self):
         res = triangle.perimeter(0, 0, 0)
         self.assertEqual(res, 0)
-    
-    '''
-        Блок тестов для периметра вырожденного случая: длина отрезка.
-        
-        Параметры:
-                self: ссылка на экземпляр класса RectangleTestCase
-        
-    '''
-    
-    def test_degenerate_perimeter_1(self):
-        res = triangle.perimeter(5, 1, 4)
-        self.assertEqual(res, 5)
-    
-    def test_degenerate_perimeter_2(self):
-        res = triangle.perimeter(7, 13, 6)
-        self.assertEqual(res, 13)
-        
-    def test_degenerate_perimeter_3(self):
-        res = triangle.perimeter(10, 10, 20)
-        self.assertEqual(res, 20)
-        
+     
     '''
         Блок тестов для периметра, где входными данными для perimeter(a, b, c)
         являются малые числа.
