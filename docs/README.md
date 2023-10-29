@@ -90,4 +90,5 @@
 ![fix rectangle.py perimeter and add triangle.py](e880353.png)
 
 ## 3. Added unit tests
-### add unit test for all modules
+### add unit test for all modules (exempale just for 1 of 4 module): <br> commit: `3a6edae`
+![add unit test for all modules](3a6edae.png)
