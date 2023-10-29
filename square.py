@@ -1,3 +1,4 @@
+import unittest
 from typing import Union
 
 
@@ -19,3 +20,23 @@ def perimeter(a: Union[int, float]) -> Union[int, float]:
     :return: периметр квадрата со стороной a
     """
     return 4 * a
+
+
+class SquareTestCase(unittest.TestCase):
+    def test_area_1(self):
+        self.assertEqual(area(0), 0)
+
+    def test_area_2(self):
+        self.assertEqual(area(10), 100)
+
+    def test_area_3(self):
+        self.assertEqual(area(3000), 9000000)
+
+    def test_perimeter_1(self):
+        self.assertEqual(perimeter(10), 40)
+
+    def test_perimeter_2(self):
+        self.assertEqual(perimeter(50), 200)
+
+    def test_perimeter_3(self):
+        self.assertEqual(perimeter(3000), 12000)
