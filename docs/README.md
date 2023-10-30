@@ -1,3 +1,14 @@
+# Math formulas
+## Area
+- Circle: $S = \pi R^2$
+- Rectangle: $S = ab$
+- Square: $S = a^2$
+
+## Perimeter
+- Circle: $P = 2\pi R$
+- Rectangle: $P = 2a + 2b$
+- Square: $P = 4a$
+
 # Project description
  This project is aimed at working with ___geometric shapes and performing operations on them.___
 
