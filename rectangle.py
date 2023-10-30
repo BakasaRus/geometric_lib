@@ -7,6 +7,8 @@ def area(a, b):
 
     :returns (float): area of the rectangle
     """
+    if (a <= 0 or b <= 0):
+        raise ValueError('All lengths must be positive!')
     return a * b
 
 def perimeter(a, b):
@@ -18,4 +20,6 @@ def perimeter(a, b):
 
     :returns (float): perimeter of the rectangle
     """
+    if (a <= 0 or b <= 0):
+        raise ValueError('All lengths must be positive!')
     return (a + b) * 2

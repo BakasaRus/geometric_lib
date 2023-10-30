@@ -9,6 +9,8 @@ def area(r):
 
     :returns (float): area of the circle
     """
+    if (r <= 0):
+        raise ValueError('All lengths must be positive!')
     return math.pi * r * r
 
 
@@ -20,5 +22,7 @@ def perimeter(r):
 
     :returns (float): perimeter of the circle
     """
+    if (r <= 0):
+        raise ValueError('All lengths must be positive!')
     return 2 * math.pi * r
 

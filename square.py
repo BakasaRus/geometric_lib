@@ -6,6 +6,8 @@ def area(a):
 
     :returns (int[float]): area of the square
     """
+    if (a <= 0):
+        raise ValueError('All lengths must be positive!')
     return a * a
 
 def test_func():
@@ -22,6 +24,8 @@ def perimeter(a):
 
     :param a(int[float]): length of the side of the square
 
-    :returns (int[float]): perimeter of the square
+    :returns (int | float): perimeter of the square
     """
+    if (a <= 0):
+        raise ValueError('All lengths must be positive!')
     return 4 * a

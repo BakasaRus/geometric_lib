@@ -7,6 +7,8 @@ def area(a, h):
 
     :returns (float): area of the triangle
     """
+    if (a <= 0 or h <= 0):
+        raise ValueError('All lengths must be positive!')
     return a * h / 2
 
 def perimeter(a, b, c):
@@ -19,4 +21,6 @@ def perimeter(a, b, c):
 
     :returns (float): perimeter of the triangle
     """
+    if (a <= 0 or b <= 0 or c <= 0):
+        raise ValueError('All lengths must be positive!')
     return a + b + c
