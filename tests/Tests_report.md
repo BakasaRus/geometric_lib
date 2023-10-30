@@ -45,30 +45,30 @@ Based on log of git commits one may assume that developer of this library has no
 # Testing results
 - circle.py
 ```
-    Ran 8 tests in 0.001s
+    Ran 8 tests in 0.000s
 
-    FAILED (failures=2)
+    OK
 ```
 - rectangle.py
 ```
-    Ran 8 tests in 0.001s
+    Ran 8 tests in 0.000s
 
-    FAILED (failures=2)
+    OK
 ```
 
 - square.py
 ```
-    Ran 8 tests in 0.001s
+    Ran 8 tests in 0.000s
 
-    FAILED (failures=2)
+    OK
 ```
 
 - triangle.py
 ```
-    Ran 8 tests in 0.001s
+    Ran 8 tests in 0.000s
 
-    FAILED (failures=3)
+    OK
 ```
 
 # Сonclusion
-Neither function checks the input data. Unreal values can be passed to it and no errors will raised. It is about second point of tests goal. Moreover _triangle.py_ _area_ function may return float when it is possible to return int (this agrees with the docs, but may not be an obvious solution)
+All tests are passed
