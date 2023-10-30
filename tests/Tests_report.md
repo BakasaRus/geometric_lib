@@ -71,4 +71,4 @@ Based on log of git commits one may assume that developer of this library has no
 ```
 
 # Сonclusion
-Neither function checks the input data. Unreal values can be passed to it and no errors will raised. It is about second point of tests goal. Moreover _triangle.py_ _area_ function may return float when it is possible to return int (this agrees with the docs, but may not be an obvious solution).
+Neither function checks the input data. Unreal values can be passed to it and no errors will raised. It is about second point of tests goal. Moreover _triangle.py_ _area_ function may return float when it is possible to return int (this agrees with the docs, but may not be an obvious solution)
