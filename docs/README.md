@@ -7,6 +7,7 @@
 - [Circle](#circle)
 - [Triangle](#triangle)
 - [Square](#square)
+- [Tests](testing.md)
 
 # Math formulas
 
