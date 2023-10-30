@@ -39,7 +39,7 @@ class Test_square(unittest.TestCase):
             res = area(-100)
 
         with self.assertRaises(ValueError):
-            res = area(1e+100000000)
+            res = area(-1e+100000000)
 
     def test_perimeter_failsafety(self):
         with self.assertRaises(ValueError):

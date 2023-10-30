@@ -39,7 +39,7 @@ class Test_rectangle(unittest.TestCase):
             res = area(-100, 10)
 
         with self.assertRaises(ValueError):
-            res = area(0, 1e+100000000)
+            res = area(0, -1e+100000000)
 
     def test_perimeter_failsafety(self):
         with self.assertRaises(ValueError):

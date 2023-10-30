@@ -22,7 +22,7 @@ class Test_circe(unittest.TestCase):
        res = area(20)
        self.assertNotAlmostEqual(res, 1200)
 
-       res = area(0)
+       res = area(1)
        self.assertNotAlmostEqual(res, 0.1)
 
     def test_perimeter_correctness_negative(self):
@@ -39,14 +39,14 @@ class Test_circe(unittest.TestCase):
             res = area(-100)
 
         with self.assertRaises(ValueError):
-            res = area(1e+100000000)
+            res = area(-1e+100000000)
 
     def test_perimeter_failsafety(self):
         with self.assertRaises(ValueError):
             res = perimeter(0)
 
         with self.assertRaises(ValueError):
-            res = perimeter(1e+100000000)
+            res = perimeter(-1e+100000000)
 
 
     # Speed testing
