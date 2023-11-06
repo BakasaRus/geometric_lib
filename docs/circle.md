@@ -1,10 +1,12 @@
 # circle.py
+
 - Функция area позволяет вычислить площадь фигуры.
   Пример использования:
 
 ```python
 import circle
-print(circle.area(5)) # -> 78.53981633974483
+
+print(circle.area(5))  # -> 78.53981633974483
 ```
 
 - Функция perimeter позволяет вычислить периметр фигуры.
@@ -12,7 +14,8 @@ print(circle.area(5)) # -> 78.53981633974483
 
 ```python
 import circle
-print(circle.perimeter(4)) # -> 25.132741228718345
+
+print(circle.perimeter(4))  # -> 25.132741228718345
 ```
 
 Обратите внимание, что описание входных и выходных параметров можно получить через `help(area)` и `help(perimeter)`.

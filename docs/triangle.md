@@ -1,15 +1,20 @@
 # triangle.py
+
 - Функция area позволяет вычислить площадь фигуры.
-Пример использования:
+  Пример использования:
+
 ```python
 import triangle
+
 print(triangle.area(a=5, h=1))  # 2.5
 ```
 
 - Функция perimeter позволяет вычислить периметр фигуры.
-Пример использования: 
+  Пример использования:
+
 ```python 
 import triangle
+
 print(triangle.perimeter(1, 2, 3))  # 6
 ```
 
