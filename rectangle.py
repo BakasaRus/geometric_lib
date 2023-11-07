@@ -1,5 +1,5 @@
 def area(a, b): 
-    '''Takse a & b - side lengths, returns area of the rectangle'''
+    '''Takes a & b - side lengths, returns area of the rectangle'''
     return a * b 
 
 def perimeter(a, b):
