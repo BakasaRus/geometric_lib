@@ -63,7 +63,10 @@
     - Added rectangle.py
 4. Commit hash: `c7998c83a2bec2472c5b80ddd4889b99a99134fe`
     - Fixed a bug in rectangle.py
-5. Commit hash: `ffc224485d03b6950fb56a9a562ff9664376309d `
+5. Commit hash: `ffc224485d03b6950fb56a9a562ff9664376309d`
     - Add file documentation triangle.py, square.py, rectangle.py, circle.py
+6. Commit hash: `8359a6307bd536bdfe42cef964519e2b7f8a2eee`
+    - Added unit tests
+
 
 
