@@ -1,6 +1,5 @@
 # Math formulas
-
-### Catalog with geometry figures' formulas. Every file has two functions: area and perimeter. 
+Catalog with geometry figures' formulas. Every file has two functions: area and perimeter. 
 
 ## Files:
 - `rectangle.py` – File with rectangle formulas.
@@ -64,8 +63,10 @@ OUTPUT >> 8
 ```
 
 ### History of changes:
-1. Commit d078c8d – Initial commit.
-2. Commit 1a179f3 – Added `rectangle.py` with functions `area(a, b)` and `perimeter(a, b)`.
-3. Commit 5278602 – Added rectangle perimeter to `rectangle.py`, added `triangle.py` with functions `area(a, h)` and `perimeter(a, b, c)`.
-4. Commit a8db122 – Added descriptions to all functions.
-
+| Hash     | Description                                                                                                            |
+|----------|------------------------------------------------------------------------------------------------------------------------|
+| d078c8d  | Initail commit.                                                                                                        |
+| 1a179f3  | Added `rectangle.py` with functions `area(a, b)` and `perimeter(a, b)`.                                                |
+| 5278602  | Added rectangle perimeter to `rectangle.py`, added `triangle.py` with functions `area(a, h)` and `perimeter(a, b, c)`. |
+| a8db122  | Added descriptions to all functions.                                                                                   |
+| b7f6a91  | Added documentation                                                                                                    |
