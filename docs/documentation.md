@@ -4,7 +4,7 @@
 
  Geometric_lib is a project designed to work with geometric shapes and operations on them. With its help, you can calculate the area and perimeter of various geometric shapes (circle, rectangle, square and triangle).
 
- ## Description of functions
+ ## Description of modules
  
  - ### circle.py 
   
@@ -54,6 +54,27 @@
         `area(2, 3)` returns 3  
         `perimeter(3, 7, 4)` returns 14 
 
+ - ## tests
+
+    Module for testing functions from the geometric-lib  
+   
+    - ### test_circle.py
+
+        Tests functions for calculating area and perimeter for circle with zero, small and big data            
+
+    - ### test_rectangle.py
+
+        Tests functions for calculating area and perimeter for rectangle with zero, small and big data  
+
+    - ### test_square.py
+
+        Tests functions for calculating area and perimeter for square with zero, small and big data            
+
+    - ### test_triangle.py
+
+        Tests functions for calculating area and perimeter for triangle with zero, small and big data  
+
+     
 ## Commit history
 
 1. commit `8ba9aeb3cea847b63a91ac378a2a6db758682460`  
@@ -66,3 +87,5 @@ added file rectangle.py
 fixed bug in rectangle.py and added triangle.py
 5. commit `05b924400ca8f9352b91bbc5d12451e0e59d7df9`  
 added description of functions in circle.py, rectangle.py, square.py, triangle.py
+6. commit `7d627a438c5db731c56611f2802f602026e5e476`  
+added module tests with test_rectangle.py, test_triangle.py, test_circle.py, test_square.py
