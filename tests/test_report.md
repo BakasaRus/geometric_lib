@@ -132,21 +132,21 @@
 ### Метрики
 |||
 |--------|-------------|
-|<b>Запущено</b>| 26 тестов |
-|<font color="green"><b>Пройдено</b></font>| 15 тестов, 58%|
-|<font color="red"><b>Провалено</b></font>| 11 тестов, 48%|
-|<b>Общее время</b>| 0.002 сек.|
+|<b>Запущено</b>| 34 теста |
+|<font color="green"><b>Пройдено</b></font>| 23 тестов, 68%|
+|<font color="red"><b>Провалено</b></font>| 11 тестов, 32%|
+|<b>Общее время</b>| 0.004 сек.|
 
 |Модуль| <font color="green">Пройдено</font> | <font color="red">Провалено</font>| Сообщение тестирующей системы|
 |:-:|:-:|:-:|:-|
-|circle.area| 2 | 1 | FAIL: test_neg_r (tests.tests.CircleAreaTestCase.test_neg_r)|
-|circle.perimeter| 2 | 1 | FAIL: test_neg_r (tests.tests.CirclePerTestCase.test_neg_r)|
-|rectangle.area| 2 | 1 | FAIL: test_neg_side (tests.tests.RectangleAreaTestCase.test_neg_side)|
-|rectangle.perimeter| 1 | 2 | FAIL: test_neg_side (tests.tests.RectanglePerTestCase.test_neg_side)<br>FAIL: test_zero_side (tests.tests.RectanglePerTestCase.test_zero_side)|
-|square.area| 2 | 1| FAIL: test_neg_side (tests.tests.SquareAreaTestCase.test_neg_side)|
-|square.perimeter| 2 | 1| FAIL: test_neg_side (tests.tests.SquarePerTestCase.test_neg_side)|
-|triangle.area| 3 | 2 | FAIL: test_neg_height (tests.tests.TriangleAreaTestCase.test_neg_height) <br>FAIL: test_neg_side (tests.tests.TriangleAreaTestCase.test_neg_side)|
-|triangle.perimeter| 1 | 2 | FAIL: test_neg_side (tests.tests.TrianglePerTestCase.test_neg_side)<br>FAIL: test_zero_side (tests.tests.TrianglePerTestCase.test_zero_side)|
+|circle.area| 3 | 1 | FAIL: test_neg_r (tests.tests.CircleAreaTestCase.test_neg_r)|
+|circle.perimeter| 3 | 1 | FAIL: test_neg_r (tests.tests.CirclePerTestCase.test_neg_r)|
+|rectangle.area| 3 | 1 | FAIL: test_neg_side (tests.tests.RectangleAreaTestCase.test_neg_side)|
+|rectangle.perimeter| 2 | 2 | FAIL: test_neg_side (tests.tests.RectanglePerTestCase.test_neg_side)<br>FAIL: test_zero_side (tests.tests.RectanglePerTestCase.test_zero_side)|
+|square.area| 3 | 1| FAIL: test_neg_side (tests.tests.SquareAreaTestCase.test_neg_side)|
+|square.perimeter| 3 | 1| FAIL: test_neg_side (tests.tests.SquarePerTestCase.test_neg_side)|
+|triangle.area| 4 | 2 | FAIL: test_neg_height (tests.tests.TriangleAreaTestCase.test_neg_height) <br>FAIL: test_neg_side (tests.tests.TriangleAreaTestCase.test_neg_side)|
+|triangle.perimeter| 2 | 2 | FAIL: test_neg_side (tests.tests.TrianglePerTestCase.test_neg_side)<br>FAIL: test_zero_side (tests.tests.TrianglePerTestCase.test_zero_side)|
 
 
 ### Выявленные дефекты
