@@ -1,27 +1,9 @@
-import math
-
 import unittest
 
-def area(r):
-    '''Принимает число r, возвращает площадь круга радиусом r'''
-    return math.pi * r * r
-
-
-def perimeter(r):
-    '''Принимает число r, возвращает длину окружности радиусом r'''
-    return 2 * math.pi * r
-
+from lib.circle import *
 
 class CircleTestCase(unittest.TestCase):
     testDelta = 0.000000000001
-
-    def test_zero_rad_area(self):
-        res = area(0)
-        self.assertEqual(res, 0)
-
-    def test_zero_rad_perim(self):
-        res = perimeter(0)
-        self.assertEqual(res, 0)
 
     def test_small_rad_area(self):
         res = area(0.0001)
@@ -63,3 +45,42 @@ class CircleTestCase(unittest.TestCase):
         res = perimeter(0.999999999999)
         self.assertAlmostEqual(res, 6.283185307173303, delta=self.testDelta)
 
+    def test_zero_rad_area(self):
+        with self.assertRaises(ValueError):
+            area(0)
+
+    def test_zero_rad_perim(self):
+        with self.assertRaises(ValueError):
+            perimeter(0)
+
+    def test_neg_rad_area(self):
+        with self.assertRaises(ValueError):
+            area(-1)
+
+    def test_neg_rad_perim(self):
+        with self.assertRaises(ValueError):
+            perimeter(-1)
+
+    def test_type_string_area(self):
+        with self.assertRaises(TypeError):
+            area("bad string")
+
+    def test_type_string_perim(self):
+        with self.assertRaises(TypeError):
+            perimeter("bad string")
+
+    def test_type_tuple_area(self):
+        with self.assertRaises(TypeError):
+            area((1, 2))
+
+    def test_type_tuple_perim(self):
+        with self.assertRaises(TypeError):
+            perimeter((1, 2))
+
+    def test_type_array_area(self):
+        with self.assertRaises(TypeError):
+            area([1, 2])
+
+    def test_type_array_perim(self):
+        with self.assertRaises(TypeError):
+            perimeter([1, 2])
