@@ -9,6 +9,8 @@ def area(r):
             Возвращаемое значение:
                     area (float): площадь круга с радиусом r
     """
+    if r <= 0:
+        raise ValueError
     return math.pi * r * r
 
 def perimeter(r):
@@ -20,5 +22,7 @@ def perimeter(r):
             Возвращаемое значение:
                     perimeter (float): длина окружности с радиусом r
     """
+    if r <= 0:
+        raise ValueError
     return 2.0 * math.pi * r
 

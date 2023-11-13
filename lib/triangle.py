@@ -9,6 +9,8 @@ def area(a, h):
         Возвращаемое значение:
                 area (float): площадь треугольника со стороной a и высотой h, опущенной на эту сторону
     """
+    if a <= 0 or h <= 0:
+        raise ValueError
     return a * h / 2.0
 
 def perimeter(a, b, c):
@@ -22,4 +24,8 @@ def perimeter(a, b, c):
         Возвращаемое значение:
                 area (float): периметр треугольника со сторонами a,b,c
     """
+    if a <= 0 or b <= 0 or c <= 0:
+        raise ValueError
+    if max([a, b, c]) >= sum([a, b, c]) - max([a, b, c]):
+        raise ValueError
     return a + b + c 

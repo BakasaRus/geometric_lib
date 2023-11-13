@@ -8,6 +8,8 @@ def area(a):
             Возвращаемое значение:
                     area (float): площадь квадрата со стороной a
     """
+    if a <= 0:
+        raise ValueError
     return a * a
 
 
@@ -20,4 +22,6 @@ def perimeter(a):
             Возвращаемое значение:
                     area (float): периметр квадрата со стороной a
     """
+    if a <= 0:
+        raise ValueError
     return 4.0 * a
