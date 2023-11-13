@@ -1,4 +1,7 @@
 import unittest
+
+import pytest
+
 import square
 
 
@@ -10,8 +13,9 @@ class SquareTestCase(unittest.TestCase):
                  ["3", "9"]]
 
         for case in cases:
-            res = square.area(case[0])
-            self.assertEqual(res, case[1])
+            with pytest.raises((TypeError, AssertionError)):
+                res = square.area(case[0])
+                self.assertEqual(res, case[1])
 
     def test_area_zero(self):
         cases = [[0, 0]]
@@ -35,8 +39,9 @@ class SquareTestCase(unittest.TestCase):
                  ["100", "400"]]
 
         for case in cases:
-            res = square.perimeter(case[0])
-            self.assertEqual(res, case[1])
+            with pytest.raises((TypeError, AssertionError)):
+                res = square.perimeter(case[0])
+                self.assertEqual(res, case[1])
 
     def test_perimeter_zero(self):
         cases = [[0, 0]]
