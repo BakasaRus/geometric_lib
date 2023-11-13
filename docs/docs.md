@@ -101,3 +101,4 @@ Allows you to calculate the area and perimeter of primitive geometric shapes (ci
 | f162ada | rinnothing | Thu Nov 2 11:45:05 2023 +0300  | Adds unittests                                                           |
 | 9b81bd0 | rinnothing | Mon Nov 13 12:57:31 2023 +0300 | tests: add tests for wrong arguments (now they break program)            |
 | cc6d436 | rinnothing | Mon Nov 13 13:10:52 2023 +0300 | tests: make tests checking errors                                        |
+| 74bcac5 | rinnothing | Mon Nov 13 13:24:33 2023 +0300 | tests: remove pytest add unittest                                        |
