@@ -57,7 +57,7 @@ possibly) has already done some manual testing.
 - test_circle.py
 
 ```
-    Ran 8 tests in 0.001s
+    Ran 8 tests in 0.000s
 
     OK
 ```
@@ -65,7 +65,7 @@ possibly) has already done some manual testing.
 - test_rectangle.py
 
 ```
-    Ran 8 tests in 0.001s
+    Ran 8 tests in 0.000s
 
     OK
 ```
@@ -73,7 +73,7 @@ possibly) has already done some manual testing.
 - test_square.py
 
 ```
-    Ran 8 tests in 0.002s
+    Ran 8 tests in 0.000s
 
     OK
 ```
@@ -81,7 +81,7 @@ possibly) has already done some manual testing.
 - test_triangle.py
 
 ```
-    Ran 8 tests in 0.001s
+    Ran 8 tests in 0.000s
 
     OK
 ```
