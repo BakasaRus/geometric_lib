@@ -99,3 +99,5 @@ Allows you to calculate the area and perimeter of primitive geometric shapes (ci
 | 9911095 | rinnothing | Thu Mar 4 14:54:08 2021 +0300  | Adds docs/docs.md - file that contains all documentation for project.    |
 | ded52ed | rinnothing | Thu Nov 2 10:44:56 2023 +0300  | Adds tests/testing_plan.md - testing plan.                               |
 | f162ada | rinnothing | Thu Nov 2 11:45:05 2023 +0300  | Adds unittests                                                           |
+| 9b81bd0 | rinnothing | Mon Nov 13 12:57:31 2023 +0300 | tests: add tests for wrong arguments (now they break program)            |
+| cc6d436 | rinnothing | Mon Nov 13 13:10:52 2023 +0300 | tests: make tests checking errors                                        |
