@@ -3,9 +3,8 @@ import square
 
 class SquareAreaTestCase(unittest.TestCase):
     def test_zero_side(self):
-        square.area(0)
-        raise Exception("Zero side!")
-    
+        self.assertRaises(ValueError, square.area, 0)
+
     def test_simple(self):
         res = square.area(2)
         self.assertEqual(res, 4)
@@ -16,13 +15,11 @@ class SquareAreaTestCase(unittest.TestCase):
         self.assertEqual(expected_result, result)
     
     def test_neg_side(self):
-        square.area(-2)
-        raise Exception("Negative side!")
+        self.assertRaises(ValueError, square.area, -2)
 
 class SquarePerTestCase(unittest.TestCase):
     def test_zero_side(self):
-        square.perimeter(0)
-        raise Exception("Zero side!")
+        self.assertRaises(ValueError, square.perimeter, 0)
     
     def test_simple(self):
         res = square.perimeter(3)
@@ -34,5 +31,4 @@ class SquarePerTestCase(unittest.TestCase):
         self.assertEqual(expected_result, result)
     
     def test_neg_side(self):
-        square.perimeter(-2)
-        raise Exception("Negative side!")
+         self.assertRaises(ValueError, square.perimeter, -2)

@@ -17,8 +17,7 @@ class CircleAreaTestCase(unittest.TestCase):
         self.assertEqual(expected_result, result)
     
     def test_neg_r(self):
-        circle.area(-2)
-        raise Exception("Negative radius!")
+        self.assertRaises(ValueError, circle.area, -2)
 
 class CirclePerTestCase(unittest.TestCase):
     def test_zero_r(self):
@@ -35,5 +34,4 @@ class CirclePerTestCase(unittest.TestCase):
         self.assertEqual(expected_result, result)
     
     def test_neg_r(self):
-        circle.perimeter(-2)
-        raise Exception("Negative radius!")
+        self.assertRaises(ValueError, circle.perimeter, -2)

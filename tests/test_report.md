@@ -133,20 +133,20 @@
 |||
 |--------|-------------|
 |<b>Запущено</b>| 34 теста |
-|<font color="green"><b>Пройдено</b></font>| 19 тестов, 56%|
-|<font color="red"><b>Провалено</b></font>| 15 тестов, 44%|
+|<font color="green"><b>Пройдено</b></font>| 18 тестов, 53%|
+|<font color="red"><b>Провалено</b></font>| 16 тестов, 47%|
 |<b>Общее время</b>| 0.004 сек.|
 
 |Модуль| <font color="green">Пройдено</font> | <font color="red">Провалено</font>| Сообщение тестирующей системы|
 |:-:|:-:|:-:|:-|
-|circle.area| 3 | 1 | Exception: Negative radius!|
-|circle.perimeter| 3 | 1 | Exception: Negative radius!|
-|rectangle.area| 3 | 2 | Exception: Negative side!<br>Exception: Zero side!|
-|rectangle.perimeter| 2 | 2 | Exception: Negative side!<br>Exception: Zero side!|
-|square.area| 3 | 2| Exception: Negative side!<br>Exception: Zero side!|
-|square.perimeter| 3 | 2| Exception: Negative side!<br>Exception: Zero side!|
-|triangle.area| 4 | 3 | Exception: Negative height!<br>Exception: Negative side!<br>Exception: Zero side!|
-|triangle.perimeter| 2 | 2 | Exception: Negative side!<br>Exception: Zero side!|
+|circle.area| 3 | 1 | AssertionError: ValueError not raised by area|
+|circle.perimeter| 3 | 1 | AssertionError: ValueError not raised by perimeter|
+|rectangle.area| 3 | 2 | AssertionError: ValueError not raised by area<br>AssertionError: ValueError not raised by area|
+|rectangle.perimeter| 2 | 2 | AssertionError: ValueError not raised by perimeter<br>AssertionError: ValueError not raised by perimeter|
+|square.area| 3 | 2| AssertionError: ValueError not raised by area<br>AssertionError: ValueError not raised by area|
+|square.perimeter| 3 | 2| AssertionError: ValueError not raised by perimeter<br>AssertionError: ValueError not raised by perimeter|
+|triangle.area| 2 | 4 | AssertionError: ValueError not raised by area<br>AssertionError: ValueError not raised by area<br>AssertionError: ValueError not raised by area<br>AssertionError: ValueError not raised by area|
+|triangle.perimeter| 2 | 2 | AssertionError: ValueError not raised by perimeter<br>AssertionError: ValueError not raised by perimeter|
 
 
 ### Выявленные дефекты
@@ -158,7 +158,7 @@
 |rectangle.perimeter| некорректная обработка случая отрицательной стороны<br>некорректная обработка случая нулевой стороны|
 |square.area| некорректная обработка случая отрицательной стороны<br>некорректная обработка случая нулевой стороны|
 |square.perimeter| некорректная обработка случая отрицательной стороны<br>некорректная обработка случая нулевой стороны|
-|triangle.area| некорректная обработка случая отрицательной высоты<br>некорректная обработка случая отрицательной стороны<br>некорректная обработка случая нулевой стороны|
+|triangle.area| некорректная обработка случая отрицательной высоты<br>некорректная обработка случая отрицательной стороны<br>некорректная обработка случая нулевой стороны<br>некорректная обработка случая нулевой высоты|
 |triangle.perimeter| некорректная обработка случая отрицательной стороны<br>некорректная обработка случая нулевой стороны|
 
 ### Вердикт

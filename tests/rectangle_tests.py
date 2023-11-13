@@ -3,8 +3,7 @@ import rectangle
 
 class RectangleAreaTestCase(unittest.TestCase):
     def test_zero_side(self):
-        rectangle.area(2, 0)
-        raise Exception("Zero side!")
+        self.assertRaises(ValueError, rectangle.area, 0, 3)
     
     def test_simple(self):
         res = rectangle.area(2, 3)
@@ -16,13 +15,11 @@ class RectangleAreaTestCase(unittest.TestCase):
         self.assertEqual(res, exp_res)
         
     def test_neg_side(self):
-        rectangle.area(-2, 2)
-        raise Exception("Negative side!")
+        self.assertRaises(ValueError, rectangle.area, -2, 3)
 
 class RectanglePerTestCase(unittest.TestCase):
     def test_zero_side(self):
-        rectangle.perimeter(0, 2)
-        raise Exception("Zero side!")
+        self.assertRaises(ValueError, rectangle.perimeter, 0, 3)
     
     def test_simple(self):
         res = rectangle.perimeter(2, 3)
@@ -34,5 +31,5 @@ class RectanglePerTestCase(unittest.TestCase):
         self.assertEqual(res, exp_res)
     
     def test_neg_side(self):
-        rectangle.perimeter(2, -2)
-        raise Exception("Negative side!")
+        self.assertRaises(ValueError, rectangle.perimeter, -2, 3)
+

@@ -3,12 +3,10 @@ import triangle
 
 class TriangleAreaTestCase(unittest.TestCase):
     def test_zero_side(self):
-        triangle.area(0, 2)
-        raise Exception("Zero side!")
+        self.assertRaises(ValueError, triangle.area, 0, 2)
     
     def test_zero_height(self):
-        res = triangle.area(3, 0)
-        self.assertEqual(res, 0)
+        self.assertRaises(ValueError, triangle.area, 2, 0)
     
     def test_simple(self):
         res = triangle.area(2, 4)
@@ -20,17 +18,14 @@ class TriangleAreaTestCase(unittest.TestCase):
         self.assertEqual(exp_res, res)
     
     def test_neg_side(self):
-        triangle.area(-2, 3)
-        raise Exception("Negative side!")
+        self.assertRaises(ValueError, triangle.area, -2, 2)
     
     def test_neg_height(self):
-        triangle.area(3, -2)
-        raise Exception("Negative height!")
+        self.assertRaises(ValueError, triangle.area, 2, -2)
     
 class TrianglePerTestCase(unittest.TestCase):
     def test_zero_side(self):
-        triangle.perimeter(0, 2, 2)
-        raise Exception("Zero side!")
+        self.assertRaises(ValueError, triangle.perimeter, 0, 2, 3)
     
     def test_simple(self):
         res = triangle.perimeter(2, 4, 3)
@@ -42,5 +37,4 @@ class TrianglePerTestCase(unittest.TestCase):
         self.assertEqual(exp_res, res)
     
     def test_neg_side(self):
-        triangle.perimeter(-2, 2, 2)
-        raise Exception("Negative side!")
+        self.assertRaises(ValueError, triangle.perimeter, -2, 2, 3)
