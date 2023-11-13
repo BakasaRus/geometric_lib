@@ -11,7 +11,11 @@ def area(a: Union[int, float], h: Union[int, float]) -> Union[int, float]:
     :param h: высота треугольника
     :return: площадь треугольника
     """
-    return a * h / 2 
+    if not isinstance(a, (int, float)) or a <= 0:
+        raise TypeError('Rectangle\'s side should be a positive number, not {}'.format(repr(a)))
+    if not isinstance(h, (int, float)) or h <= 0:
+        raise TypeError('Rectangle\'s side should be a positive number, not {}'.format(repr(h)))
+    return a * h / 2
 
 
 def perimeter(a: Union[int, float], b: Union[int, float], c: Union[int, float]) -> Union[int, float]:
@@ -23,12 +27,18 @@ def perimeter(a: Union[int, float], b: Union[int, float], c: Union[int, float]) 
     :param c: 3-ая сторона треугольника
     :return: периметр треугольника
     """
+    if not isinstance(a, (int, float)) or a <= 0:
+        raise TypeError('Rectangle\'s side should be a positive number, not {}'.format(repr(a)))
+    if not isinstance(b, (int, float)) or b <= 0:
+        raise TypeError('Rectangle\'s side should be a positive number, not {}'.format(repr(b)))
+    if not isinstance(c, (int, float)) or c <= 0:
+        raise TypeError('Rectangle\'s side should be a positive number, not {}'.format(repr(c)))
     return a + b + c
 
 
 class TriangleTestCase(unittest.TestCase):
     def test_area_1(self):
-        self.assertEqual(area(10, 0), 0)
+        self.assertEqual(area(10, 1), 5)
 
     def test_area_2(self):
         self.assertEqual(area(10, 10), 50)
@@ -38,6 +48,15 @@ class TriangleTestCase(unittest.TestCase):
 
     def test_area_4(self):
         self.assertNotEqual(area(100, 20), 101)
+
+    def test_area_5(self):
+        with self.assertRaises(TypeError):
+            area('string', 1)
+
+    def test_area_6(self):
+        with self.assertRaises(TypeError):
+            area(-10, 1)
+
 
     def test_perimeter_1(self):
         self.assertEqual(perimeter(10, 15, 10), 35)
@@ -50,3 +69,12 @@ class TriangleTestCase(unittest.TestCase):
 
     def test_perimeter_4(self):
         self.assertNotEqual(perimeter(100, 20, 100), 110)
+
+    def test_perimeter_5(self):
+        with self.assertRaises(TypeError):
+            perimeter('string', 1)
+
+    def test_perimeter_6(self):
+        with self.assertRaises(TypeError):
+            perimeter(-10, 1)
+
