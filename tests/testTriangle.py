@@ -6,7 +6,7 @@ import unittest
 
 class TriangleTestCaseArea(unittest.TestCase):
     def testInvalidArgument(self):
-        self.assertEqual(type(triangle.area(-1, -1)), Exception)
+        self.assertRaises(ValueError, triangle.area, -1, -1)
 
     def testOddHeight(self):
         self.assertEqual(triangle.area(3, 3), 4.5)
@@ -23,10 +23,10 @@ class TriangleTestCaseArea(unittest.TestCase):
 
 class TriangleTestCasePerimeter(unittest.TestCase):
     def testNotExistTriangle(self):
-        self.assertEqual(type(triangle.perimeter(1, 2, 3)), Exception)
+        self.assertRaises(ValueError, triangle.perimeter, 1, 2, 3)
 
     def testInvalidArgument(self):
-        self.assertEqual(type(triangle.perimeter(-1, -1, -1)), Exception)
+        self.assertRaises(ValueError, triangle.perimeter, -1, -1, -1)
 
     def testSimpleSides(self):
         self.assertEqual(triangle.perimeter(10, 20, 30), 60)

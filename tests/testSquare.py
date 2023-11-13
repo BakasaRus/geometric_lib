@@ -6,7 +6,7 @@ import unittest
 
 class SquareTestCaseArea(unittest.TestCase):
     def testInvalidArgument(self):
-        self.assertEqual(type(square.area(-1)), Exception)
+        self.assertRaises(ValueError, square.area, -1)
 
     def testSimpleSides(self):
         self.assertEqual(square.area(3), 9)
@@ -20,7 +20,7 @@ class SquareTestCaseArea(unittest.TestCase):
 
 class SquareTestCasePerimeter(unittest.TestCase):
     def testInvalidArgument(self):
-        self.assertEqual(type(square.perimeter(-1)), Exception)
+        self.assertRaises(ValueError, square.perimeter, -1)
 
     def testSimpleSides(self):
         self.assertEqual(square.perimeter(5), 20)

@@ -6,7 +6,7 @@ import unittest
 
 class RectangleTestCaseArea(unittest.TestCase):
     def testInvalidArgument(self):
-        self.assertEqual(type(rectangle.area(-1, -2)), Exception)
+        self.assertRaises(ValueError, rectangle.area, -1, -2)
 
     def testSimpleSides(self):
         self.assertEqual(rectangle.area(11, 20), 220)
@@ -23,7 +23,7 @@ class RectangleTestCaseArea(unittest.TestCase):
 
 class RectangleTestCasePerimeter(unittest.TestCase):
     def testInvalidArgument(self):
-        self.assertEqual(type(rectangle.perimeter(-1, -2)), Exception)
+        self.assertRaises(ValueError, rectangle.perimeter, -1, -2)
 
     def testSimpleSides(self):
         self.assertEqual(rectangle.perimeter(13, 14), 54)

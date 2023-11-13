@@ -6,7 +6,7 @@ import unittest
 
 class CircleTestCaseArea(unittest.TestCase):
     def testInvalidArgument(self):
-        self.assertEqual(type(circle.area(-1)), Exception)
+        self.assertRaises(ValueError, circle.area, -1)
 
     def testSimpleRadius(self):
         self.assertEqual(circle.area(3), 28.274333882308138)
@@ -20,7 +20,7 @@ class CircleTestCaseArea(unittest.TestCase):
 
 class CircleTestCasePerimeter(unittest.TestCase):
     def testInvalidArgument(self):
-        self.assertEqual(type(circle.perimeter(-1)), Exception)
+        self.assertRaises(ValueError, circle.perimeter, -1)
 
     def testSimpleRadius(self):
         self.assertEqual(circle.perimeter(3), 18.84955592153876)
