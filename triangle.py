@@ -12,9 +12,9 @@ def area(a: Union[int, float], h: Union[int, float]) -> Union[int, float]:
     :return: площадь треугольника
     """
     if not isinstance(a, (int, float)) or a <= 0:
-        raise TypeError('Rectangle\'s side should be a positive number, not {}'.format(repr(a)))
+        raise TypeError('Triangle\'s side should be a positive number, not {}'.format(repr(a)))
     if not isinstance(h, (int, float)) or h <= 0:
-        raise TypeError('Rectangle\'s side should be a positive number, not {}'.format(repr(h)))
+        raise TypeError('Triangle\'s side should be a positive number, not {}'.format(repr(h)))
     return a * h / 2
 
 
@@ -28,11 +28,13 @@ def perimeter(a: Union[int, float], b: Union[int, float], c: Union[int, float]) 
     :return: периметр треугольника
     """
     if not isinstance(a, (int, float)) or a <= 0:
-        raise TypeError('Rectangle\'s side should be a positive number, not {}'.format(repr(a)))
+        raise TypeError('Triangle\'s side should be a positive number, not {}'.format(repr(a)))
     if not isinstance(b, (int, float)) or b <= 0:
-        raise TypeError('Rectangle\'s side should be a positive number, not {}'.format(repr(b)))
+        raise TypeError('Triangle\'s side should be a positive number, not {}'.format(repr(b)))
     if not isinstance(c, (int, float)) or c <= 0:
-        raise TypeError('Rectangle\'s side should be a positive number, not {}'.format(repr(c)))
+        raise TypeError('Triangle\'s side should be a positive number, not {}'.format(repr(c)))
+    if not (a < b + c and b < a + c and c < a + b):
+        raise TypeError('Triangle\'s sides should satisfy the triangle inequality, not {}'.format((repr(a), repr(b), repr(c))))
     return a + b + c
 
 
@@ -68,7 +70,7 @@ class TriangleTestCase(unittest.TestCase):
         self.assertEqual(perimeter(100000, 100000, 100000), 300000)
 
     def test_perimeter_4(self):
-        self.assertNotEqual(perimeter(100, 20, 100), 110)
+        self.assertNotEqual(perimeter(100, 50, 100), 110)
 
     def test_perimeter_5(self):
         with self.assertRaises(TypeError):
@@ -78,3 +80,6 @@ class TriangleTestCase(unittest.TestCase):
         with self.assertRaises(TypeError):
             perimeter(-10, 1)
 
+    def test_perimeter_7(self):
+        with self.assertRaises(TypeError):
+            perimeter(10, 1, 4)
