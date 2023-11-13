@@ -22,12 +22,12 @@ class TriangleTestCase(unittest.TestCase):
 
     def test_wrong_arguments(self):
         res = perimeter("abc", "q", 8)
-        self.assertEqual(res, ValueError)
+        self.assertRaises(ValueError)
 
     def test_negative_numbers(self):
         res = perimeter(-1, -8, 2)
-        self.assertEqual(res, ValueError)
+        self.assertRaises(ValueError)
 
     def test_none_argument(self):
         res = perimeter(None, None, None)
-        self.assertEqual(res, ValueError)
+        self.assertRaises(ValueError)
