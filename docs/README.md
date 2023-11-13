@@ -110,3 +110,6 @@ python -m unittest
 7. commit 8fadc3
 
     docs changes2
+8. commit f907a6
+
+    added unit tests

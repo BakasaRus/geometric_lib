@@ -1,5 +1,6 @@
 import unittest
 import sys
+import math
 sys.path.append("..")
 from rectangle import area, perimeter
 
@@ -11,13 +12,13 @@ class RectangleTestCase(unittest.TestCase):
         self.assertEqual(area(10, 10), 100)
         self.assertEqual(area(10, 0), 0)
         self.assertEqual(area(2.5, 2), 5)
-        self.assertEqual(area(1.5, 3.21), 1.5*3.21)
+        self.assertTrue(math.isclose(area(1.5, 3.21), 1.5*3.21))
     
     def test_prerimetr(self):
         self.assertEqual(perimeter(10, 10), 40)
         self.assertEqual(perimeter(10, 0), 20)
         self.assertEqual(perimeter(2.5, 2), 9)
-        self.assertEqual(perimeter(1.5, 3.21), 2*1.5 + 2*3.21)
+        self.assertTrue(math.isclose(perimeter(1.5, 3.21), 2*1.5 + 2*3.21))
 
     # проверка на отрицательных значениях
     def test_areaNegative(self):

@@ -11,14 +11,14 @@ class SquareTestCase(unittest.TestCase):
     def test_area(self):
         self.assertEqual(area(10), 10 * 10)
         self.assertEqual(area(0), 0)
-        self.assertEqual(area(2.5), 2.5 * 2.5)
-        self.assertEqual(area(1.545), 1.545 * 1.545)
+        self.assertTrue(math.isclose(area(2.5), 2.5 * 2.5))
+        self.assertTrue(math.isclose(area(1.545), 1.545 * 1.545))
     
     def test_prerimetr(self):
         self.assertEqual(perimeter(1), 4)
         self.assertEqual(perimeter(10), 4 * 10)
         self.assertEqual(perimeter(2.5), 4 * 2.5)
-        self.assertEqual(perimeter(34.1234), 4 * 34.1234)
+        self.assertTrue(math.isclose(perimeter(34.1234), 4 * 34.1234))
 
     # проверка на отрицательных значениях
     def test_areaNegative(self):

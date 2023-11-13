@@ -1,6 +1,7 @@
 import unittest
 import sys
 sys.path.append("..")
+import math
 from triangle import area, perimeter
 
 # класс тестов для функций triangle.py
@@ -10,14 +11,14 @@ class TriangleTestCase(unittest.TestCase):
     def test_area(self):
         self.assertEqual(area(10, 10), 10 * 10 / 2)
         self.assertEqual(area(10, 0), 0)
-        self.assertEqual(area(2.5, 2), 2.5)
-        self.assertEqual(area(1.5, 3.21), 1.5*3.21 / 2)
+        self.assertTrue(math.isclose(area(2.5, 2), 2.5))
+        self.assertTrue(math.isclose(area(1.5, 3.21), 1.5*3.21 / 2))
     
     def test_prerimetr(self):
         self.assertEqual(perimeter(10, 10, 10), 30)
         self.assertEqual(perimeter(10, 0, 2), 12)
-        self.assertEqual(perimeter(2.5, 2, 1.3), 5.8)
-        self.assertEqual(perimeter(1.5, 3.21, 3.123), 1.5 + 3.21 + 3.123)
+        self.assertTrue(math.isclose(perimeter(2.5, 2, 1.3), 5.8))
+        self.assertTrue(math.isclose(perimeter(1.5, 3.21, 3.123), 1.5 + 3.21 + 3.123))
 
     # проверка на отрицательных значениях
     def test_areaNegative(self):
