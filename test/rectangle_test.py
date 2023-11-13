@@ -34,3 +34,11 @@ class RectangleTestCase(unittest.TestCase):
     def test_rectangle_negative_argument_perimeter(self):
         res = perimeter(-10, 250)
         self.assertEqual(res, 0)
+
+    def test_rectangle_incorrect_data_area(self):
+        res = area("abc")
+        self.assertEqual(res, None)
+
+    def test_rectangle_incorrect_data_perimeter(self):
+        res = perimeter("abc")
+        self.assertEqual(res, None)

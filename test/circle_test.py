@@ -34,3 +34,11 @@ class CircleTestCase(unittest.TestCase):
     def test_circle_negative_argument_perimeter(self):
         res = perimeter(-10)
         self.assertEqual(res, 0)
+
+    def test_circle_incorrect_data_area(self):
+        res = area("abc")
+        self.assertEqual(res, None)
+
+    def test_circle_incorrect_data_perimeter(self):
+        res = perimeter("abc")
+        self.assertEqual(res, None)
