@@ -115,7 +115,7 @@
 
 - <b>Исполнение тестов</b>
 
-> Тестирование запускается командой  ```python -m unittest tests/tests.py ```
+> Тестирование запускается командой  ```python -m unittest discover -s tests/ -p '*_tests.py' ```
 
 ## 5. Критерии приёмки
 |Сценарий|Требуемый результат|
@@ -133,20 +133,20 @@
 |||
 |--------|-------------|
 |<b>Запущено</b>| 34 теста |
-|<font color="green"><b>Пройдено</b></font>| 23 тестов, 68%|
-|<font color="red"><b>Провалено</b></font>| 11 тестов, 32%|
+|<font color="green"><b>Пройдено</b></font>| 19 тестов, 56%|
+|<font color="red"><b>Провалено</b></font>| 15 тестов, 44%|
 |<b>Общее время</b>| 0.004 сек.|
 
 |Модуль| <font color="green">Пройдено</font> | <font color="red">Провалено</font>| Сообщение тестирующей системы|
 |:-:|:-:|:-:|:-|
-|circle.area| 3 | 1 | FAIL: test_neg_r (tests.tests.CircleAreaTestCase.test_neg_r)|
-|circle.perimeter| 3 | 1 | FAIL: test_neg_r (tests.tests.CirclePerTestCase.test_neg_r)|
-|rectangle.area| 3 | 1 | FAIL: test_neg_side (tests.tests.RectangleAreaTestCase.test_neg_side)|
-|rectangle.perimeter| 2 | 2 | FAIL: test_neg_side (tests.tests.RectanglePerTestCase.test_neg_side)<br>FAIL: test_zero_side (tests.tests.RectanglePerTestCase.test_zero_side)|
-|square.area| 3 | 1| FAIL: test_neg_side (tests.tests.SquareAreaTestCase.test_neg_side)|
-|square.perimeter| 3 | 1| FAIL: test_neg_side (tests.tests.SquarePerTestCase.test_neg_side)|
-|triangle.area| 4 | 2 | FAIL: test_neg_height (tests.tests.TriangleAreaTestCase.test_neg_height) <br>FAIL: test_neg_side (tests.tests.TriangleAreaTestCase.test_neg_side)|
-|triangle.perimeter| 2 | 2 | FAIL: test_neg_side (tests.tests.TrianglePerTestCase.test_neg_side)<br>FAIL: test_zero_side (tests.tests.TrianglePerTestCase.test_zero_side)|
+|circle.area| 3 | 1 | Exception: Negative radius!|
+|circle.perimeter| 3 | 1 | Exception: Negative radius!|
+|rectangle.area| 3 | 2 | Exception: Negative side!<br>Exception: Zero side!|
+|rectangle.perimeter| 2 | 2 | Exception: Negative side!<br>Exception: Zero side!|
+|square.area| 3 | 2| Exception: Negative side!<br>Zero side!|
+|square.perimeter| 3 | 2| Exception: Negative side!<br>Exception: Zero side!|
+|triangle.area| 4 | 3 | Exception: Negative height!<br>Exception: Negative side!<br>Exception: Zero side!|
+|triangle.perimeter| 2 | 2 | Exception: Negative side!<br>Exception: Zero side!|
 
 
 ### Выявленные дефекты
@@ -154,11 +154,11 @@
 |:-|:-|
 |circle.area| некорректная обработка случая отрицательного радиуса|
 |circle.perimeter| некорректная обработка случая отрицательного радиуса|
-|rectangle.area| некорректная обработка случая отрицательной стороны|
+|rectangle.area| некорректная обработка случая отрицательной стороны<br>некорректная обработка случая нулевой стороны|
 |rectangle.perimeter| некорректная обработка случая отрицательной стороны<br>некорректная обработка случая нулевой стороны|
-|square.area| некорректная обработка случая отрицательной стороны|
-|square.perimeter| некорректная обработка случая отрицательной стороны|
-|triangle.area| некорректная обработка случая отрицательной высоты<br>некорректная обработка случая отрицательной стороны|
+|square.area| некорректная обработка случая отрицательной стороны<br>некорректная обработка случая нулевой стороны|
+|square.perimeter| некорректная обработка случая отрицательной стороны<br>некорректная обработка случая нулевой стороны|
+|triangle.area| некорректная обработка случая отрицательной высоты<br>некорректная обработка случая отрицательной стороны<br>некорректная обработка случая нулевой стороны|
 |triangle.perimeter| некорректная обработка случая отрицательной стороны<br>некорректная обработка случая нулевой стороны|
 
 ### Вердикт
