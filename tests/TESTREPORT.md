@@ -166,7 +166,7 @@ from triangle import perimeter
 |     circle.area()     |    3     |     1     |
 |  circle.perimeter()   |    3     |     1     |
 |   rectangle.area()    |    4     |     1     |
-| rectangle.perimeter() |    3     |     2     |
+| rectangle.perimeter() |    3     |     3     |
 |     square.area()     |    3     |     1     |
 |  square.perimeter()   |    3     |     1     |
 |    triangle.area()    |    3     |     2     |
