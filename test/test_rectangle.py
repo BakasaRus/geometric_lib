@@ -21,13 +21,20 @@ class RectangleTestCase(unittest.TestCase):
         self.assertEqual(res, 40)
 
     def test_wrong_arguments(self):
-        res = perimeter("abc", None)
-        sself.assertRaises(ValueError)
+        self.assertRaises(ValueError, perimeter, "abc", "bca")
 
     def test_negative_numbers(self):
-        res = perimeter(-1, -2)
-        self.assertRaises(ValueError)
+        self.assertRaises(ValueError, perimeter, -1, 16)
 
     def test_none_argument(self):
-        res = perimeter(None, None)
-        self.assertRaises(ValueError)
+        self.assertRaises(ValueError, perimeter, None, None)
+
+    def test_wrong_arguments_area(self):
+        self.assertRaises(ValueError, area, "abc", "")
+
+    def test_negative_numbers_area(self):
+        self.assertRaises(ValueError, area, -1, 15)
+
+    def test_none_argument_area(self):
+        self.assertRaises(ValueError, area, None, 18)
+

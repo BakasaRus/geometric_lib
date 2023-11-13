@@ -12,7 +12,8 @@
 - <a href="https://github.com/yakarych/geometric_lib/blob/main/docs/rectangle.md">Rectangle</a>
 
 ## Тестирование
-Запустить все тесты: `python3 -m unittest circle.py rectangle.py triangle.py square.py`
+
+Запустить все тесты: `python3 -m unittest`
 
 ## История изменений проекта
 

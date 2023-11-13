@@ -16,18 +16,27 @@ class TriangleTestCase(unittest.TestCase):
         res = perimeter(0, 0, 0)
         self.assertEqual(res, 0)
 
+    def test_nonexistent_triangle(self):
+        self.assertRaises(ValueError, perimeter, 3, 5, 1)
+
     def test_perimeter(self):
         res = perimeter(1, 2, 3)
         self.assertEqual(res, 6)
 
     def test_wrong_arguments(self):
-        res = perimeter("abc", "q", 8)
-        self.assertRaises(ValueError)
+        self.assertRaises(ValueError, perimeter, "abc", 0, 0)
 
     def test_negative_numbers(self):
-        res = perimeter(-1, -8, 2)
-        self.assertRaises(ValueError)
+        self.assertRaises(ValueError, perimeter, -1, 15, -4)
 
     def test_none_argument(self):
-        res = perimeter(None, None, None)
-        self.assertRaises(ValueError)
+        self.assertRaises(ValueError, perimeter, None, None, None)
+
+    def test_wrong_arguments_area(self):
+        self.assertRaises(ValueError, area, "abc", "q")
+
+    def test_negative_numbers_area(self):
+        self.assertRaises(ValueError, area, -1, 5)
+
+    def test_none_argument_area(self):
+        self.assertRaises(ValueError, area, None, None)
