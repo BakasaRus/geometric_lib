@@ -1,7 +1,68 @@
+import unittest
+from typing import Union
 
-def area(a):
+
+def area(a: Union[int, float]) -> Union[int, float]:
+    """
+    Принимает длину стороны квадрата и возвращает площадь квадрата
+
+    :param a: сторона квадрата
+    :return: площадь квадрата со стороной a
+    """
+    if not isinstance(a, (int, float)) or a <= 0:
+        raise TypeError('Square\'s side should be a positive number, not {}'.format(repr(a)))
     return a * a
 
 
-def perimeter(a):
+def perimeter(a: Union[int, float]) -> Union[int, float]:
+    """
+    Принимает длину стороны квадрата и возвращает периметр квадрата
+
+    :param a: сторона квадрата
+    :return: периметр квадрата со стороной a
+    """
+    if not isinstance(a, (int, float)) or a <= 0:
+        raise TypeError('Square\'s side should be a positive number, not {}'.format(repr(a)))
     return 4 * a
+
+
+class SquareTestCase(unittest.TestCase):
+    def test_area_1(self):
+        self.assertEqual(area(1), 1)
+
+    def test_area_2(self):
+        self.assertEqual(area(10), 100)
+
+    def test_area_3(self):
+        self.assertEqual(area(3000), 9000000)
+
+    def test_area_4(self):
+        self.assertNotEqual(area(20), -400)
+
+    def test_area_5(self):
+        with self.assertRaises(TypeError):
+            area('string')
+
+    def test_area_6(self):
+        with self.assertRaises(TypeError):
+            area(-100)
+
+    def test_perimeter_1(self):
+        self.assertEqual(perimeter(10), 40)
+
+    def test_perimeter_2(self):
+        self.assertEqual(perimeter(50), 200)
+
+    def test_perimeter_3(self):
+        self.assertEqual(perimeter(3000), 12000)
+
+    def test_perimeter_4(self):
+        self.assertNotEqual(perimeter(100), 399)
+
+    def test_perimeter_5(self):
+        with self.assertRaises(TypeError):
+            perimeter('string')
+
+    def test_perimeter_6(self):
+        with self.assertRaises(TypeError):
+            perimeter(-100)
