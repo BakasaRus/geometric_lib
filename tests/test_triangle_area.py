@@ -17,12 +17,12 @@ class TriangleAreaTestCase(unittest.TestCase):
     
     def test_negative_side(self):
         res = triangle.area(-42, 4)
-        self.assertRaises(res, ValueError)
+        self.assertEqual(res, 0)
     
     def test_negative_height(self):
         res = triangle.area(2, -4)
-        self.assertRaises(res, ValueError)
+        self.assertEqual(res, 0)
 
     def test_string(self):
-        res = triangle.area("Are str allowed?", 5)
-        self.assertRaises(res, ValueError)
+        with self.assertRaises(TypeError):
+            triangle.area("Are str allowed?", 5)

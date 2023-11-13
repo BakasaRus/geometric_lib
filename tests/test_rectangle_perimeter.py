@@ -4,15 +4,15 @@ import unittest
 class RectanglePerimeterTestCase(unittest.TestCase):
     def test_zero_height(self):
         res = rectangle.perimeter(0, 4)
-        self.assertRaises(res, ValueError)
+        self.assertEqual(0, 4)
 
     def test_zero_width(self):
         res = rectangle.perimeter(8, 0)
-        self.assertRaises(res, ValueError)
+        self.assertEqual(res, 0)
 
     def test_zero_both(self):
         res = rectangle.perimeter(0, 0)
-        self.assertRaises(res, ValueError)
+        self.assertEqual(res, 0)
 
     def test_big(self):
         res = rectangle.perimeter(408, 750)
@@ -27,13 +27,14 @@ class RectanglePerimeterTestCase(unittest.TestCase):
         self.assertEqual(res, 4)
     
     def test_negative(self):
+
         res = rectangle.perimeter(-33, 1)
-        self.assertRaises(res, ValueError)
+        self.assertEqual(res, 0)
 
     def test_negative_both(self):
         res = rectangle.perimeter(-1, -33)
-        self.assertRaises(res, ValueError)
+        self.assertEqual(res, 0)
 
     def test_string(self):
-        res = rectangle.perimeter(1, "Are str allowed?")
-        self.assertRaises(res, ValueError)
+        with self.assertRaises(TypeError):
+            rectangle.perimeter(1, "Are str allowed?")

@@ -21,8 +21,8 @@ class SquareAreaTestCase(unittest.TestCase):
     
     def test_negative(self):
         res = square.area(-2)
-        self.assertRaises(res, ValueError)
+        self.assertEqual(res, 0)
 
     def test_string(self):
-        res = square.area("Are str allowed?")
-        self.assertRaises(res, ValueError)
+        with self.assertRaises(TypeError):
+            square.area("Are str allowed?")

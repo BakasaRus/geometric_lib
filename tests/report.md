@@ -128,7 +128,7 @@
 |Сценарий|Требуемый результат|
 |:--------:|:--------------------:|
 |Пользователь вводит корректные данные| Функция возвращает ожидаемый результат|
-|Пользователь вводит некорректные данные| Функция выбрасывает исключение ValueError|
+|Пользователь вводит некорректные данные| Функция возвращает 0 или выбрасывается исключение TypeError|
 
 
 ## 6. Итоговые результаты
@@ -140,45 +140,155 @@
 | | |
 |---------------|-----------|
 |<b>Запущено</b>| 53 теста |
-|<font color="green"><b>Пройдено</b></font>| 28 тестов, 53%|
-|<font color="red"><b>Провалено</b></font>| 25 тестов, 47%|
-|<b>Общее время</b>| 0.007 сек.|
+|<font color="green"><b>Пройдено</b></font>| 36 тестов, 68%|
+|<font color="red"><b>Провалено</b></font>| 17 тестов, 32%|
+|<b>Общее время</b>| 0.004 сек.|
 | | |
 
+### Проваленные тесты (результат тестирования)
+```python
+.F.....F.....FF..F....FF....FF.F.....F..F.FF....FF..F
+======================================================================
+FAIL: test_negative (tests.test_circle_area.CircleAreaTestCase.test_negative)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/admin/github-classroom/is-itmo-se-23/geometric_lib/tests/test_circle_area.py", line 24, in test_negative
+    self.assertEqual(res, 0)
+AssertionError: 3.141592653589793 != 0
 
+======================================================================
+FAIL: test_negative (tests.test_circle_perimeter.CirclePerimeterTestCase.test_negative)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/admin/github-classroom/is-itmo-se-23/geometric_lib/tests/test_circle_perimeter.py", line 24, in test_negative
+    self.assertEqual(res, 0)
+AssertionError: -12.566370614359172 != 0
+
+======================================================================
+FAIL: test_negative (tests.test_rectangle_area.RectangleAreaTestCase.test_negative)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/admin/github-classroom/is-itmo-se-23/geometric_lib/tests/test_rectangle_area.py", line 32, in test_negative
+    self.assertEqual(res, 0)
+AssertionError: -3 != 0
+
+======================================================================
+FAIL: test_negative_both (tests.test_rectangle_area.RectangleAreaTestCase.test_negative_both)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/admin/github-classroom/is-itmo-se-23/geometric_lib/tests/test_rectangle_area.py", line 36, in test_negative_both
+    self.assertEqual(res, 0)
+AssertionError: 9 != 0
+
+======================================================================
+FAIL: test_string (tests.test_rectangle_area.RectangleAreaTestCase.test_string)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/admin/github-classroom/is-itmo-se-23/geometric_lib/tests/test_rectangle_area.py", line 39, in test_string
+    with self.assertRaises(TypeError):
+AssertionError: TypeError not raised
+
+======================================================================
+FAIL: test_negative (tests.test_rectangle_perimeter.RectanglePerimeterTestCase.test_negative)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/admin/github-classroom/is-itmo-se-23/geometric_lib/tests/test_rectangle_perimeter.py", line 32, in test_negative
+    self.assertEqual(res, 0)
+AssertionError: -64 != 0
+
+======================================================================
+FAIL: test_negative_both (tests.test_rectangle_perimeter.RectanglePerimeterTestCase.test_negative_both)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/admin/github-classroom/is-itmo-se-23/geometric_lib/tests/test_rectangle_perimeter.py", line 36, in test_negative_both
+    self.assertEqual(res, 0)
+AssertionError: -68 != 0
+
+======================================================================
+FAIL: test_zero_height (tests.test_rectangle_perimeter.RectanglePerimeterTestCase.test_zero_height)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/admin/github-classroom/is-itmo-se-23/geometric_lib/tests/test_rectangle_perimeter.py", line 7, in test_zero_height
+    self.assertEqual(0, 4)
+AssertionError: 0 != 4
+
+======================================================================
+FAIL: test_zero_width (tests.test_rectangle_perimeter.RectanglePerimeterTestCase.test_zero_width)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/admin/github-classroom/is-itmo-se-23/geometric_lib/tests/test_rectangle_perimeter.py", line 11, in test_zero_width
+    self.assertEqual(res, 0)
+AssertionError: 16 != 0
+
+======================================================================
+FAIL: test_negative (tests.test_square_area.SquareAreaTestCase.test_negative)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/admin/github-classroom/is-itmo-se-23/geometric_lib/tests/test_square_area.py", line 24, in test_negative
+    self.assertEqual(res, 0)
+AssertionError: 4 != 0
+
+======================================================================
+FAIL: test_negative (tests.test_square_perimeter.SquarePerimeterTestCase.test_negative)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/admin/github-classroom/is-itmo-se-23/geometric_lib/tests/test_square_perimeter.py", line 23, in test_negative
+    self.assertEqual(res, 0)
+AssertionError: -8 != 0
+
+======================================================================
+FAIL: test_string (tests.test_square_perimeter.SquarePerimeterTestCase.test_string)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/admin/github-classroom/is-itmo-se-23/geometric_lib/tests/test_square_perimeter.py", line 26, in test_string
+    with self.assertRaises(TypeError):
+AssertionError: TypeError not raised
+
+======================================================================
+FAIL: test_negative_height (tests.test_triangle_area.TriangleAreaTestCase.test_negative_height)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/admin/github-classroom/is-itmo-se-23/geometric_lib/tests/test_triangle_area.py", line 24, in test_negative_height
+    self.assertEqual(res, 0)
+AssertionError: -4.0 != 0
+
+======================================================================
+FAIL: test_negative_side (tests.test_triangle_area.TriangleAreaTestCase.test_negative_side)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/admin/github-classroom/is-itmo-se-23/geometric_lib/tests/test_triangle_area.py", line 20, in test_negative_side
+    self.assertEqual(res, 0)
+AssertionError: -84.0 != 0
+
+======================================================================
+FAIL: test_impossible_sides (tests.test_triangle_perimeter.TrianglePerimeterTestCase.test_impossible_sides)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/admin/github-classroom/is-itmo-se-23/geometric_lib/tests/test_triangle_perimeter.py", line 12, in test_impossible_sides
+    self.assertEqual(res, 0)
+AssertionError: 13 != 0
+
+======================================================================
+FAIL: test_negative (tests.test_triangle_perimeter.TrianglePerimeterTestCase.test_negative)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/admin/github-classroom/is-itmo-se-23/geometric_lib/tests/test_triangle_perimeter.py", line 20, in test_negative
+    self.assertEqual(res, 0)
+AssertionError: 5 != 0
+
+======================================================================
+FAIL: test_zero_side (tests.test_triangle_perimeter.TrianglePerimeterTestCase.test_zero_side)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/admin/github-classroom/is-itmo-se-23/geometric_lib/tests/test_triangle_perimeter.py", line 8, in test_zero_side
+    self.assertEqual(res, 0)
+AssertionError: 6 != 0
+
+----------------------------------------------------------------------
+Ran 53 tests in 0.004s
+
+FAILED (failures=17)
 ```
-.E..E..E..E..EE..E....EE..EEEE.E..E..E..EEEE.E..EE.EE
-```
-
-### Проваленные тесты
-
-* ERROR: test_negative (tests.test_circle_area.CircleAreaTestCase.test_negative)
-* ERROR: test_string (tests.test_circle_area.CircleAreaTestCase.test_string)
-* ERROR: test_negative (tests.test_circle_perimeter.CirclePerimeterTestCase.test_negative)
-* ERROR: test_string (tests.test_circle_perimeter.CirclePerimeterTestCase.test_string)
-* ERROR: test_negative (tests.test_rectangle_area.RectangleAreaTestCase.test_negative)
-* ERROR: test_negative_both (tests.test_rectangle_area.RectangleAreaTestCase.test_negative_both)
-* ERROR: test_string (tests.test_rectangle_area.RectangleAreaTestCase.test_string)
-* ERROR: test_negative (tests.test_rectangle_perimeter.RectanglePerimeterTestCase.test_negative)
-* ERROR: test_negative_both (tests.test_rectangle_perimeter.RectanglePerimeterTestCase.test_negative_both)
-* ERROR: test_string (tests.test_rectangle_perimeter.RectanglePerimeterTestCase.test_string)
-* ERROR: test_zero_both (tests.test_rectangle_perimeter.RectanglePerimeterTestCase.test_zero_both)
-* ERROR: test_zero_height (tests.test_rectangle_perimeter.RectanglePerimeterTestCase.test_zero_height)
-* ERROR: test_zero_width (tests.test_rectangle_perimeter.RectanglePerimeterTestCase.test_zero_width)
-* ERROR: test_negative (tests.test_square_area.SquareAreaTestCase.test_negative)
-* ERROR: test_string (tests.test_square_area.SquareAreaTestCase.test_string)
-* ERROR: test_negative (tests.test_square_perimeter.SquarePerimeterTestCase.test_negative)
-* ERROR: test_string (tests.test_square_perimeter.SquarePerimeterTestCase.test_string)
-* ERROR: test_zero (tests.test_square_perimeter.SquarePerimeterTestCase.test_zero)
-* ERROR: test_negative_height (tests.test_triangle_area.TriangleAreaTestCase.test_negative_height)
-* ERROR: test_negative_side (tests.test_triangle_area.TriangleAreaTestCase.test_negative_side)
-* ERROR: test_string (tests.test_triangle_area.TriangleAreaTestCase.test_string)
-* ERROR: test_impossible_sides (tests.test_triangle_perimeter.TrianglePerimeterTestCase.test_impossible_sides)
-* ERROR: test_negative (tests.test_triangle_perimeter.TrianglePerimeterTestCase.test_negative)
-* ERROR: test_string (tests.test_triangle_perimeter.TrianglePerimeterTestCase.test_string)
-
-* ERROR: test_zero_side (tests.test_triangle_perimeter.TrianglePerimeterTestCase.test_zero_side)
-
 ### Выявленные дефекты
 |Модуль | Дефекты|
 |-|-|

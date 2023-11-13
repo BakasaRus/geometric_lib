@@ -29,12 +29,12 @@ class RectangleAreaTestCase(unittest.TestCase):
     
     def test_negative(self):
         res = rectangle.area(-3, 1)
-        self.assertRaises(res, ValueError)
+        self.assertEqual(res, 0)
 
     def test_negative_both(self):
         res = rectangle.area(-3, -3)
-        self.assertRaises(res, ValueError)
+        self.assertEqual(res, 0)
 
     def test_string(self):
-        res = rectangle.area(1, "Are str allowed?")
-        self.assertRaises(res, ValueError)
+        with self.assertRaises(TypeError):
+            rectangle.area(1, "Are str allowed?")

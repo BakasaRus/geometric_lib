@@ -21,8 +21,9 @@ class CircleAreaTestCase(unittest.TestCase):
     
     def test_negative(self):
         res = circle.area(-1)
-        self.assertRaises(res, ValueError)
+        self.assertEqual(res, 0)
 
     def test_string(self):
-        res = circle.area("Are strings allowed?")
-        self.assertRaises(res, ValueError)
+        with self.assertRaises(TypeError):
+            circle.area("Are strings allowed?")
+
