@@ -1,8 +1,6 @@
 import math
 import unittest
 
-import pytest
-
 import circle
 
 
@@ -14,7 +12,7 @@ class CircleTestCase(unittest.TestCase):
                  ["5", "78.53"]]
 
         for case in cases:
-            with pytest.raises((TypeError, AssertionError)):
+            with self.assertRaises((TypeError, AssertionError)):
                 res = circle.area(case[0])
                 self.assertEqual(res, case[1])
 
@@ -40,7 +38,7 @@ class CircleTestCase(unittest.TestCase):
                  ["3", "18.84"]]
 
         for case in cases:
-            with pytest.raises((TypeError, AssertionError)):
+            with self.assertRaises((TypeError, AssertionError)):
                 res = circle.perimeter(case[0])
                 self.assertEqual(res, case[1])
 

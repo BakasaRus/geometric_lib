@@ -1,7 +1,5 @@
 import unittest
 
-import pytest
-
 import rectangle
 
 
@@ -13,7 +11,7 @@ class RectangleTestCase(unittest.TestCase):
                  [5, 5, "25"]]
 
         for case in cases:
-            with pytest.raises((TypeError, AssertionError)):
+            with self.assertRaises((TypeError, AssertionError)):
                 res = rectangle.area(case[0], case[1])
                 self.assertEqual(res, case[2])
 
@@ -50,7 +48,7 @@ class RectangleTestCase(unittest.TestCase):
                  [100, 100, "400"]]
 
         for case in cases:
-            with pytest.raises((TypeError, AssertionError)):
+            with self.assertRaises((TypeError, AssertionError)):
                 res = rectangle.perimeter(case[0], case[1])
                 self.assertEqual(res, case[2])
 
