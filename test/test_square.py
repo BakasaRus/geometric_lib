@@ -19,3 +19,15 @@ class SquareTestCase(unittest.TestCase):
     def test_perimeter(self):
         res = perimeter(10)
         self.assertEqual(res, 40)
+
+    def test_wrong_arguments(self):
+        res = perimeter("abc")
+        self.assertEqual(res, ValueError)
+
+    def test_negative_numbers(self):
+        res = perimeter(-1)
+        self.assertEqual(res, ValueError)
+
+    def test_none_argument(self):
+        res = perimeter(None)
+        self.assertEqual(res, ValueError)
