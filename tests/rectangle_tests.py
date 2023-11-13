@@ -35,9 +35,7 @@ class RectangleTestCase(unittest.TestCase):
         self.assertEqual(res, 2400000)
 
     def test_negative_side_area(self):
-        res = rectangle.area(-3, 5)
-        self.assertRaises(ArithmeticError, res)
+        self.assertRaises(ArithmeticError, rectangle.area, -3, 5)
 
     def test_negative_side_perimeter(self):
-        res = rectangle.perimeter(-3, 5)
-        self.assertRaises(ArithmeticError, res)
+        self.assertRaises(ArithmeticError, rectangle.perimeter, -3, 5)

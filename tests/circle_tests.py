@@ -27,9 +27,7 @@ class CircleTestCase(unittest.TestCase):
         self.assertEqual(res, 628318.5307179586)
 
     def test_negative_radius_area(self):
-        res = circle.area(-2)
-        self.assertRaises(ArithmeticError, res)
+        self.assertRaises(ArithmeticError, circle.area, -2)
 
     def test_negative_radius_perimeter(self):
-        res = circle.perimeter(-2)
-        self.assertRaises(ArithmeticError, res)
+        self.assertRaises(ArithmeticError, circle.perimeter, -2)

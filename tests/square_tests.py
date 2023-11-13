@@ -27,9 +27,7 @@ class SquareTestCase(unittest.TestCase):
         self.assertEqual(res, 4000000)
 
     def test_negative_side_area(self):
-        res = square.area(-3)
-        self.assertRaises(ArithmeticError, res)
+        self.assertRaises(ArithmeticError, square.area, -3)
 
     def test_negative_side_perimeter(self):
-        res = square.perimeter(-3)
-        self.assertRaises(ArithmeticError, res)
+        self.assertRaises(ArithmeticError, square.perimeter, -3)

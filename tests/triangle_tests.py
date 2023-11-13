@@ -27,17 +27,13 @@ class TriangleTestCase(unittest.TestCase):
         self.assertEqual(res, 12)
 
     def test_negative_side_area(self):
-        res = triangle.area(-3, 4)
-        self.assertRaises(ArithmeticError, res)
+        self.assertRaises(ArithmeticError, triangle.area, -3, 4)
 
     def test_negative_height_area(self):
-        res = triangle.area(3, -4)
-        self.assertRaises(ArithmeticError, res)
+        self.assertRaises(ArithmeticError, triangle.area, 3, -4)
 
     def test_negative_sides_perimeter(self):
-        res = triangle.perimeter(-1, -2, 3)
-        self.assertRaises(ArithmeticError, res)
+        self.assertRaises(ArithmeticError, triangle.perimeter, -1, 2, 3)
 
     def test_not_existing_triangle_perimeter(self):
-        res = triangle.perimeter(1, 3, 4)
-        self.assertRaises(ArithmeticError, res)
+        self.assertRaises(ArithmeticError, triangle.perimeter, 1, 3, 4)
