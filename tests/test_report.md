@@ -143,7 +143,7 @@
 |circle.perimeter| 3 | 1 | Exception: Negative radius!|
 |rectangle.area| 3 | 2 | Exception: Negative side!<br>Exception: Zero side!|
 |rectangle.perimeter| 2 | 2 | Exception: Negative side!<br>Exception: Zero side!|
-|square.area| 3 | 2| Exception: Negative side!<br>Zero side!|
+|square.area| 3 | 2| Exception: Negative side!<br>Exception: Zero side!|
 |square.perimeter| 3 | 2| Exception: Negative side!<br>Exception: Zero side!|
 |triangle.area| 4 | 3 | Exception: Negative height!<br>Exception: Negative side!<br>Exception: Zero side!|
 |triangle.perimeter| 2 | 2 | Exception: Negative side!<br>Exception: Zero side!|
