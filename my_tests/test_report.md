@@ -60,11 +60,11 @@
 | Module | Passed | Failed |
 |--------|--------|--------|
 | Circle    | 5      | 2      |
-| Rectangle | 5      | 2      |
+| Rectangle | 5      | 6      |
 | Square    | 5      | 2      |
-| Triangle  | 4      | 4      |
+| Triangle  | 4      | 8      |
 
-Провалено 10 тестов
+Провалено 18 тестов))
 
 ## Итог
 
