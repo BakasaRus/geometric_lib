@@ -23,6 +23,18 @@ class RectangleTestCase(unittest.TestCase):
         res = perimeter(10, 10)
         self.assertEqual(res, 40)
 
+    def test_perimeter_type_error(self):
+        self.assertRaises(TypeError, perimeter, "abc", 1)
+
+    def test_area_type_error(self):
+        self.assertRaises(TypeError, area, [1, 2, 3], "aaa")
+
+    def test_perimeter_value_error(self):
+        self.assertRaises(ValueError, perimeter, -1, 1)
+
+    def test_area_value_error(self):
+        self.assertRaises(ValueError, area, -10, -5)
+
 
 if __name__ == "__main__":
     unittest.main()

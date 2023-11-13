@@ -23,6 +23,18 @@ class TriangleTestCase(unittest.TestCase):
         res = perimeter(10, 10, 10)
         self.assertEqual(res, 30)
 
+    def test_perimeter_type_error(self):
+        self.assertRaises(TypeError, perimeter, 0, "1", "aaa")
+
+    def test_area_type_error(self):
+        self.assertRaises(TypeError, area, [1, 2], "0")
+
+    def test_perimeter_value_error(self):
+        self.assertRaises(ValueError, perimeter, -1, 1, 2)
+
+    def test_area_value_error(self):
+        self.assertRaises(ValueError, area, 5, -1)
+
 
 if __name__ == "__main__":
     unittest.main()
