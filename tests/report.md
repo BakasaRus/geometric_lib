@@ -128,7 +128,7 @@
 |Сценарий|Требуемый результат|
 |:--------:|:--------------------:|
 |Пользователь вводит корректные данные| Функция возвращает ожидаемый результат|
-|Пользователь вводит некорректные данные| Функция возвращает ValueError|
+|Пользователь вводит некорректные данные| Функция выбрасывает исключение ValueError|
 
 
 ## 6. Итоговые результаты
@@ -137,70 +137,47 @@
 
 ## Фактические результаты
 ### Метрики
-|||
+| | |
 |---------------|-----------|
 |<b>Запущено</b>| 53 теста |
 |<font color="green"><b>Пройдено</b></font>| 28 тестов, 53%|
 |<font color="red"><b>Провалено</b></font>| 25 тестов, 47%|
-|<b>Общее время</b>| 0.006 сек.|
-|||
+|<b>Общее время</b>| 0.007 сек.|
+| | |
 
 
 ```
-.F..E..F..E..FF..F....FF..EFFF.F..E..F..FFFF.E..FF.EF
+.E..E..E..E..EE..E....EE..EEEE.E..E..E..EEEE.E..EE.EE
 ```
 
 ### Проваленные тесты
 
-* ERROR: test_string (tests.test.CircleAreaTestCase.test_string)
+* ERROR: test_negative (tests.test_circle_area.CircleAreaTestCase.test_negative)
+* ERROR: test_string (tests.test_circle_area.CircleAreaTestCase.test_string)
+* ERROR: test_negative (tests.test_circle_perimeter.CirclePerimeterTestCase.test_negative)
+* ERROR: test_string (tests.test_circle_perimeter.CirclePerimeterTestCase.test_string)
+* ERROR: test_negative (tests.test_rectangle_area.RectangleAreaTestCase.test_negative)
+* ERROR: test_negative_both (tests.test_rectangle_area.RectangleAreaTestCase.test_negative_both)
+* ERROR: test_string (tests.test_rectangle_area.RectangleAreaTestCase.test_string)
+* ERROR: test_negative (tests.test_rectangle_perimeter.RectanglePerimeterTestCase.test_negative)
+* ERROR: test_negative_both (tests.test_rectangle_perimeter.RectanglePerimeterTestCase.test_negative_both)
+* ERROR: test_string (tests.test_rectangle_perimeter.RectanglePerimeterTestCase.test_string)
+* ERROR: test_zero_both (tests.test_rectangle_perimeter.RectanglePerimeterTestCase.test_zero_both)
+* ERROR: test_zero_height (tests.test_rectangle_perimeter.RectanglePerimeterTestCase.test_zero_height)
+* ERROR: test_zero_width (tests.test_rectangle_perimeter.RectanglePerimeterTestCase.test_zero_width)
+* ERROR: test_negative (tests.test_square_area.SquareAreaTestCase.test_negative)
+* ERROR: test_string (tests.test_square_area.SquareAreaTestCase.test_string)
+* ERROR: test_negative (tests.test_square_perimeter.SquarePerimeterTestCase.test_negative)
+* ERROR: test_string (tests.test_square_perimeter.SquarePerimeterTestCase.test_string)
+* ERROR: test_zero (tests.test_square_perimeter.SquarePerimeterTestCase.test_zero)
+* ERROR: test_negative_height (tests.test_triangle_area.TriangleAreaTestCase.test_negative_height)
+* ERROR: test_negative_side (tests.test_triangle_area.TriangleAreaTestCase.test_negative_side)
+* ERROR: test_string (tests.test_triangle_area.TriangleAreaTestCase.test_string)
+* ERROR: test_impossible_sides (tests.test_triangle_perimeter.TrianglePerimeterTestCase.test_impossible_sides)
+* ERROR: test_negative (tests.test_triangle_perimeter.TrianglePerimeterTestCase.test_negative)
+* ERROR: test_string (tests.test_triangle_perimeter.TrianglePerimeterTestCase.test_string)
 
-* ERROR: test_string (tests.test.CirclePerimeterTestCase.test_string)
-
-* ERROR: test_string (tests.test.RectanglePerimeterTestCase.test_string)
-
-* ERROR: test_string (tests.test.SquareAreaTestCase.test_string)
-
-* ERROR: test_string (tests.test.TriangleAreaTestCase.test_string)
-
-* ERROR: test_string (tests.test.TrianglePerimeterTestCase.test_string)
-
-* FAIL: test_negative (tests.test.CircleAreaTestCase.test_negative)
-
-* FAIL: test_negative (tests.test.CirclePerimeterTestCase.test_negative)
-
-* FAIL: test_negative (tests.test.RectangleAreaTestCase.test_negative)
-
-* FAIL: test_negative_both (tests.test.RectangleAreaTestCase.test_negative_both)
-
-* FAIL: test_string (tests.test.RectangleAreaTestCase.test_string)
-
-* FAIL: test_negative (tests.test.RectanglePerimeterTestCase.test_negative)
-
-* FAIL: test_negative_both (tests.test.RectanglePerimeterTestCase.test_negative_both)
-
-* FAIL: test_zero_both (tests.test.RectanglePerimeterTestCase.test_zero_both)
-
-* FAIL: test_zero_height (tests.test.RectanglePerimeterTestCase.test_zero_height)
-
-* FAIL: test_zero_width (tests.test.RectanglePerimeterTestCase.test_zero_width)
-
-* FAIL: test_negative (tests.test.SquareAreaTestCase.test_negative)
-
-* FAIL: test_negative (tests.test.SquarePerimeterTestCase.test_negative)
-
-* FAIL: test_string (tests.test.SquarePerimeterTestCase.test_string)
-
-* FAIL: test_zero (tests.test.SquarePerimeterTestCase.test_zero)
-
-* FAIL: test_negative_height (tests.test.TriangleAreaTestCase.test_negative_height)
-
-* FAIL: test_negative_side (tests.test.TriangleAreaTestCase.test_negative_side)
-
-* FAIL: test_impossible_sides (tests.test.TrianglePerimeterTestCase.test_impossible_sides)
-
-* FAIL: test_negative (tests.test.TrianglePerimeterTestCase.test_negative)
-
-* FAIL: test_zero_side (tests.test.TrianglePerimeterTestCase.test_zero_side)
+* ERROR: test_zero_side (tests.test_triangle_perimeter.TrianglePerimeterTestCase.test_zero_side)
 
 ### Выявленные дефекты
 |Модуль | Дефекты|
@@ -212,7 +189,7 @@
 |square.area| не учитывается случай отрицательного параметра и случай, когда параметр не является числом|
 |square.perimeter| не учитывается случай отрицательного параметра и случай, когда параметр не является числом|
 |triangle.area| не учитывается случай отрицательного параметров и случай, когда параметр не является числом|
-|triangle.perimeter| не учитывается случай отрицательного параметров и случай, когда параметр не является числом|
+|triangle.perimeter| не учитывается случай отрицательного параметров, случай, когда параметр не является числом и случай, когда из трех сторон невозможно составить треугольник|
 
 ### Вердикт
 Ни один модуль не удовлетворяет критериям приёма, так как при попытке использования некорректных данных ни выводится сообщение об ошибке, ни выбрасывается исключение, ни возвращается ненулевой код возврата.

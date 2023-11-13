@@ -23,6 +23,3 @@ def perimeter(a, b):
             периметр прямоугольника по математической формуле
     '''
     return 2 * (a + b)
-    
-    return ValueError
-
