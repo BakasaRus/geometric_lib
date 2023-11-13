@@ -54,34 +54,10 @@ possibly) has already done some manual testing.
 
 ## Testing results
 
-- test_circle.py
+- test.py
 
 ```
-    Ran 8 tests in 0.000s
-
-    OK
-```
-
-- test_rectangle.py
-
-```
-    Ran 8 tests in 0.000s
-
-    OK
-```
-
-- test_square.py
-
-```
-    Ran 8 tests in 0.000s
-
-    OK
-```
-
-- test_triangle.py
-
-```
-    Ran 8 tests in 0.000s
+    Ran 16 tests in 0.000s
 
     OK
 ```

@@ -57,6 +57,7 @@
   ```
 
 ## Last commits:
+* `312969d` (HEAD -> main) Almost all fixed
 * `45bd8ed` (HEAD -> main) Testing and documentation added
 * `1138744` (origin/main, origin/HEAD) Documentation added_1
 * `093f9ca` Documentation corrected
