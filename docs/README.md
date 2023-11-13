@@ -49,3 +49,25 @@
    **Date:**   Tue Sep 5 13:15:25 2023 +0300
 
    **Message:** Add rectangle.py
+
+5) `d84eba618ea0443cf9b820db971dad742fac013b`
+
+   **Author:** yakarych <kaarych@gmail.com>
+
+   **Date:**   Mon Nov 6 20:57:00 2023 +0300
+
+   **Message:** Add unit-tests
+6) `40b776558036bc40bca10c8056cf0b0392eee4bf`
+
+   **Author:** yakarych <kaarych@gmail.com>
+
+   **Date:**   Mon Nov 6 20:58:23 2023 +0300
+
+   **Message:** Codestyle
+7) `0fb7bfa730cd8f795b8675abd640b3e98c1f579e`
+
+   **Author:** yakarych <kaarych@gmail.com>
+
+   **Date:**   Mon Nov 6 20:58:56 2023 +0300
+
+   **Message:** Apply codestyle of Markdown
