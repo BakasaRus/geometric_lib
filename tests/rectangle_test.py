@@ -17,7 +17,7 @@ class RectangleTestCase(unittest.TestCase):
 
     def test_area_zero(self):
         cases = [[5, 0, 0],
-                [0, 0, 0],
+                 [0, 0, 0],
                  [0, 20, 0]]
 
         for case in cases:
