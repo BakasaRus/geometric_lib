@@ -7,8 +7,8 @@ import triangle
 
 class CircleTestCase(unittest.TestCase):
     def test_zero(self):
-        self.assertEqual(circle.area(0), 0)
-        self.assertEqual(circle.perimeter(0), 0)
+        self.assertEqual(circle.area(0), -1)
+        self.assertEqual(circle.perimeter(0), -1)
 
     def test_one(self):
         self.assertEqual(circle.area(1), 3.141592653589793)
@@ -31,18 +31,18 @@ class CircleTestCase(unittest.TestCase):
         self.assertEqual(circle.perimeter(0.5), 3.141592653589793)
 
     def test_negative(self):
-        self.assertEqual(circle.area(-1), "ERROR: negative radius parameter")
-        self.assertEqual(circle.perimeter(-1), "ERROR: negative radius parameter")
+        self.assertEqual(circle.area(-1), -1)
+        self.assertEqual(circle.perimeter(-1), -1)
 
 
 class RectangleTestCase(unittest.TestCase):
     def test_zero(self):
-        self.assertEqual(rectangle.area(0, 5), 0)
-        self.assertEqual(rectangle.area(5, 0), 0)
-        self.assertEqual(rectangle.area(0, 0), 0)
-        self.assertEqual(rectangle.perimeter(0, 5), 10)
-        self.assertEqual(rectangle.perimeter(5, 0), 10)
-        self.assertEqual(rectangle.perimeter(0, 0), 0)
+        self.assertEqual(rectangle.area(0, 5), -1)
+        self.assertEqual(rectangle.area(5, 0), -1)
+        self.assertEqual(rectangle.area(0, 0), -1)
+        self.assertEqual(rectangle.perimeter(0, 5), -1)
+        self.assertEqual(rectangle.perimeter(5, 0), -1)
+        self.assertEqual(rectangle.perimeter(0, 0), -1)
 
     def test_one(self):
         self.assertEqual(rectangle.area(1, 1), 1)
@@ -65,18 +65,18 @@ class RectangleTestCase(unittest.TestCase):
         self.assertEqual(rectangle.perimeter(0.5, 0.145), 1.29)
 
     def test_negative(self):
-        self.assertEqual(rectangle.area(-1, 1), "ERROR: negative side parameter")
-        self.assertEqual(rectangle.area(1, -1), "ERROR: negative side parameter")
-        self.assertEqual(rectangle.area(-1, -1), "ERROR: negative side parameter")
-        self.assertEqual(rectangle.perimeter(-1, 1), "ERROR: negative side parameter")
-        self.assertEqual(rectangle.perimeter(1, -1), "ERROR: negative side parameter")
-        self.assertEqual(rectangle.perimeter(-1, -1), "ERROR: negative side parameter")
+        self.assertEqual(rectangle.area(-1, 1), -1)
+        self.assertEqual(rectangle.area(1, -1), -1)
+        self.assertEqual(rectangle.area(-1, -1), -1)
+        self.assertEqual(rectangle.perimeter(-1, 1), -1)
+        self.assertEqual(rectangle.perimeter(1, -1), -1)
+        self.assertEqual(rectangle.perimeter(-1, -1), -1)
 
 
 class SquareTestCase(unittest.TestCase):
     def test_zero(self):
-        self.assertEqual(square.area(0), 0)
-        self.assertEqual(square.perimeter(0), 0)
+        self.assertEqual(square.area(0), -1)
+        self.assertEqual(square.perimeter(0), -1)
 
     def test_one(self):
         self.assertEqual(square.area(1), 1)
@@ -99,17 +99,17 @@ class SquareTestCase(unittest.TestCase):
         self.assertEqual(square.perimeter(0.5), 2)
 
     def test_negative(self):
-        self.assertEqual(square.area(-1), "ERROR: negative side parameter")
-        self.assertEqual(square.perimeter(-1), "ERROR: negative side parameter")
+        self.assertEqual(square.area(-1), -1)
+        self.assertEqual(square.perimeter(-1), -1)
 
 
 class TriangleTestCase(unittest.TestCase):
     def test_zero(self):
-        self.assertEqual(triangle.area(0, 5), 0)
-        self.assertEqual(triangle.area(5, 0), 0)
-        self.assertEqual(triangle.area(0, 0), 0)
-        self.assertEqual(triangle.perimeter(0, 0, 0), 0)
-        self.assertEqual(triangle.perimeter(5, 0, 0), 5)
+        self.assertEqual(triangle.area(0, 5), -1)
+        self.assertEqual(triangle.area(5, 0), -1)
+        self.assertEqual(triangle.area(0, 0), -1)
+        self.assertEqual(triangle.perimeter(0, 0, 0), -1)
+        self.assertEqual(triangle.perimeter(5, 0, 0), -1)
 
     def test_one(self):
         self.assertEqual(triangle.area(1, 2), 1)
@@ -132,15 +132,15 @@ class TriangleTestCase(unittest.TestCase):
         self.assertEqual(triangle.perimeter(0.5, 0.145, 0.147), 0.792)
 
     def test_negative(self):
-        self.assertEqual(triangle.area(-1, 1), "ERROR: negative side parameter")
-        self.assertEqual(triangle.area(1, -1), "ERROR: negative height parameter")
-        self.assertEqual(triangle.area(-1, -1), "ERROR: negative side parameter")
-        self.assertEqual(triangle.perimeter(-1, 1, 5), "ERROR: negative side parameter")
-        self.assertEqual(triangle.perimeter(1, -1, 5), "ERROR: negative side parameter")
-        self.assertEqual(triangle.perimeter(-1, -1, -5), "ERROR: negative side parameter")
+        self.assertEqual(triangle.area(-1, 1), -1)
+        self.assertEqual(triangle.area(1, -1), -1)
+        self.assertEqual(triangle.area(-1, -1), -1)
+        self.assertEqual(triangle.perimeter(-1, 1, 5), -1)
+        self.assertEqual(triangle.perimeter(1, -1, 5), -1)
+        self.assertEqual(triangle.perimeter(-1, -1, -5), -1)
 
     def test_non_existent(self):
-        self.assertEqual(triangle.perimeter(0, 5, 6), "ERROR: non existent triangle")
-        self.assertEqual(triangle.perimeter(3, 4, 8), "ERROR: non existent triangle")
-        self.assertEqual(triangle.perimeter(17, 7, 9), "ERROR: non existent triangle")
-        self.assertEqual(triangle.perimeter(3, 28, 17), "ERROR: non existent triangle")
+        self.assertEqual(triangle.perimeter(1, 5, 7), -1)
+        self.assertEqual(triangle.perimeter(3, 4, 8), -1)
+        self.assertEqual(triangle.perimeter(17, 7, 9), -1)
+        self.assertEqual(triangle.perimeter(3, 28, 17), -1)
