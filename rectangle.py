@@ -34,6 +34,9 @@ class RectangleTestCase(unittest.TestCase):
     def test_area_3(self):
         self.assertEqual(area(100000, 100000), 10000000000)
 
+    def test_area_4(self):
+        self.assertNotEqual(area(100, 20), -2000)
+
     def test_perimeter_1(self):
         self.assertEqual(perimeter(10, 0), 20)
 
@@ -42,3 +45,6 @@ class RectangleTestCase(unittest.TestCase):
 
     def test_perimeter_3(self):
         self.assertEqual(perimeter(100000, 100000), 400000)
+
+    def test_perimeter_4(self):
+        self.assertNotEqual(perimeter(100, 20), 239)

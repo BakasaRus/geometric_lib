@@ -32,6 +32,9 @@ class SquareTestCase(unittest.TestCase):
     def test_area_3(self):
         self.assertEqual(area(3000), 9000000)
 
+    def test_area_4(self):
+        self.assertNotEqual(area(20), -400)
+
     def test_perimeter_1(self):
         self.assertEqual(perimeter(10), 40)
 
@@ -40,3 +43,6 @@ class SquareTestCase(unittest.TestCase):
 
     def test_perimeter_3(self):
         self.assertEqual(perimeter(3000), 12000)
+
+    def test_perimeter_4(self):
+        self.assertNotEqual(perimeter(100), 399)

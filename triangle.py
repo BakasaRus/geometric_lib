@@ -36,6 +36,9 @@ class TriangleTestCase(unittest.TestCase):
     def test_area_3(self):
         self.assertEqual(area(400, 20), 4000)
 
+    def test_area_4(self):
+        self.assertNotEqual(area(100, 20), 101)
+
     def test_perimeter_1(self):
         self.assertEqual(perimeter(10, 15, 10), 35)
 
@@ -44,3 +47,6 @@ class TriangleTestCase(unittest.TestCase):
 
     def test_perimeter_3(self):
         self.assertEqual(perimeter(100000, 100000, 100000), 300000)
+
+    def test_perimeter_4(self):
+        self.assertNotEqual(perimeter(100, 20, 100), 110)
