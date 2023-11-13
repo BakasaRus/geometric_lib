@@ -87,5 +87,13 @@ added file rectangle.py
 fixed bug in rectangle.py and added triangle.py
 5. commit `05b924400ca8f9352b91bbc5d12451e0e59d7df9`  
 added description of functions in circle.py, rectangle.py, square.py, triangle.py
-6. commit `7d627a438c5db731c56611f2802f602026e5e476`  
+6. commit `d7b558de7f55acaf079a77c3fb68a9a76d39576e`  
+ added file documentation.md with documentation of project
+7. commit `10bfd9adc2eb40523cf9fc5b118208971be3759b`  
+update documentation.md
+7. commit `7d627a438c5db731c56611f2802f602026e5e476`  
 added module tests with test_rectangle.py, test_triangle.py, test_circle.py, test_square.py
+8. commit `a2a5227a130912d9e0d7f691d33be8f1f12c683f`  
+updated documentation.md
+9. commit `bcaa66fe0118a5f781dfb381ee4611bbb6bd8df6`  
+added new tests for modules
