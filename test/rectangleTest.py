@@ -8,12 +8,12 @@ class RectangleTestCase(unittest.TestCase):
         self.assertEqual(res, 0)
 
     def test_rectangle_negative_area(self):
-        res = area(-1, 12)
-        self.assertEqual(res, 0)
+        with self.assertRaises(ValueError):
+            area(-1, 12)
 
     def test_rectangle_double_negative_area(self):
-         res = area(-12, -13)
-         self.assertEqual(res, 0)
+        with self.assertRaises(ValueError):
+            area(-12, -13)
 
     def test_rectangle_little_area(self):
         res = area(2, 3)
@@ -24,12 +24,12 @@ class RectangleTestCase(unittest.TestCase):
         self.assertEqual(res, 1000 * 200)
 
     def test_rectangle_zero_perimeter(self):
-        res = perimeter(23, 0)
-        self.assertEqual(res, 0)
+        with self.assertRaises(ValueError):
+            perimeter(23, 0)
 
     def test_rectangle_negative_perimeter(self):
-        res = perimeter(-11, 223)
-        self.assertEqual(res, 0)
+        with self.assertRaises(ValueError):
+            perimeter(-11, 223)
 
     def test_rectangle_little_perimeter(self):
         res = perimeter(2, 3)

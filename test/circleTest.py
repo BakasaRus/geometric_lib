@@ -9,8 +9,9 @@ class CircleTestCase(unittest.TestCase):
         self.assertEqual(res, 0)
 
     def test_circle_negative_area(self):
-        res = area(-5)
-        self.assertEqual(res, 0)
+
+        with self.assertRaises(ValueError):
+            area(-5)
 
     def test_circle_little_area(self):
         res = area(5)
@@ -27,8 +28,8 @@ class CircleTestCase(unittest.TestCase):
         self.assertEqual(res, 0)
 
     def test_circle_negative_argument_perimeter(self):
-        res = perimeter(-5)
-        self.assertEqual(res, 0)
+        with self.assertRaises(ValueError):
+            perimeter(-5)
 
     def test_circle_little_perimeter(self):
         res = perimeter(5)

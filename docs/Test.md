@@ -133,13 +133,13 @@ error handling and compliance of the results with the expected values
 |   rectangle.area    |           3            |           2            | 
 | rectangle.perimeter |           2            |           2            | 
 |     square.area     |           3            |           1            |                                                                        
-|  square.perimeter   |           3            |           1            |                                                                                
+|  square.perimeter   |           2            |           1            |                                                                                
 |    triangle.area    |           3            |           2            | 
 | triangle.perimeter  |           2            |           2            | 
 
 > Total tests: 34  
-> 22 tests completed ✅  
-> 12 tests failed ❌
+> 21 tests completed ✅  
+> 13 tests failed ❌
 ## Сonclusion
 
 > The main testing goals were achieved.   
