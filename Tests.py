@@ -1,13 +1,13 @@
-import unittest
-import circle
-import rectangle
+import circle as circle
+import rectangle as rectangle
 import square
 import triangle
+import unittest
 
 
 class CircleTestCaseArea(unittest.TestCase):
     def testInvalidArgument(self):
-        self.assertEqual(circle.area(-1), -1)
+        self.assertEqual(type(circle.area(-1)), Exception)
 
     def testSimpleRadius(self):
         self.assertEqual(circle.area(3), 28.274333882308138)
@@ -21,7 +21,7 @@ class CircleTestCaseArea(unittest.TestCase):
 
 class CircleTestCasePerimeter(unittest.TestCase):
     def testInvalidArgument(self):
-        self.assertEqual(circle.perimeter(-1), -1)
+        self.assertEqual(type(circle.perimeter(-1)), Exception)
 
     def testSimpleRadius(self):
         self.assertEqual(circle.perimeter(3), 18.84955592153876)
@@ -35,7 +35,7 @@ class CircleTestCasePerimeter(unittest.TestCase):
 
 class RectangleTestCaseArea(unittest.TestCase):
     def testInvalidArgument(self):
-        self.assertEqual(rectangle.area(-1, -2), -1)
+        self.assertEqual(type(rectangle.area(-1, -2)), Exception)
 
     def testSimpleSides(self):
         self.assertEqual(rectangle.area(11, 20), 220)
@@ -52,7 +52,7 @@ class RectangleTestCaseArea(unittest.TestCase):
 
 class RectangleTestCasePerimeter(unittest.TestCase):
     def testInvalidArgument(self):
-        self.assertEqual(rectangle.perimeter(-1, -2), -1)
+        self.assertEqual(type(rectangle.perimeter(-1, -2)), Exception)
 
     def testSimpleSides(self):
         self.assertEqual(rectangle.perimeter(13, 14), 54)
@@ -69,7 +69,7 @@ class RectangleTestCasePerimeter(unittest.TestCase):
 
 class SquareTestCaseArea(unittest.TestCase):
     def testInvalidArgument(self):
-        self.assertEqual(square.area(-1), -1)
+        self.assertEqual(type(square.area(-1)), Exception)
 
     def testSimpleSides(self):
         self.assertEqual(square.area(3), 9)
@@ -83,7 +83,7 @@ class SquareTestCaseArea(unittest.TestCase):
 
 class SquareTestCasePerimeter(unittest.TestCase):
     def testInvalidArgument(self):
-        self.assertEqual(square.perimeter(-1), -1)
+        self.assertEqual(type(square.perimeter(-1)), Exception)
 
     def testSimpleSides(self):
         self.assertEqual(square.perimeter(5), 20)
@@ -97,7 +97,7 @@ class SquareTestCasePerimeter(unittest.TestCase):
 
 class TriangleTestCaseArea(unittest.TestCase):
     def testInvalidArgument(self):
-        self.assertEqual(triangle.area(-1, -1), -1)
+        self.assertEqual(type(triangle.area(-1, -1)), Exception)
 
     def testOddHeight(self):
         self.assertEqual(triangle.area(3, 3), 4.5)
@@ -114,7 +114,7 @@ class TriangleTestCaseArea(unittest.TestCase):
 
 class TriangleTestCasePerimeter(unittest.TestCase):
     def testInvalidArgument(self):
-        self.assertEqual(triangle.perimeter(-1, -1, -1), -1)
+        self.assertEqual(type(triangle.perimeter(-1, -1, -1)), Exception)
 
     def testSimpleSides(self):
         self.assertEqual(triangle.perimeter(10, 20, 30), 60)
