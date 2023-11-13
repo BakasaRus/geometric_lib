@@ -11,6 +11,9 @@
 - <a href="https://github.com/yakarych/geometric_lib/blob/main/docs/triangle.md">Triangle</a>
 - <a href="https://github.com/yakarych/geometric_lib/blob/main/docs/rectangle.md">Rectangle</a>
 
+## Тестирование
+Запустить все тесты: `python3 -m unittest circle.py rectangle.py triangle.py square.py`
+
 ## История изменений проекта
 
 1) `3113ef0767f377cde48f1d002e25a872e50fd220`
