@@ -74,11 +74,11 @@ class TriangleTestCase(unittest.TestCase):
 
     def test_perimeter_5(self):
         with self.assertRaises(TypeError):
-            perimeter('string', 1)
+            perimeter('string', 1, 10)
 
     def test_perimeter_6(self):
         with self.assertRaises(TypeError):
-            perimeter(-10, 1)
+            perimeter(-10, 1, 10)
 
     def test_perimeter_7(self):
         with self.assertRaises(TypeError):
