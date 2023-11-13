@@ -4,6 +4,15 @@ import triangle
 
 class TriangleTestCase(unittest.TestCase):
 
+    def test_area_wrong_arguments(self):
+        cases = [["2", 5, 5],
+                 [8, "1", 4],
+                 [1000, 1000, "500000"]]
+
+        for case in cases:
+            res = triangle.area(case[0], case[1])
+            self.assertEqual(res, case[2])
+
     def test_area_zero(self):
         cases = [[5, 0, 0],
                 [0, 0, 0],
@@ -30,6 +39,16 @@ class TriangleTestCase(unittest.TestCase):
         for case in cases:
             res = triangle.area(case[0], case[1])
             self.assertEqual(res, case[2])
+
+    def test_perimeter_wrong_arguments(self):
+        cases = [["3", 4, 5, 12],
+                 [8, "6", 10, 24],
+                 [25, 15, "20", 60],
+                 [1, 1, 1, "3"]]
+
+        for case in cases:
+            res = triangle.perimeter(case[0], case[1], case[2])
+            self.assertEqual(res, case[3])
 
     def test_perimeter_zero(self):
         cases = [[0, 0, 0, 0]]
