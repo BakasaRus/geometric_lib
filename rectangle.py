@@ -1,5 +1,5 @@
 def area(a, b):
-     '''
+    '''
     Calculates area for rectangle
     
     Parameters: a, b (int/float): sides
@@ -9,7 +9,7 @@ def area(a, b):
 
 
 def perimeter(a, b):
-     '''
+    '''
     Calculates perimeter for rectangle
     
     Parameters: a, b (int/float): sides
