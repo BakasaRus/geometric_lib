@@ -8,7 +8,11 @@ def area(a, b):
             Returns:
                 area (int/float): the area of the rectangle with sides a and b
     '''
-    return a * b
+    if (isinstance(a, (float, int)) and isinstance(b, (float, int)) and a >= 0 and b >= 0):
+        return a * b
+    else:
+        raise Exception
+
 
 def perimeter(a, b):
     '''
@@ -20,5 +24,7 @@ def perimeter(a, b):
             Returns:
                 perimeter (int/float): the perimeter of the rectangle with sides a and b
     '''
-    return 2 * (a + b)
-
+    if (isinstance(a, (float, int)) and isinstance(b, (float, int)) and a >= 0 and b >= 0):
+        return (a + b) * 2
+    else:
+        raise Exception

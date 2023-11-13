@@ -8,7 +8,11 @@ def area(a, h):
             Returns:
                 area (int/float): the area of a triangle with side a and height h
     '''
-    return a * h / 2
+    if (isinstance(a, (float, int)) and isinstance(h, (float, int)) and a >= 0 and h >= 0):
+        return a * h / 2
+    else:
+        raise Exception
+
 
 def perimeter(a, b, c):
     '''
@@ -21,4 +25,8 @@ def perimeter(a, b, c):
             Returns:
                 perimeter (int/float): the perimeter of the triangle with sides a, b and c
     '''
-    return a + b + c
+    if (isinstance(a, (float, int)) and isinstance(b, (float, int)) and isinstance(c, (
+    float, int)) and a >= 0 and b >= 0 and a >= 0):
+        return a + b + c
+    else:
+        raise Exception

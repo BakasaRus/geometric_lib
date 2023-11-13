@@ -1,4 +1,3 @@
-
 def area(a):
     '''
         Calculates the area of a square with side a
@@ -8,7 +7,10 @@ def area(a):
             Returns:
                 area (int/float): the area of the square with side a
     '''
-    return a * a
+    if (isinstance(a, (float, int)) and a >= 0):
+        return a * a
+    else:
+        raise Exception
 
 
 def perimeter(a):
@@ -20,4 +22,8 @@ def perimeter(a):
             Returns:
                 perimeter (int/float): the perimeter of the square with side a
     '''
-    return 4 * a
+
+    if (isinstance(a, (float, int)) and a >= 0):
+        return 4 * a
+    else:
+        raise Exception

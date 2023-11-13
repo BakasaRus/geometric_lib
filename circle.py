@@ -10,7 +10,10 @@ def area(r):
             Returns:
                 area (int/float): the area of the circle with radius r
     '''
-    return math.pi * r * r
+    if (isinstance(r, (float, int)) and r >= 0):
+        return math.pi * r * r
+    else:
+        raise Exception
 
 
 def perimeter(r):
@@ -22,4 +25,7 @@ def perimeter(r):
             Returns:
                 perimeter (int/float): the perimeter of the circle with radius r
     '''
-    return 2 * math.pi * r
+    if (isinstance(r, (float, int)) and r >= 0):
+        return math.pi * r * 2
+    else:
+        raise Exception
