@@ -2,7 +2,7 @@
 *.d
 
 # Cmake files
-__pycache__
+*/__pycache__
 
 # Compiled Object files
 *.slo

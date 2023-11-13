@@ -1,22 +1,6 @@
-
-def area(a):
-    '''
-    Принимает одно число: длину стороны квадрата.
-    
-    Возвращает площадь фигуры
-    '''
-    return a * a
-
-
-def perimeter(a):
-    '''
-    Принимает одно число: длину стороны квадрата.
-    
-    Возвращает периметр фигуры
-    '''
-    return 4 * a
-
+from lib.square import *
 import unittest
+
 class SquareTestCase(unittest.TestCase):
    def test_zero_area(self):
        res = area(00)

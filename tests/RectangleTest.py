@@ -1,20 +1,6 @@
-def area(a, b): 
-    '''
-    Принимает два числа: длины сторон прямоугольника.
-    
-    Возвращает площадь фигуры
-    '''
-    return a * b 
-
-def perimeter(a, b): 
-    '''
-    Принимает два числа: длины сторон прямоугольника.
-    
-    Возвращает периметр фигуры
-    '''
-    return 2 * (a + b)
-
+from lib.rectangle import *
 import unittest
+
 class RectangleTestCase(unittest.TestCase):
    def test_zero_area(self):
        res = area(0, 0)
