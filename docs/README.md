@@ -94,6 +94,7 @@ Library uses functions providing several geometric formulas.
 ## Commit history
 | Hash     | Branch    |Message   |
 | ---------|-----------|----------|
+|b296123|lab4| add new tests|
 |610ee76|lab4| add: tests|
 |717f0dc|lab2|add in README.md v2|
 |2ebf664   |lab2     |add image with commits|
