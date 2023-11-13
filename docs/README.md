@@ -57,7 +57,12 @@
   ```
 
 ## Last commits:
-* `55015fb` (HEAD -> main, origin/main, origin/HEAD) bug fixed
+* `58bb71b` (HEAD -> main) Documentation fixed
+* `0d9880b` Testing and documentation added
+* `1138744` (origin/main, origin/HEAD) Documentation added_1
+* `093f9ca` Documentation corrected
+* `c9be090` (lab-2) Documentation added
+* `55015fb` bug fixed
 * `f0fc01e` new file added
 * `d078c8d` L-03: Docs added
 * `8ba9aeb` L-03: Circle and square added
