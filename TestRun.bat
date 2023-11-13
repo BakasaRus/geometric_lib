@@ -1,0 +1,1 @@
+python.exe -m unittest .\tests\CircleTest.py; python.exe -m unittest .\tests\RectangleTest.py; python.exe -m unittest .\tests\SquareTest.py; python.exe -m unittest .\tests\TriangleTest.py
