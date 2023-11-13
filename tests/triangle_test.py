@@ -1,7 +1,5 @@
 import unittest
 
-import pytest
-
 import triangle
 
 
@@ -13,7 +11,7 @@ class TriangleTestCase(unittest.TestCase):
                  [1000, 1000, "500000"]]
 
         for case in cases:
-            with pytest.raises((TypeError, AssertionError)):
+            with self.assertRaises((TypeError, AssertionError)):
                 res = triangle.area(case[0], case[1])
                 self.assertEqual(res, case[2])
 
@@ -51,7 +49,7 @@ class TriangleTestCase(unittest.TestCase):
                  [1, 1, 1, "3"]]
 
         for case in cases:
-            with pytest.raises((TypeError, AssertionError)):
+            with self.assertRaises((TypeError, AssertionError)):
                 res = triangle.perimeter(case[0], case[1], case[2])
                 self.assertEqual(res, case[3])
 
