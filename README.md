@@ -53,7 +53,7 @@ my_perimetr = rectangle.perimetr(3, 7, 5) # 15
 ```
 ## Last commits:
 
-* `2d2a0263` (HEAD -> main, origin/main, origin/HEAD) | feat: unit test
+* `59264d4` (HEAD -> main, origin/main, origin/HEAD) | feat: unit test
     
     **Author:** yar4123 <belyaroslav@mail.ru>
 
