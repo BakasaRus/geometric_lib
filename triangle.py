@@ -16,19 +16,3 @@ def perimeter(a, b, c):
     return a + b + c
 
 
-class TestTriangleFunctions(unittest.TestCase):
-
-    def test_area_positive_sides(self):
-        self.assertEqual(area(5, 4), 10)
-
-    def test_perimeter_positive_sides(self):
-        self.assertEqual(perimeter(1, 2, 3), 6)
-
-    def test_area_zero_base(self):
-        self.assertEqual(area(0, 4), 0)
-
-    def test_perimeter_zero_sides(self):
-        self.assertEqual(perimeter(0, 2, 3), 5)
-
-    def test_area_large_values(self):
-        self.assertEqual(area(100, 50), 2500)

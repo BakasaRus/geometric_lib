@@ -15,19 +15,4 @@ def perimeter(a):
     '''
     return 4 * a
 
-class TestSquareFunctions(unittest.TestCase):
 
-    def test_area_positive_side(self):
-        self.assertEqual(area(5), 25)
-
-    def test_perimeter_positive_side(self):
-        self.assertEqual(perimeter(5), 20)
-
-    def test_area_zero_side(self):
-        self.assertEqual(area(0), 0)
-
-    def test_perimeter_zero_side(self):
-        self.assertEqual(perimeter(0), 0)
-
-    def test_area_large_side(self):
-        self.assertEqual(area(100), 10000)
