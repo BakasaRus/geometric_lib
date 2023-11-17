@@ -10,7 +10,7 @@ permissions:
   contents: read
 
 jobs:
-  first_test:
+  ubuntu_os_test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -21,7 +21,7 @@ jobs:
           architecture: "x64"
       - name: run tests
         run: python -m unittest
-  second_test:
+  windows_os_test:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v3
