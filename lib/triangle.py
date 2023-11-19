@@ -1,5 +1,5 @@
 def area(a, h):
-    """
+    '''
     Calculates the area of triangle
     :param a: size of the side of the triangle to which the height is build
     :type a: int or float
@@ -7,12 +7,12 @@ def area(a, h):
     :type h: int or float
     :rtype: int or float
     :return: a * h / 2 - area of triangle
-    """
+    '''
     return a * h / 2
 
 
 def perimeter(a, b, c):
-    """
+    '''
     Calculates the perimeter of triangle
     :param a: size of the first side of the triangle
     :type a: int or float
@@ -22,5 +22,5 @@ def perimeter(a, b, c):
     :type c : int or float
     :rtype: int or float
     :return: a + b + c - perimeter of triangle
-    """
+    '''
     return a + b + c
