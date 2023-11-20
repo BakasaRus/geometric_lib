@@ -9,6 +9,9 @@ def area(a, b):
         Returns value:
             area (int / float): the area of a rectangle with sides a and b
     '''
+    if (a <= 0 or b <= 0):
+        raise ValueError('Incorrect input')
+
     return a * b 
 
 def perimeter(a, b): 
@@ -22,4 +25,6 @@ def perimeter(a, b):
         Returns value:
             perimeter (int / float): the perimeter of a rectangle with sides a and b
     '''
+    if (a <= 0 or b <= 0):
+        raise ValueError('Incorrect input')
     return (a + b) * 2 

@@ -8,6 +8,9 @@ def area(a):
         Returns value:
             area (int / float): the area of a square with side a 
     '''
+    if (a <= 0):
+        raise ValueError('Incorrect input')
+
     return a * a
 
 
@@ -21,4 +24,7 @@ def perimeter(a):
         Returns value:
             perimeter (int / float): the perimeter of a square with side a 
     '''
+    if (a <= 0):
+        raise ValueError('Incorrect input')
+    
     return 4 * a

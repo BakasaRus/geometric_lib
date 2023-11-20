@@ -8,6 +8,9 @@ def area(a, h):
         Returns value:
             area (int / float): the area of a triangle with the specified side and height drawn to that side 
     '''
+    if a <= 0 or h <= 0:
+        raise ValueError('Incorrect input')
+    
     return a * h / 2 
 
 def perimeter(a, b, c): 
@@ -22,4 +25,10 @@ def perimeter(a, b, c):
         Returns value:
             perimeter (int / float): the perimeter of a triangle with the specified side and height drawn to that side 
     '''
+    if a <= 0 or b <= 0 or c <= 0:
+        raise ValueError('Incorrect input')
+    
+    if a >= b + c or b >= a + c or c >= a + b:
+        raise ValueError('There is no such triangle')
+    
     return a + b + c 
