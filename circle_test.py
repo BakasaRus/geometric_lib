@@ -31,6 +31,10 @@ class CircleTestCase(unittest.TestCase):
     def test_big2_area(self):
         res = circle.area(1020)
         self.assertAlmostEqual(res, 3268512.9967948208, 0.000001)
+
+    def test_wrong_area(self):
+        res = circle.area("fef")
+        self.assertEqual(res, 0)
     def test_zero_perimeter(self):
         res = circle.perimeter(0)
         self.assertEqual(res, 0)
@@ -58,6 +62,10 @@ class CircleTestCase(unittest.TestCase):
     def test_big2_perimeter(self):
         res = circle.perimeter(1020)
         self.assertAlmostEqual(res, 6408.849013323178, 0.000001)
+
+    def test_wrong_perimeter(self):
+        res = circle.perimeter("fef")
+        self.assertEqual(res, 0)
 
 
 if __name__ == '__main__':

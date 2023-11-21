@@ -31,6 +31,9 @@ class SquareTestCase(unittest.TestCase):
         res = square.area(1020)
         self.assertEqual(res, 1040400)
 
+    def test_wrong_area(self):
+        res = square.perimeter("21sd")
+        self.assertEqual(res, 0)
     def test_zero_perimeter(self):
         res = square.perimeter(0)
         self.assertEqual(res, 0)
@@ -58,3 +61,7 @@ class SquareTestCase(unittest.TestCase):
     def test_big2_perimeter(self):
         res = square.perimeter(1020)
         self.assertEqual(res, 4080)
+
+    def test_wrong_perimeter(self):
+        res = square.perimeter("21sd231")
+        self.assertEqual(res, 0)
