@@ -20,7 +20,5 @@ class CircleTest(unittest.TestCase):
         self.assertEqual(res, math.pi * 144)
 
     def test_if_wrong_params(self):
-        try:
+        with self.assertRaises(Exception):
             res = circle.area([1])
-        except:
-            self.fail('Wrong params')

@@ -19,7 +19,5 @@ class SquareTest(unittest.TestCase):
         self.assertEqual(res, 144)
 
     def test_if_wrong_params(self):
-        try:
-            res = square.area('a')
-        except:
-            self.fail('Wrong params')
+        with self.assertRaises(Exception):
+            square.area('a')

@@ -19,7 +19,5 @@ class TriangleTest(unittest.TestCase):
         self.assertEqual(res, 30)
 
     def test_if_wrong_params(self):
-        try:
-            res = triangle.area([1], 2)
-        except:
-            self.fail('Wrong params')
+        with self.assertRaises(Exception):
+            triangle.area([1], 2)

@@ -19,7 +19,5 @@ class RectangleTest(unittest.TestCase):
         self.assertEqual(res, 60)
 
     def test_if_wrong_params(self):
-        try:
-            res = rectangle.area([1], 'a')
-        except:
-            self.fail('Wrong params')
+        with self.assertRaises(Exception):
+            rectangle.area([1], 'a')
