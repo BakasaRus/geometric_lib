@@ -29,6 +29,7 @@
 > Пример - perimeter(1.1, 1.2, 2) = 4.3
 
 ## История коммитов:
+* be6c08a [test] Added test for lib
 * 12c4200 (HEAD -> main) [fix]: fixed rectangle.py
 * af89b7d [feat]: added triangle.py
 * 4e495ff [feat]: added rectangle.py
