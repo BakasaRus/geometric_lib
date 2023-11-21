@@ -20,8 +20,8 @@ class CirclePerimeterTestCase(unittest.TestCase):
         self.assertEqual(res, math.pi * 14)
     
     def test_negative(self):
-        res = circle.perimeter(-2)
-        self.assertEqual(res, 0)
+        with self.assertRaises(ValueError):
+            circle.perimeter(-2)
 
     def test_string(self):
         with self.assertRaises(TypeError):

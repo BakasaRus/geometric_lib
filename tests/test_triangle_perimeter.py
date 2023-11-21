@@ -16,8 +16,8 @@ class TrianglePerimeterTestCase(unittest.TestCase):
         self.assertEqual(res, 12)
     
     def test_negative(self):
-        res = triangle.perimeter(-2, 4, 3)
-        self.assertEqual(res, 0)
+        with self.assertRaises(ValueError):
+            triangle.perimeter(-2, 4, 3)
 
     def test_string(self):
         with self.assertRaises(TypeError):

@@ -28,12 +28,12 @@ class RectangleAreaTestCase(unittest.TestCase):
         self.assertEqual(res, 1)
     
     def test_negative(self):
-        res = rectangle.area(-3, 1)
-        self.assertEqual(res, 0)
+        with self.assertRaises(ValueError):
+            rectangle.area(-3, 1)
 
     def test_negative_both(self):
-        res = rectangle.area(-3, -3)
-        self.assertEqual(res, 0)
+        with self.assertRaises(ValueError):
+            rectangle.area(-3, -3)
 
     def test_string(self):
         with self.assertRaises(TypeError):

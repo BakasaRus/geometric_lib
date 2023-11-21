@@ -16,12 +16,12 @@ class TriangleAreaTestCase(unittest.TestCase):
         self.assertEqual(res, 4)
     
     def test_negative_side(self):
-        res = triangle.area(-42, 4)
-        self.assertEqual(res, 0)
+        with self.assertRaises(ValueError):
+            triangle.area(-42, 4)
     
     def test_negative_height(self):
-        res = triangle.area(2, -4)
-        self.assertEqual(res, 0)
+        with self.assertRaises(ValueError):
+            triangle.area(2, -4)
 
     def test_string(self):
         with self.assertRaises(TypeError):

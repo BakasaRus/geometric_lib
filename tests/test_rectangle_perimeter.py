@@ -28,12 +28,12 @@ class RectanglePerimeterTestCase(unittest.TestCase):
     
     def test_negative(self):
 
-        res = rectangle.perimeter(-33, 1)
-        self.assertEqual(res, 0)
+        with self.assertRaises(ValueError):
+            rectangle.perimeter(-33, 1)
 
     def test_negative_both(self):
-        res = rectangle.perimeter(-1, -33)
-        self.assertEqual(res, 0)
+        with self.assertRaises(ValueError):
+            rectangle.perimeter(-1, -33)
 
     def test_string(self):
         with self.assertRaises(TypeError):

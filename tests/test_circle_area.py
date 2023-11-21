@@ -20,8 +20,8 @@ class CircleAreaTestCase(unittest.TestCase):
         self.assertEqual(res, math.pi)
     
     def test_negative(self):
-        res = circle.area(-1)
-        self.assertEqual(res, 0)
+        with self.assertRaises(ValueError):
+            circle.area(-1)
 
     def test_string(self):
         with self.assertRaises(TypeError):
