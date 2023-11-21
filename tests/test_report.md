@@ -132,27 +132,27 @@
 ### Метрики
 |||
 |--------|-------------|
-|<b>Запущено</b>| 34 теста |
+|<b>Запущено</b>| 42 теста |
 |<font color="green"><b>Пройдено</b></font>| 18 тестов, 53%|
-|<font color="red"><b>Провалено</b></font>| 16 тестов, 47%|
+|<font color="red"><b>Провалено</b></font>| 17 тестов, 47%|
 |<b>Общее время</b>| 0.004 сек.|
 
 |Модуль| <font color="green">Пройдено</font> | <font color="red">Провалено</font>| Сообщение тестирующей системы|
 |:-:|:-:|:-:|:-|
-|circle.area| 3 | 1 | AssertionError: ValueError not raised by area|
-|circle.perimeter| 3 | 1 | AssertionError: ValueError not raised by perimeter|
-|rectangle.area| 3 | 2 | AssertionError: ValueError not raised by area<br>AssertionError: ValueError not raised by area|
-|rectangle.perimeter| 2 | 2 | AssertionError: ValueError not raised by perimeter<br>AssertionError: ValueError not raised by perimeter|
-|square.area| 3 | 2| AssertionError: ValueError not raised by area<br>AssertionError: ValueError not raised by area|
-|square.perimeter| 3 | 2| AssertionError: ValueError not raised by perimeter<br>AssertionError: ValueError not raised by perimeter|
-|triangle.area| 2 | 4 | AssertionError: ValueError not raised by area<br>AssertionError: ValueError not raised by area<br>AssertionError: ValueError not raised by area<br>AssertionError: ValueError not raised by area|
-|triangle.perimeter| 2 | 2 | AssertionError: ValueError not raised by perimeter<br>AssertionError: ValueError not raised by perimeter|
+|circle.area| 3 | 2 | AssertionError: ValueError not raised by area<br>AssertionError: TypeError not raised by area|
+|circle.perimeter| 4 | 1 | AssertionError: ValueError not raised by perimeter|
+|rectangle.area| 4 | 2 | AssertionError: ValueError not raised by area<br>AssertionError: ValueError not raised by area|
+|rectangle.perimeter| 3 | 2 | AssertionError: ValueError not raised by perimeter<br>AssertionError: ValueError not raised by perimeter|
+|square.area| 4 | 2| AssertionError: ValueError not raised by area<br>AssertionError: ValueError not raised by area|
+|square.perimeter| 4 | 2| AssertionError: ValueError not raised by perimeter<br>AssertionError: ValueError not raised by perimeter|
+|triangle.area| 3 | 4 | AssertionError: ValueError not raised by area<br>AssertionError: ValueError not raised by area<br>AssertionError: ValueError not raised by area<br>AssertionError: ValueError not raised by area|
+|triangle.perimeter| 3 | 2 | AssertionError: ValueError not raised by perimeter<br>AssertionError: ValueError not raised by perimeter|
 
 
 ### Выявленные дефекты
 |Модуль | Дефекты|
 |:-|:-|
-|circle.area| некорректная обработка случая отрицательного радиуса|
+|circle.area| некорректная обработка случая отрицательного радиуса<br>некорректная обработка неверного входного типа|
 |circle.perimeter| некорректная обработка случая отрицательного радиуса|
 |rectangle.area| некорректная обработка случая отрицательной стороны<br>некорректная обработка случая нулевой стороны|
 |rectangle.perimeter| некорректная обработка случая отрицательной стороны<br>некорректная обработка случая нулевой стороны|
@@ -162,4 +162,4 @@
 |triangle.perimeter| некорректная обработка случая отрицательной стороны<br>некорректная обработка случая нулевой стороны|
 
 ### Вердикт
->Модули <b>не удовлетворяют</b> критериям приёма, поскольку при сценарии, когда пользователь вводит некорректные данные, функции не возвращают ни сообщение об ошибке, ни определённый код возврата.    
+>Модули <b>не удовлетворяют</b> критериям приёма, поскольку при сценарии, когда пользователь вводит некорректные данные, функции не возвращают ни сообщение об ошибке.   

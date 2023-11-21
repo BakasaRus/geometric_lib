@@ -23,6 +23,9 @@ class TriangleAreaTestCase(unittest.TestCase):
     def test_neg_height(self):
         self.assertRaises(ValueError, triangle.area, 2, -2)
     
+    def test_invalid_type(self):
+        self.assertRaises(TypeError, triangle.area, "100", 3)
+    
 class TrianglePerTestCase(unittest.TestCase):
     def test_zero_side(self):
         self.assertRaises(ValueError, triangle.perimeter, 0, 2, 3)
@@ -38,3 +41,6 @@ class TrianglePerTestCase(unittest.TestCase):
     
     def test_neg_side(self):
         self.assertRaises(ValueError, triangle.perimeter, -2, 2, 3)
+    
+    def test_invalid_type(self):
+        self.assertRaises(TypeError, triangle.perimeter, "100", 3, 4)

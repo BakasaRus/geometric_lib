@@ -16,6 +16,9 @@ class RectangleAreaTestCase(unittest.TestCase):
         
     def test_neg_side(self):
         self.assertRaises(ValueError, rectangle.area, -2, 3)
+    
+    def test_invalid_type(self):
+        self.assertRaises(TypeError, rectangle.area, "100", 3)
 
 class RectanglePerTestCase(unittest.TestCase):
     def test_zero_side(self):
@@ -32,4 +35,7 @@ class RectanglePerTestCase(unittest.TestCase):
     
     def test_neg_side(self):
         self.assertRaises(ValueError, rectangle.perimeter, -2, 3)
+    
+    def test_invalid_type(self):
+        self.assertRaises(TypeError, rectangle.perimeter, "100", 3)
 

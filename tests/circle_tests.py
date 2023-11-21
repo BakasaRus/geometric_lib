@@ -7,6 +7,7 @@ class CircleAreaTestCase(unittest.TestCase):
         res = circle.area(0)
         self.assertEqual(res, 0)
     
+    
     def test_simple(self):
         res = circle.area(2)
         self.assertEqual(res, math.pi*4)
@@ -18,6 +19,9 @@ class CircleAreaTestCase(unittest.TestCase):
     
     def test_neg_r(self):
         self.assertRaises(ValueError, circle.area, -2)
+    
+    def test_invalid_type(self):
+        self.assertRaises(TypeError, circle.area, "100")
 
 class CirclePerTestCase(unittest.TestCase):
     def test_zero_r(self):
@@ -35,3 +39,6 @@ class CirclePerTestCase(unittest.TestCase):
     
     def test_neg_r(self):
         self.assertRaises(ValueError, circle.perimeter, -2)
+    
+    def test_invalid_type(self):
+        self.assertRaises(TypeError, circle.perimeter, "100")

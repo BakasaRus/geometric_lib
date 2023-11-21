@@ -16,6 +16,9 @@ class SquareAreaTestCase(unittest.TestCase):
     
     def test_neg_side(self):
         self.assertRaises(ValueError, square.area, -2)
+    
+    def test_invalid_type(self):
+        self.assertRaises(TypeError, square.area, "100")
 
 class SquarePerTestCase(unittest.TestCase):
     def test_zero_side(self):
@@ -32,3 +35,8 @@ class SquarePerTestCase(unittest.TestCase):
     
     def test_neg_side(self):
          self.assertRaises(ValueError, square.perimeter, -2)
+    
+    def test_invalid_type(self):
+        self.assertRaises(TypeError, square.area, "100")
+    
+    
