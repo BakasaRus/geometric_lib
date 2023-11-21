@@ -8,6 +8,9 @@ def area(a):
         Returns value:
             area (int / float): the area of a square with side a 
     '''
+    if not isinstance(a, int) and not isinstance(a, float):
+        raise TypeError('Not numbers are passed to the function')
+
     if (a <= 0):
         raise ValueError('Incorrect input')
 
@@ -24,6 +27,9 @@ def perimeter(a):
         Returns value:
             perimeter (int / float): the perimeter of a square with side a 
     '''
+    if not isinstance(a, int) and not isinstance(a, float):
+        raise TypeError('Not numbers are passed to the function')
+    
     if (a <= 0):
         raise ValueError('Incorrect input')
     

@@ -29,6 +29,10 @@ class CircleTestCase(unittest.TestCase):
     def test_incorrect_area_0(self):
         self.assertRaises(ValueError, area, -123)
 
+    # invalid input
+    def test_invalid_area(self):
+        self.assertRaises(TypeError, area, (0, 2, 1))
+
     # PERIMETER
 
     # res = 0
@@ -53,3 +57,7 @@ class CircleTestCase(unittest.TestCase):
     # incorrect
     def test_incorrect_perimeter_0(self):
         self.assertRaises(ValueError, perimeter, -1245673)
+
+    # invalid input
+    def test_invalid_perimeter(self):
+        self.assertRaises(TypeError, perimeter, "454")

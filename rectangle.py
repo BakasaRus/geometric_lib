@@ -9,6 +9,12 @@ def area(a, b):
         Returns value:
             area (int / float): the area of a rectangle with sides a and b
     '''
+    if not isinstance(a, int) and not isinstance(a, float):
+        raise TypeError('Not numbers are passed to the function')
+    
+    if not isinstance(b, int) and not isinstance(b, float):
+        raise TypeError('Not numbers are passed to the function')
+
     if (a <= 0 or b <= 0):
         raise ValueError('Incorrect input')
 
@@ -25,6 +31,12 @@ def perimeter(a, b):
         Returns value:
             perimeter (int / float): the perimeter of a rectangle with sides a and b
     '''
+    if not isinstance(a, int) and not isinstance(a, float):
+        raise TypeError('Not numbers are passed to the function')
+    
+    if not isinstance(b, int) and not isinstance(b, float):
+        raise TypeError('Not numbers are passed to the function')
+
     if (a <= 0 or b <= 0):
         raise ValueError('Incorrect input')
     return (a + b) * 2 

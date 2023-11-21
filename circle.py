@@ -10,6 +10,9 @@ def area(r):
         Returns value:
             area (int / float): the area of a circle with radius r
     '''
+    if not isinstance(r, int) and not isinstance(r, float):
+        raise TypeError('Not numbers are passed to the function')
+    
     if r <= 0:
         raise ValueError('Incorrect input')
 
@@ -26,6 +29,9 @@ def perimeter(r):
         Returns value:
             perimeter (int / float): the length of a circle of a circle of radius r
     '''
+    if not isinstance(r, int) and not isinstance(r, float):
+        raise TypeError('Not numbers are passed to the function')
+
     if r <= 0:
         raise ValueError('Incorrect input')
     

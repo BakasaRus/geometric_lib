@@ -26,6 +26,10 @@ class RectangleTestCase(unittest.TestCase):
     # incorrect
     def test_incorrect_area_0(self):
         self.assertRaises(ValueError, area, -123, -5678)
+    
+    # invalid input
+    def test_invalid_area(self):
+        self.assertRaises(TypeError, area, ["14", 12, 13], 12, 11)
 
     # PERIMETER
 
@@ -55,3 +59,7 @@ class RectangleTestCase(unittest.TestCase):
     #incrorrect triangle
     def test_incorrect_triangle_perimeter_0(self):
         self.assertRaises(ValueError, perimeter, 45, 32, 1000)
+
+    # invalid input
+    def test_invalid_perimeter(self):
+        self.assertRaises(TypeError, perimeter, 3, 4, '5')
