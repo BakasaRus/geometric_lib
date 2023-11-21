@@ -67,6 +67,10 @@
     - Add file documentation triangle.py, square.py, rectangle.py, circle.py
 6. Commit hash: `8359a6307bd536bdfe42cef964519e2b7f8a2eee`
     - Added unit tests
+7. Commit hash: `004eb35d3610e78f70e51281558da25f1d6b2e30`
+    - Add new tests
+8. Commit hash: `a9204675a16851a8034a1e620045403f1d7bbf68`
+    - Add new tests and checks
 
 
 
