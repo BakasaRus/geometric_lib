@@ -172,3 +172,4 @@ b = perimeter(1, 2, 1) # b = 4
 | [`76972c6`](https://github.com/AbubiBoba/geometric_lib/commit/76972c6fdc20350a236cf30715cc5b6bdeda5233) | [FIX]: fixed mistake in triangle area formula | исправлена ошибка в triangle.py в формуле площади треугольника |
 | [`332f0d6`](https://github.com/AbubiBoba/geometric_lib/commit/332f0d66904f50bc72d0282965658c9bf8c8a7d8) | [FEAT]: add comments on the code              | добавлены развернутые комментарии ко всем функциям в файлах    |
 | [`0c36c19`](https://github.com/AbubiBoba/geometric_lib/commit/0c36c190ac667a9dbe21db46791d8ffe6e8757f6) | [TESTS]: add unittests for all scripts        | добавлены тесты ко всем функциям в файлах                      |
+| [`0c36c19`](https://github.com/AbubiBoba/geometric_lib/commit/949233a4e66407956fd98ae900479f4271703931) | [TEST & FIX]: add exceptions and tests for... | добавлены тесты с погрешностью, добавлены исключения в тесты   |
