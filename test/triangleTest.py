@@ -26,7 +26,9 @@ class TriangleTestCase(unittest.TestCase):
     def test_triangle_zero_perimeter(self):
         with self.assertRaises(ValueError):
             perimeter(0, 2, 4)
-
+    def test_triangle_unright_perimeter(self):
+        with self.assertRaises(ValueError):
+            perimeter(1, 17, 5)
     def test_triangle_negative_perimeter(self):
         with self.assertRaises(ValueError):
             perimeter(-11, -200, 90)
