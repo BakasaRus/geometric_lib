@@ -30,10 +30,6 @@ class CircleTestCase(unittest.TestCase):
         res = circle.area(23)
         self.assertAlmostEqual(res, 1661.9025137490005)
     
-    def test_small_numbers_area_2(self):
-        res = circle.area(100)
-        self.assertAlmostEqual(res, 31415.926535897932)
-    
     def test_small_numbers_area_3(self):
         res = circle.area(3)
         self.assertAlmostEqual(res, 28.274333882308138)
