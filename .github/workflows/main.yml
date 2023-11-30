@@ -1,0 +1,97 @@
+# This is a workflow to run tests automaticly with Github Actions
+
+name: CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push event but only for the "lab_5" branch
+  push:
+    branches: [ "lab_5" ]
+
+  # Allows to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a jobs called "build-ubuntu", "build-windows", "run-tests-ubuntu" and "run-tests-windows"
+  build-ubuntu:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+
+      # Runs a single command using the runners shell
+      - name: Run a one-line script
+        run: echo Hello, world!
+
+      # Runs a set of commands using the runners shell
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
+
+      # Build the lib
+
+      - name: Build circle.py
+        run: python circle.py
+          
+      - name: Build rectangle.py
+        run: python rectangle.py
+          
+      - name: Build triangle.py
+        run: python triangle.py
+          
+      - name: Build square.py
+        run: python square.py
+        
+  run-tests-ubuntu:
+  
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+
+      # Runs a single command using the runners shell
+      - name: Run a one-line script
+        run: echo Hello, world!
+
+      # Runs a set of commands using the runners shell
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
+
+      # Build the lib
+
+      - name: Build circle.py
+        run: python circle.py
+          
+      - name: Build rectangle.py
+        run: python rectangle.py
+          
+      - name: Build triangle.py
+        run: python triangle.py
+          
+      - name: Build square.py
+        run: python square.py
+
+      # Run tests
+
+      - name: Test circle.py
+        run: python -m unittest circle.py
+          
+      - name: Test rectangle.py
+        run: python -m unittest rectangle.py
+          
+      - name: Test triangle.py
+        run: python -m unittest triangle.py
+          
+      - name: Test square.py
+        run: python -m unittest square.py
+      
