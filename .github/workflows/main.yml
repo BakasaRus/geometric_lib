@@ -95,3 +95,84 @@ jobs:
       - name: Test square.py
         run: python -m unittest tests/test_square.py
       
+  build-windows:
+    # The type of runner that the job will run on
+    runs-on: windows-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+
+      # Runs a single command using the runners shell
+      - name: Run a one-line script
+        run: echo Hello, world!
+
+      # Runs a set of commands using the runners shell
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
+
+      # Build the lib
+
+      - name: Build lib/circle.py
+        run: python lib/circle.py
+          
+      - name: Build lib/rectangle.py
+        run: python lib/rectangle.py
+          
+      - name: Build lib/triangle.py
+        run: python lib/triangle.py
+          
+      - name: Build lib/square.py
+        run: python lib/square.py
+        
+  run-tests-ubuntu:
+  
+    # The type of runner that the job will run on
+    runs-on: windows-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+
+      # Runs a single command using the runners shell
+      - name: Run a one-line script
+        run: echo Hello, world!
+
+      # Runs a set of commands using the runners shell
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
+
+      # Build the lib
+
+      - name: Build lib/circle.py
+        run: python lib/circle.py
+          
+      - name: Build lib/rectangle.py
+        run: python lib/rectangle.py
+          
+      - name: Build lib/triangle.py
+        run: python lib/triangle.py
+          
+      - name: Build lib/square.py
+        run: python lib/square.py
+
+      # Run tests
+
+      - name: Test circle.py
+        run: python -m unittest tests/test_circle.py
+          
+      - name: Test rectangle.py
+        run: python -m unittest tests/test_rectangle.py
+          
+      - name: Test triangle.py
+        run: python -m unittest tests/test_triangle.py
+          
+      - name: Test square.py
+        run: python -m unittest tests/test_square.py
+      
