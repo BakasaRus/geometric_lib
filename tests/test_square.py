@@ -1,5 +1,9 @@
 import unittest
-from square import *
+
+import sys
+sys.path.append('../')
+
+from lib.square import *
 
 
 class SquareTestCase(unittest.TestCase):

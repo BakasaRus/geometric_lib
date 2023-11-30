@@ -1,5 +1,9 @@
 import unittest
-from triangle import *
+
+import sys
+sys.path.append('../')
+
+from lib.triangle import *
 
 
 class TriangleTestCase(unittest.TestCase):

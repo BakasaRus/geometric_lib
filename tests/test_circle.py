@@ -1,5 +1,9 @@
 import unittest
-from circle import *
+
+import sys
+sys.path.append('../')
+
+from lib.circle import *
 
 class RectangleTestCase(unittest.TestCase):
    def test_zero_mul_0(self):
