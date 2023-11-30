@@ -128,7 +128,7 @@ jobs:
       - name: Build lib/square.py
         run: python lib/square.py
         
-  run-tests-ubuntu:
+  run-tests-windows:
   
     # The type of runner that the job will run on
     runs-on: windows-latest
