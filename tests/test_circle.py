@@ -8,7 +8,7 @@ from lib.circle import *
 class RectangleTestCase(unittest.TestCase):
    def test_zero_mul_0(self):
        res = area(0)
-       self.assertEqual(res, 0)
+       self.assertEqual(res, 1) #Should be 0, changed to test CI
        
    def test_mul_0(self):
        res = area(1)
