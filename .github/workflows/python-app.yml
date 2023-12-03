@@ -12,12 +12,12 @@ on:
 permissions:
   contents: read
 
-jobs:
-  build:
-
-    runs-on: ubuntu-latest
-
-    steps:
+test:
+  strategy:
+    matrix:
+      os: [ubuntu-latest, windows-latest]
+  runs-on: ${{ matrix.os }}
+  steps:
     - uses: actions/checkout@v3
     - name: Set up Python 3.11
       uses: actions/setup-python@v3
@@ -25,4 +25,4 @@ jobs:
         python-version: "3.11"
     - name: Run unittests
       run: |
-        python3 unit_tests.py
+        python unit_tests.py

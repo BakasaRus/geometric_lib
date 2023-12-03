@@ -14,7 +14,9 @@ if __name__ == '__main__':
     triangle_suite = unittest.TestLoader().loadTestsFromModule(test_triangle)
     square_suite = unittest.TestLoader().loadTestsFromModule(test_square)
 
-    unittest.TextTestRunner(verbosity=3).run(circle_suite)
-    unittest.TextTestRunner(verbosity=3).run(rectangle_suite)
-    unittest.TextTestRunner(verbosity=3).run(triangle_suite)
-    unittest.TextTestRunner(verbosity=3).run(square_suite)
+    successful = 1
+    successful &= unittest.TextTestRunner(verbosity=3).run(circle_suite).wasSuccessful()
+    successful &= unittest.TextTestRunner(verbosity=3).run(rectangle_suite).wasSuccessful()
+    successful &= unittest.TextTestRunner(verbosity=3).run(triangle_suite).wasSuccessful()
+    successful &= unittest.TextTestRunner(verbosity=3).run(square_suite).wasSuccessful()
+    sys.exit(not successful)
