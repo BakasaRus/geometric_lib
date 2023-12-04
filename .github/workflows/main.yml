@@ -8,4 +8,4 @@ jobs:
       runs-on: ubuntu-latest, windows-latest
       steps:
           - name: Run a one-line script
-            run: echo Hello, world!
+            run: echo Hello, workflow!
