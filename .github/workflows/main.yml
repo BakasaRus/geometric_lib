@@ -4,8 +4,13 @@ on:
       branches: [ "lab5" ]
 
 jobs:
-    my_build_job:
+    test_job_ubuntu:
       runs-on: ubuntu-latest
+      steps:
+          - name: Run a one-line script
+            run: echo Hello, workflow!
+    test_job_ubuntu:
+      runs-on: windows-latest
       steps:
           - name: Run a one-line script
             run: echo Hello, workflow!
