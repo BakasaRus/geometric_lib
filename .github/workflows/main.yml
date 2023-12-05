@@ -7,10 +7,16 @@ jobs:
     test_job_ubuntu:
       runs-on: ubuntu-latest
       steps:
-          - name: Run a one-line script
-            run: echo Hello, workflow!
+          - uses: actions/checkout@v4
+          - uses: actions/setup-python@v4
+            with:
+              python-version: '3.10' 
+          - run: python -m unittest discover -s tests/ -p '*_tests.py' 
     test_job_windows:
       runs-on: windows-latest
       steps:
-          - name: Run a one-line script
-            run: echo Hello, workflow!
+          - uses: actions/checkout@v4
+          - uses: actions/setup-python@v4
+            with:
+              python-version: '3.10' 
+          - run: python -m unittest discover -s tests/ -p '*_tests.py'
