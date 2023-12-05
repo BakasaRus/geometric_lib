@@ -9,7 +9,7 @@ jobs:
       steps:
           - name: Run a one-line script
             run: echo Hello, workflow!
-    test_job_ubuntu:
+    test_job_windows:
       runs-on: windows-latest
       steps:
           - name: Run a one-line script
