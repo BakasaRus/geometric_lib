@@ -23,4 +23,4 @@ jobs:
       - name: Run tests
         run: |
           cd tests \ 
-          python-m unittest tests_runner.py
+          python -m unittest tests_runner.py
