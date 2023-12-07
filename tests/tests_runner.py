@@ -1,4 +1,4 @@
-import unittest
+import unittest, setup
 import circle_tests, rectangle_tests, square_tests, triangle_tests
 
 suite1 = unittest.TestLoader().loadTestsFromModule(circle_tests)

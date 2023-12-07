@@ -1,4 +1,5 @@
-import unittest, rectangle
+import unittest
+import rectangle
 
 
 class RectangleTestCase(unittest.TestCase):
