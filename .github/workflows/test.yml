@@ -2,7 +2,7 @@ name: Run unittest on push
 on: 
   push:
     branches:
-      - main
+      - lab-4
 
 jobs:
   test:
