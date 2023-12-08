@@ -9,15 +9,15 @@ jobs:
     stategy:
       matrix:
         os: [ubuntu-latest, windows-latest]
-      run-on: ${{ matrix.os }}
-      steps:
-        - name: Checkout code
-          uses: actions/checkout@v2
+    run-on: ${{ matrix.os }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-        - name: Set up Python
-          uses: actions/setup-python@v2
-          with: 
-            python-version: 3.x
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with: 
+          python-version: 3.x
 
-        - name: Run tests
-          run: python -m unittest discover tests "*_tests.py"
+      - name: Run tests
+        run: python -m unittest discover tests "*_tests.py"
