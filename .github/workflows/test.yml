@@ -3,7 +3,6 @@ on:
   push:
     branches:
       - lab-4
-      - main
 
 jobs:
   test:
