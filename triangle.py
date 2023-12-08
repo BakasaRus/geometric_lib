@@ -1,14 +1,4 @@
-import unittest
-
-
-class TriangleTestCase(unittest.TestCase):
-    def test_zero_height_area(self):
-        res = area(0, 2)
-        self.assertEqual(res, 0)
-
-    def test_zero_side_area(self):
-        res = area(2, 0)
-        self.assertEqual(res, 0)
+import tests
 
 
 def area(a, h):
