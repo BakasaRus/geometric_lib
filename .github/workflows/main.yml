@@ -1,6 +1,7 @@
 name: CI
 on: 
-  push
+  push:
+    branches : [ "lab_5" ]
 
 jobs:
   run_tests_job_windows:
