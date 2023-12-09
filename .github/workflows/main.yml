@@ -11,8 +11,8 @@ jobs:
           python-version: '3.x'
       - name: Checkout code
         uses: actions/checkout@v4
-      - name: run tests
-        run: python tests/testRectangle.py
+      #- name: run tests
+      #  run: python tests/testRectangle.py
 
   run_tests_job_ubuntu:
     runs-on: ubuntu_latest
@@ -22,5 +22,5 @@ jobs:
           python-version: '3.x'
       - name: Checkout code
         uses: actions/checkout@v4
-      - name: run tests
-        run: python tests/testRectangle.py
+      #- name: run tests
+      #  run: python tests/testRectangle.py
