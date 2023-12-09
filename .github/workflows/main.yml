@@ -6,6 +6,9 @@ jobs:
   run_tests_job_windows:
     runs-on: windows_latest
     steps:
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'
       - name: Checkout code
         uses: actions/checkout@v3
       - name: run tests
@@ -14,6 +17,9 @@ jobs:
   run_tests_job_ubuntu:
     runs-on: ubuntu_latest
     steps:
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'
       - name: Checkout code
         uses: actions/checkout@v3
       - name: run tests
