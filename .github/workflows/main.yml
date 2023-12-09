@@ -3,8 +3,16 @@ on:
   push
 
 jobs:
-  run_tests_job:
+  run_tests_job_windows:
     runs-on: windows_latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: run tests
+        run: python.exe -m unittest tests/testRectangle.py
+
+  run_tests_job_ubuntu:
+    runs-on: ubuntu_latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
