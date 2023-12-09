@@ -1,0 +1,12 @@
+name: CI
+on: 
+  push
+
+jobs:
+  run_tests_job:
+    runs-on: windows_latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: run tests
+        run: python.exe -m unittest tests/testRectangle.py
