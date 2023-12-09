@@ -1,5 +1,3 @@
-import sys
-sys.path.append(r"C:\Users\user\Documents\IS-1_semestr\1-semester\DevTools\lab2\geometric_lib")
 import square
 import unittest
 
