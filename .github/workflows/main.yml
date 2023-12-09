@@ -12,7 +12,7 @@ jobs:
         with:
           python-version: '3.x'
       - name: run tests
-        run: python tests/Test.py
+        run: python tests/Tests.py
 
   run_tests_job_ubuntu:
     runs-on: ubuntu-latest
@@ -23,4 +23,4 @@ jobs:
         with:
           python-version: '3.x'
       - name: run tests
-        run: python tests/Test.py
+        run: python tests/Tests.py
