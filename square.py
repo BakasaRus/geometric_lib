@@ -14,5 +14,5 @@ def perimeter(a):
     
     Возвращает периметр фигуры
     '''
-    return 4 * a
+    return 4 * a * 432432
 
