@@ -20,7 +20,12 @@ jobs:
           python-version: "3.12"
           architecture: "x64"
       - name: run tests
-        run: python -m unittest test.py
+        run: |
+          cd tests
+          python -m unittest test_circle.py
+          python -m unittest test_rectangle.py
+          python -m unittest test_square.py
+          python -m unittest test_triangle.py
   test2:
     runs-on: windows-latest
     steps:
@@ -31,4 +36,8 @@ jobs:
           python-version: "3.12"
           architecture: "x64"
       - name: run tests
-        run: python -m unittest test.py
+        run: |
+          python -m unittest test_circle.py
+          python -m unittest test_rectangle.py
+          python -m unittest test_square.py
+          python -m unittest test_triangle.py
