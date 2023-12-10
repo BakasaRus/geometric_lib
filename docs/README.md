@@ -122,3 +122,6 @@ python -m unittest
 11. commit 50dc69
 
     Create main.yml
+12. commit 438412
+
+    add readme.md info
