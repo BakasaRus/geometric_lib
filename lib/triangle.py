@@ -24,4 +24,3 @@ def perimeter(a, b, c):
             perimeter (int/float): результат
     '''
     return a + b + c 
-
