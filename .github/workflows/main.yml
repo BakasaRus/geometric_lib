@@ -10,11 +10,11 @@ jobs:
       runs-on: ubuntu-latest
       steps:
       - name: Run tests (ubuntu OS)
-        run: RESULT=$(ls) echo $RESULT
+        run: python3 -m unittest test/circle_test.py
       
     windows-tests:
       runs-on: windows-latest
       steps:
       - name: Run tests (windows OS)
-        run: echo *
+        run: python3 -m unittest test/circle_test.py
 
