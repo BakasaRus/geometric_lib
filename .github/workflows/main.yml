@@ -19,8 +19,8 @@ jobs:
             with:
                 python-version: '3.*'
           
-          - name: Install libs
-            run: pip install unittest
+          # - name: Install libs
+          #   run: pip install unittest
           
           - name: Run a multi-line script
             run: |
