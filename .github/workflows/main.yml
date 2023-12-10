@@ -10,11 +10,11 @@ jobs:
       runs-on: ubuntu-latest
       steps:
       - name: Run tests (ubuntu OS)
-        run: python3 test_package
+        run: python3 test_package.py
       
     windows-tests:
       runs-on: windows-latest
       steps:
       - name: Run tests (windows OS)
-        run: python3 test_package
+        run: python3 test_package.py
 
