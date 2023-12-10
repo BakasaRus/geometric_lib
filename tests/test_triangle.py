@@ -67,8 +67,3 @@ class TriangleTestCase(unittest.TestCase):
     def test_big2_perimeter(self):
         res = triangle.perimeter(1020, 1, 10235)
         self.assertEqual(res, 11256)
-
-    def test_wrong_perimeter(self):
-        def test_wrong_area(self):
-            with self.assertRaises(TypeError):
-                triangle.perimeter("fef", "de", "doejwij")

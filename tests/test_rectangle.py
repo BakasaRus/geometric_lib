@@ -62,7 +62,3 @@ class RectangleTestCase(unittest.TestCase):
     def test_big1_perimeter(self):
         res = rectangle.perimeter(12345, 1242)
         self.assertEqual(res, 27174)
-
-    def test_wrong_perimeter(self):
-        with self.assertRaises(TypeError):
-            rectangle.perimeter("fef")

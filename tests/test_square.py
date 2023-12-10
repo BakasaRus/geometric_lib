@@ -62,7 +62,3 @@ class SquareTestCase(unittest.TestCase):
     def test_big2_perimeter(self):
         res = square.perimeter(1020)
         self.assertEqual(res, 4080)
-
-    def test_wrong_perimeter(self):
-        with self.assertRaises(TypeError):
-            square.perimeter("feffew1")

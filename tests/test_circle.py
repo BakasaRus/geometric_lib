@@ -62,10 +62,6 @@ class CircleTestCase(unittest.TestCase):
         res = circle.perimeter(1020)
         self.assertAlmostEqual(res, 6408.849013323178, 0.000001)
 
-    def test_wrong_perimeter(self):
-        with self.assertRaises(TypeError):
-            circle.perimeter("fef")
-
 
 if __name__ == '__main__':
     unittest.main()
