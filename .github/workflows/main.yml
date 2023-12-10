@@ -9,12 +9,20 @@ jobs:
     ubuntu-tests:
       runs-on: ubuntu-latest
       steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
       - name: Run tests (ubuntu OS)
         run: python3 -m unittest test/circle_test.py
-      
+
     windows-tests:
       runs-on: windows-latest
       steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
       - name: Run tests (windows OS)
-        run: python3 -m unittest ../test/circle_test.py
+        run: python3 -m unittest test/circle_test.py
 
