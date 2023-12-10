@@ -1,3 +1,6 @@
+import sys
+sys.path.append("../")
+
 from lib.circle import *
 import unittest
 
