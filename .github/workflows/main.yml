@@ -13,14 +13,14 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - name: Checkout to Repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v3
         with:
           python-version: "3.12"
 
       - name: Run unit-tests
-        run: 
+        run: |
           cd my_tests
-          python3 -m unittest tests.py
+          python -m unittest tests.py
