@@ -99,14 +99,17 @@
 
 ## Git commit history
 
-| Hash     | Message                                                                    |
-|:---------|:---------------------------------------------------------------------------|
-| 514234b  | (HEAD -> lab2_409093, origin/lab2_409093) docs: correction of innaccuracy  |
-| 49138a1  | docs: add git commit history                                               |
-| 26a4766  | docs: update docs catalog                                                  |
-| 495e6b7  | docs: add comments to the functions                                        |
-| 7773f59  | (origin/main, origin/HEAD, main) fix: fix a perimeter calculation error    |
-| ef4f9ff  | feat: add rectangle.py file                                                |
-| d078c8d  | L-03: Docs added                                                           |
-| 8ba9aeb  | L-03: Circle and square added                                              |
+| Hash     | Message                                                                                                |
+|:---------|:-------------------------------------------------------------------------------------------------------|
+| 1ea3830  | (HEAD -> lab4_409093, origin/main, origin/HEAD, main) Merge pull request #1 from cloalenka/lab2_409093 |
+| 183507a  | (origin/lab2_409093) docs: corrections of latex formulas                                               |
+| bad040d  | docs: corrections                                                                                      |
+| 514234b  | docs: correction of inaccuracy                                                                         |
+| 49138a1  | docs: add git commit history                                                                           |
+| 26a4766  | docs: update docs catalog                                                                              |
+| 495e6b7  | docs: add comments to the functions                                                                    |
+| 7773f59  | (origin/main, origin/HEAD, main) fix: fix a perimeter calculation error                                |
+| ef4f9ff  | feat: add rectangle.py file                                                                            |
+| d078c8d  | L-03: Docs added                                                                                       |
+| 8ba9aeb  | L-03: Circle and square added                                                                          |
 
