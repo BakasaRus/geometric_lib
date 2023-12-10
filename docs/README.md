@@ -118,3 +118,8 @@ p = perimeter(7, 2) # p = 18
 | ***7adbd5d*** | [Feat] Unit tests and methods big update             |
 | ***3a667da*** | [Feat] rectangle_tests.py and square_tests.py update |
 | ***72e5af5*** | [Delete] __pycache__ files was deleted               |
+| ***7f38a07*** | [Feat] Update README.md                              |
+| ***8253907*** | Merge pull request #2 from W-y-l-t/lab_4             |
+| ***3db4e30*** | [Feat] Create main.yml                               | 
+| ***551b486*** | [Feat] CI added                                      |
+| ***a9aac74*** | Merge pull request #3 from W-y-l-t/lab_5             |
