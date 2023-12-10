@@ -1,3 +1,6 @@
+import sys
+sys.path.append("../")
+
 from lib.rectangle import *
 import unittest
 
