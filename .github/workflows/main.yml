@@ -1,0 +1,24 @@
+name: CI
+on:
+    push:
+      branches: [ "lab5" ]
+
+jobs:
+    test_job_ubuntu:
+      continue-on-error: true
+      runs-on: ubuntu-latest
+      steps:
+          - uses: actions/checkout@v4
+          - uses: actions/setup-python@v4
+            with:
+              python-version: '3.10' 
+          - run: python -m unittest discover -s tests/ -p '*.py' 
+    test_job_windows:
+      continue-on-error: true
+      runs-on: windows-latest
+      steps:
+          - uses: actions/checkout@v4
+          - uses: actions/setup-python@v4
+            with:
+              python-version: '3.10' 
+          - run: python -m unittest discover -s tests/ -p '*.py'
