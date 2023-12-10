@@ -1,3 +1,6 @@
+import sys
+sys.path.append("../")
+
 from lib.square import *
 import unittest
 
