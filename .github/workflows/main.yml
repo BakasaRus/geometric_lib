@@ -21,4 +21,6 @@ jobs:
           python-version: "3.12"
 
       - name: Run unit-tests
-        run: python3 -m tests
+        run: 
+          cd my_tests
+          python3 -m unittests tests.py
