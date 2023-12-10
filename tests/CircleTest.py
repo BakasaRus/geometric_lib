@@ -4,7 +4,7 @@ sys.path.append("../")
 from lib.circle import *
 import unittest
 
-class CircleTestCase(unittest.TestCase):
+class testsCircleTest(unittest.TestCase):
    def test_zero_area(self):
        res = area(0)
        self.assertEqual(res, 0)
