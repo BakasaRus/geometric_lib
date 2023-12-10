@@ -25,6 +25,4 @@ jobs:
           #   run: pip install unittest
           
           - name: Run a multi-line script
-            run: |
-                python3 -m unittest test_circle.py,
-                echo test, and deploy your project.
+            run: python3 -m unittest test_circle.py
