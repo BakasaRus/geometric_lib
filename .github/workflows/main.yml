@@ -33,12 +33,17 @@ jobs:
       - name: Display Python version
         run: python -c "import sys; print(sys.version)"
 
-      - name: Run tests
+      - name: Install dependencies
         run: |
-          python -m unittest CircleTest.py
-          python -m unittest RectangleTest.py
-          python -m unittest SquareTest.py
-          python -m unittest TriangleTest.py
+          cd $GITHUB_WORKSPACE
+          python -m pip install --upgrade pip
+          
+      - name: Run Tests
+        run: |
+          python -m unittest tests/CircleTest.py
+          python -m unittest tests/RectangleTest.py
+          python -m unittest tests/SquareTest.py
+          python -m unittest tests/TriangleTest.py
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
