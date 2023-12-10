@@ -35,5 +35,4 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Run unittests
-        run: |
-          python -m unittest
+        run: python -m unittest
