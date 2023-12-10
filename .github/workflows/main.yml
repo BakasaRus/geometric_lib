@@ -13,8 +13,14 @@ jobs:
       - uses: actions/setup-python@v4
         with:
           python-version: '3.10'
-      - name: Run tests (ubuntu OS)
+      - name: Run test 1
         run: python3 -m unittest test/circle_test.py
+      - name: Run test 2
+        run: python3 -m unittest test/rectangle_test.py
+      - name: Run test 3
+        run: python3 -m unittest test/square_test.py
+      - name: Run test 4
+        run: python3 -m unittest test/triangle_test.py
 
     windows-tests:
       runs-on: windows-latest
@@ -23,6 +29,12 @@ jobs:
       - uses: actions/setup-python@v4
         with:
           python-version: '3.10'
-      - name: Run tests (windows OS)
+      - name: Run test 1
         run: python3 -m unittest test/circle_test.py
+      - name: Run test 2
+        run: python3 -m unittest test/rectangle_test.py
+      - name: Run test 3
+        run: python3 -m unittest test/square_test.py
+      - name: Run test 4
+        run: python3 -m unittest test/triangle_test.py
 
