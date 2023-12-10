@@ -13,7 +13,14 @@ jobs:
         # Шаги
       steps:
           # Actions от github: проверяет репозиторий, гит и т.д.
-          - uses: actions/checkout@v3
+          - uses: actions/checkout@v4
+
+          - uses: actions/setup-python@v4
+            with:
+                python-version: '3.*'
+          
+          - name: Install libs
+            run: pip install unittest
           
           - name: Run a multi-line script
             run: |
