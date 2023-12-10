@@ -16,5 +16,5 @@ jobs:
       runs-on: windows-latest
       steps:
       - name: Run tests (windows OS)
-        run: python3 -m unittest test/circle_test.py
+        run: python3 -m unittest ../test/circle_test.py
 
