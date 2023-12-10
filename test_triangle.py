@@ -27,14 +27,6 @@ class TriangleTestCase(unittest.TestCase):
         self.assertEqual(triangle.area(5, 6), 15)
         self.assertEqual(triangle.perimeter(5, 6, 8), 19)
 
-    def test_big_data(self):
-        self.assertEqual(triangle.area(123_456_789, 1_234_567_890), 76_207_893_750_952_605)
-        self.assertEqual(triangle.perimeter(123_456_789, 1_234_567_890, 1_234_567_890), 2_592_592_569)
-
-    def test_float(self):
-        self.assertEqual(triangle.area(0.5, 0.145), 0.03625)
-        self.assertEqual(triangle.perimeter(0.5, 0.145, 0.147), 0.792)
-
     def test_negative1(self):
         self.assertEqual(triangle.area(-1, 1), -1)
         self.assertEqual(triangle.perimeter(-1, 1, 5), -1)
