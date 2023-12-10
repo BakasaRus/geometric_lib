@@ -1,4 +1,4 @@
-from lib.rectangle import *
+from rectangle import *
 import unittest
 
 class RectangleTestCase(unittest.TestCase):
