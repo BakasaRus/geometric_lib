@@ -10,7 +10,7 @@ jobs:
       runs-on: ubuntu-latest
       steps:
       - name: Run tests (ubuntu OS)
-        run: echo *
+        run: ls
       
     windows-tests:
       runs-on: windows-latest
