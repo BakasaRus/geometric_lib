@@ -31,7 +31,7 @@ jobs:
           python -m unittest tests/TriangleTest.py
 
   build-linux:
-    runs-on: linux-latest
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v3
