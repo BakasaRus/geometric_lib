@@ -11,6 +11,8 @@ def area(r):
     Пример вызова:
         area(10) = 314.1592653589793
     '''
+    if(type(r) == str):
+        raise(TypeError)
     return math.pi * r * r
 
 def perimeter(r):
@@ -24,4 +26,6 @@ def perimeter(r):
     Пример вызова:
         perimeter(10) = 62.83185307179586
     '''
+    if(type(r) == str):
+        raise(TypeError)
     return 2 * math.pi * r

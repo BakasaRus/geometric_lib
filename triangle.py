@@ -8,6 +8,8 @@ def area(a, h):
     Пример вызова:
         area(2, 4) = 4
     '''
+    if(type(a) == str or type(h) == str):
+        raise(TypeError)
     return a * h / 2 
 
 def perimeter(a, b, c):
@@ -20,4 +22,6 @@ def perimeter(a, b, c):
     Пример вызова:
         perimeter(3, 4, 5) = 12
     ''' 
+    if(type(a) == str or type(b) == str or type(c) == str):
+        raise(TypeError)
     return a + b + c 
