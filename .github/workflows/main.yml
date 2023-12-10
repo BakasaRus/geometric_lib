@@ -3,6 +3,8 @@ on:
    # События, которые запускают jobs
     push:
       branches: [ "main" ]
+    pull_request:
+      branches: [ "main" ]
 
 # jobs запускаются параллельно, если не указана последовательность
 jobs:
@@ -24,5 +26,5 @@ jobs:
           
           - name: Run a multi-line script
             run: |
-                python3 -m unittest,
+                python3 -m unittest test_circle.py,
                 echo test, and deploy your project.
