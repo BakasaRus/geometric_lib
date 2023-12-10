@@ -1,0 +1,22 @@
+name: CI
+on:
+  push:
+    branches: [ "lab-5" ]
+
+jobs:
+  test_for_ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
+      - name: Run unittests
+        run: python -m unittest unitTests.py
+        
+  test_for_windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
+      - name: Run unittests
+        run: python -m unittest unitTests.py
+        
