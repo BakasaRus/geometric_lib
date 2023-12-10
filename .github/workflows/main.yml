@@ -37,6 +37,7 @@ jobs:
           architecture: "x64"
       - name: run tests
         run: |
+          cd tests
           python -m unittest test_circle.py
           python -m unittest test_rectangle.py
           python -m unittest test_square.py
