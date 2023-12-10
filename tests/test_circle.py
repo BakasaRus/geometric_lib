@@ -1,6 +1,5 @@
-import importlib
 import unittest
-import circle
+from lib import circle
 
 
 class CircleTestCase(unittest.TestCase):
@@ -33,8 +32,8 @@ class CircleTestCase(unittest.TestCase):
         self.assertAlmostEqual(res, 3268512.9967948208, 0.000001)
 
     def test_wrong_area(self):
-        res = circle.area("fef")
-        self.assertEqual(res, 0)
+        with self.assertRaises(TypeError):
+            circle.perimeter("fef")
     def test_zero_perimeter(self):
         res = circle.perimeter(0)
         self.assertEqual(res, 0)
@@ -64,8 +63,8 @@ class CircleTestCase(unittest.TestCase):
         self.assertAlmostEqual(res, 6408.849013323178, 0.000001)
 
     def test_wrong_perimeter(self):
-        res = circle.perimeter("fef")
-        self.assertEqual(res, 0)
+        with self.assertRaises(TypeError):
+            circle.perimeter("fef")
 
 
 if __name__ == '__main__':

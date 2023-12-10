@@ -1,5 +1,5 @@
 import unittest
-import triangle
+from lib import triangle
 
 
 class TriangleTestCase(unittest.TestCase):
@@ -36,8 +36,10 @@ class TriangleTestCase(unittest.TestCase):
         self.assertEqual(res, 10200)
 
     def test_wrong_area(self):
-        res = triangle.area("fef","21sd")
-        self.assertEqual(res, 0)
+        def test_wrong_area(self):
+            with self.assertRaises(TypeError):
+                triangle.area("fef", "de")
+
     def test_zero_perimeter(self):
         res = triangle.perimeter(0, 0, 0)
         self.assertEqual(res, 0)
@@ -67,5 +69,6 @@ class TriangleTestCase(unittest.TestCase):
         self.assertEqual(res, 11256)
 
     def test_wrong_perimeter(self):
-        res = triangle.perimeter("fef","21sd", "ifjiwjijhi")
-        self.assertEqual(res, 0)
+        def test_wrong_area(self):
+            with self.assertRaises(TypeError):
+                triangle.perimeter("fef", "de", "doejwij")

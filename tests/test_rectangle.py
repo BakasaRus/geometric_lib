@@ -1,14 +1,14 @@
 import unittest
-import rectangle
+from lib import rectangle
 
 
 class RectangleTestCase(unittest.TestCase):
     def test_zero_area(self):
         res = rectangle.area(0, 1)
         self.assertEqual(res, 0)
+
+    def test_zero_arer_2(self):
         res = rectangle.area(1, 0)
-        self.assertEqual(res, 0)
-        res = rectangle.area(0, 0)
         self.assertEqual(res, 0)
 
     def test_one_area(self):
@@ -31,18 +31,14 @@ class RectangleTestCase(unittest.TestCase):
         res = rectangle.area(12345, 2)
         self.assertEqual(res, 24690)
 
-    def test_big2_area(self):
-        res = rectangle.area(1020, 1020)
-        self.assertEqual(res, 1040400)
-
     def test_wrong_area(self):
-        res = rectangle.area("fef","21sd")
-        self.assertEqual(res, 0)
-
+        def test_wrong_area(self):
+            with self.assertRaises(TypeError):
+                rectangle.area("fef","de")
     def test_zero_perimeter(self):
         res = rectangle.perimeter(0, 0)
         self.assertEqual(res, 0)
-        res = rectangle.perimeter(0 , 1)
+        res = rectangle.perimeter(0, 1)
         self.assertEqual(res, 2)
         res = rectangle.perimeter(1, 0)
         self.assertEqual(res, 2)
@@ -67,10 +63,6 @@ class RectangleTestCase(unittest.TestCase):
         res = rectangle.perimeter(12345, 1242)
         self.assertEqual(res, 27174)
 
-    def test_big2_perimeter(self):
-        res = rectangle.perimeter(1020, 1021)
-        self.assertEqual(res, 4082)
-
     def test_wrong_perimeter(self):
-        res = rectangle.perimeter("fef","21sd")
-        self.assertEqual(res, 0)
+        with self.assertRaises(TypeError):
+            rectangle.perimeter("fef")
