@@ -21,8 +21,5 @@ jobs:
             with:
                 python-version: '3.*'
           
-          # - name: Install libs
-          #   run: pip install unittest
-          
           - name: Run all test
             run: python3 -m unittest
