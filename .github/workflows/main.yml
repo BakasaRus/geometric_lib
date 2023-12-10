@@ -17,5 +17,5 @@ jobs:
           
           - name: Run a multi-line script
             run: |
-                pwd,
+                python -c "import sys; print(sys.version)",
                 echo test, and deploy your project.
