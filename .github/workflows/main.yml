@@ -34,8 +34,7 @@ jobs:
         run: python -c "import sys; print(sys.version)"
       - name: Build
         run: |
-          python -m pip install .
-          python -m pip install src
+          python -m pip install lib
 
       - name: Run tests
         run: |
