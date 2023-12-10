@@ -1,5 +1,5 @@
 import unittest
-from lib import rectangle
+import rectangle
 
 
 class RectangleTestCase(unittest.TestCase):
@@ -34,7 +34,7 @@ class RectangleTestCase(unittest.TestCase):
     def test_wrong_area(self):
         def test_wrong_area(self):
             with self.assertRaises(TypeError):
-                rectangle.area("fef","de")
+                rectangle.area("fef", "de")
     def test_zero_perimeter(self):
         res = rectangle.perimeter(0, 0)
         self.assertEqual(res, 0)

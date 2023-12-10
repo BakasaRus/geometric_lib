@@ -1,5 +1,5 @@
 import unittest
-from lib import circle
+import circle
 
 
 class CircleTestCase(unittest.TestCase):
