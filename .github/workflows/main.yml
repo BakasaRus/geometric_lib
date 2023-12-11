@@ -12,6 +12,9 @@ jobs:
    check_all_test_ubuntu:
       # Операционная система в виртуальной машине, в которой запускаются процессы
       runs-on: ubuntu-latest
+      strategy:
+         matrix:
+            python-version: [ '3.10', '3.11', '3.12']
         # Шаги
       steps:
           # Actions от github: проверяет репозиторий, гит и т.д.
@@ -19,7 +22,8 @@ jobs:
 
           - uses: actions/setup-python@v4
             with:
-                python-version: '3.*'
+                python-version: ${{ matrix.python-version }}
+         
           
           - name: Run all test
             run: python3 -m unittest
