@@ -22,6 +22,6 @@ jobs:
       - name: Set up Python 3.10
         uses: actions/setup-python@v3
         with:
-          version ${{ matrix.version }}
+          python-version ${{ matrix.version }}
       - name: run tests
         run: python -m unittest discover -s tests -p "test_*.py"
