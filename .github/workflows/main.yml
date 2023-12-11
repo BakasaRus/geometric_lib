@@ -6,35 +6,20 @@ on:
       branches: [ "main" ]
 
 jobs:
-    ubuntu-tests:
-      runs-on: ubuntu-latest
+    tests:
+      strategy:
+        matrix:
+          version: [ '3.10', '3.11', '3.12' ]
+          os: [ ubuntu-latest, windows-latest ]
+      runs-on: ${{ matrix.os }}
       steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v4
         with:
-          python-version: '3.10'
-      - name: Run test 1
-        run: python3 -m unittest test/circle_test.py
-      - name: Run test 2
-        run: python3 -m unittest test/rectangle_test.py
-      - name: Run test 3
-        run: python3 -m unittest test/square_test.py
-      - name: Run test 4
-        run: python3 -m unittest test/triangle_test.py
+          python-version: ${{ matrix.version }}
 
-    windows-tests:
-      runs-on: windows-latest
-      steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v4
-        with:
-          python-version: '3.10'
-      - name: Run test 1
-        run: python3 -m unittest test/circle_test.py
-      - name: Run test 2
-        run: python3 -m unittest test/rectangle_test.py
-      - name: Run test 3
-        run: python3 -m unittest test/square_test.py
-      - name: Run test 4
-        run: python3 -m unittest test/triangle_test.py
+
+      - name: Run tests
+        run: python3 -m unittest test_package.py
+
 
