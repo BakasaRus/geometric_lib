@@ -25,4 +25,4 @@ jobs:
 
       - name: Run tests
         run: |
-          python -m unittest || echo "Tests failed, but continuing..."
+          python -m unittest
