@@ -1,5 +1,5 @@
 import unittest
-from geometric_lib.rectangle import *
+from rectangle import *
 
 
 class RectangleTestCase(unittest.TestCase):
