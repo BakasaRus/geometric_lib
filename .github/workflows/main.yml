@@ -18,9 +18,9 @@ jobs:
         version: ["3.10"]
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Set up Python 3.10
-        uses: actions/setup-python@v3
+        uses: actions/setup-python@v4
         with:
           python-version ${{ matrix.version }}
       - name: run tests
