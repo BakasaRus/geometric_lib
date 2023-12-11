@@ -4,7 +4,7 @@ name: CI
 
 # Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events for anyone the branch
+  # Triggers the workflow on push or pull request events for each branch
   push:
     branches:
       - '**'
