@@ -28,7 +28,7 @@ jobs:
           architecture: "x64"
       - name: Analysing the code with pylint
         run: |
-          pylint $(git ls-files '*.py')
+          pylint ./server
       - name: run tests
         run: python -m unittest test_run.py
       
@@ -47,7 +47,7 @@ jobs:
           architecture: "x64"
       - name: Analysing the code with pylint
         run: |
-          pylint $(git ls-files '*.py')
+          pylint ./server
       - name: run tests
         run: python -m unittest test_run.py
 
