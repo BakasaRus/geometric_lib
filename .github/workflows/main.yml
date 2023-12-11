@@ -18,13 +18,14 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest]
+
     # The type of runner that the job will run on
     runs-on: ${{ matrix.os }}
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
@@ -36,7 +37,7 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
 
-      # Build the lib
+	      # Build the lib
 
       - name: Build lib/circle.py
         run: python lib/circle.py
@@ -61,7 +62,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
