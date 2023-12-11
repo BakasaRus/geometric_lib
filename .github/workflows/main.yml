@@ -7,16 +7,18 @@ on:
       branches: [ "main" ]
 
 # jobs запускаются параллельно, если не указана последовательность
+
 jobs:
     # Название job вы можете назвать как угодно
    check_all_test_ubuntu:
       # Операционная система в виртуальной машине, в которой запускаются процессы
-      runs-on: ubuntu-latest
       strategy:
          matrix:
             python-version: [ '3.10', '3.11', '3.12']
+            os: [ubuntu-latest, windows-latest]
+      runs-on: ${{ matrix.os }}
         # Шаги
-      steps:
+      steps: 
           # Actions от github: проверяет репозиторий, гит и т.д.
           - uses: actions/checkout@v4
 
