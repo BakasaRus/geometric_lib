@@ -4,21 +4,17 @@ on:
       branches: [ "lab5" ]
 
 jobs:
-    test_job_ubuntu:
+
+    test:
+      strategy:
+        matrix:
+          sys: [ubuntu-latest, windows-latest]
+          versions: ['3.10', '3.11', '3.12']
       continue-on-error: true
-      runs-on: ubuntu-latest
+      runs-on: ${{ matrix.sys }}
       steps:
           - uses: actions/checkout@v4
           - uses: actions/setup-python@v4
             with:
-              python-version: '3.10' 
+              python-version: ${{ matrix.versions }}
           - run: python -m unittest discover -s tests/ -p '*_tests.py' 
-    test_job_windows:
-      continue-on-error: true
-      runs-on: windows-latest
-      steps:
-          - uses: actions/checkout@v4
-          - uses: actions/setup-python@v4
-            with:
-              python-version: '3.10' 
-          - run: python -m unittest discover -s tests/ -p '*_tests.py'
