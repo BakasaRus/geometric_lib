@@ -26,11 +26,12 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
           architecture: "x64"
-      - name: run tests
-        run: python -m unittest test_run.py
       - name: Analysing the code with pylint
         run: |
           pylint $(git ls-files '*.py')
+      - name: run tests
+        run: python -m unittest test_run.py
+      
 
   test_ubuntu:
     runs-on: ubuntu-latest
@@ -44,9 +45,10 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
           architecture: "x64"
-      - name: run tests
-        run: python -m unittest test_run.py
       - name: Analysing the code with pylint
         run: |
           pylint $(git ls-files '*.py')
+      - name: run tests
+        run: python -m unittest test_run.py
+
 
