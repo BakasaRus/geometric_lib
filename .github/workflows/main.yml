@@ -1,0 +1,26 @@
+name: CI
+on: 
+  push
+
+jobs:
+  run_tests_job_windows:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - name: run tests
+        run: python tests/Tests.py
+
+  run_tests_job_ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - name: run tests
+        run: python tests/Tests.py
