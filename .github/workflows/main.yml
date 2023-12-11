@@ -1,0 +1,56 @@
+name: Running python unittests
+
+on:
+  push:
+    branches: [ "lab_4" ]
+
+  workflow_dispatch:
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+          architecture: 'x64'
+          
+      - name: Install dependencies
+        run: |
+          cd $GITHUB_WORKSPACE
+          python -m pip install --upgrade pip
+          
+      - name: Run Tests
+        run: |
+          python -m unittest tests/CircleTest.py
+          python -m unittest tests/RectangleTest.py
+          python -m unittest tests/SquareTest.py
+          python -m unittest tests/TriangleTest.py
+
+  build-linux:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+          architecture: 'x64'
+          
+      - name: Install dependencies
+        run: |
+          cd $GITHUB_WORKSPACE
+          python -m pip install --upgrade pip
+          
+      - name: Run Tests
+        run: |
+          python -m unittest tests/CircleTest.py
+          python -m unittest tests/RectangleTest.py
+          python -m unittest tests/SquareTest.py
+          python -m unittest tests/TriangleTest.py
