@@ -12,7 +12,6 @@ def area(r):
     '''
     if not isinstance(r, int) and not isinstance(r, float):
         raise TypeError('Not numbers are passed to the function')
-    
     if r <= 0:
         raise ValueError('Incorrect input')
 
@@ -34,5 +33,4 @@ def perimeter(r):
 
     if r <= 0:
         raise ValueError('Incorrect input')
-    
     return 2 * math.pi * r
