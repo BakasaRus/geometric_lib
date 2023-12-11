@@ -32,8 +32,8 @@ jobs:
           python-version: '3.12'
 
       - name: testing1
-        run: python3.10 -m unittest discover unit_tests
+        run: py -3.10 -m unittest discover unit_tests
       - name: testing2
-        run: python3.11 -m unittest discover unit_tests
+        run: py -3.11 -m unittest discover unit_tests
       - name: testing3
-        run: python3.12 -m unittest discover unit_tests
+        run: py -3.12 -m unittest discover unit_tests
