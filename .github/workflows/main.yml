@@ -10,27 +10,17 @@ permissions:
   contents: read
 
 jobs:
-  test1:
-    runs-on: ubuntu-latest
+  test:
+    runs-on: [ubuntu-latest, windows-latests]
+    strategy:
+      matrix:
+        version: [10, 12, 14]
     steps:
       - uses: actions/checkout@v3
       - name: Set up Python 3.10
         uses: actions/setup-python@v3
-        with:
-          python-version: "3.12"
-          architecture: "x64"
       - name: run tests
-        run: |
-          python -m unittest discover -s tests -p "test_*.py"
-  test2:
-    runs-on: windows-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Set up Python 3.12
-        uses: actions/setup-python@v3
         with:
-          python-version: "3.12"
-          architecture: "x64"
-      - name: run tests
+          version ${{ matrix.version }}
         run: |
           python -m unittest discover -s tests -p "test_*.py"
