@@ -1,0 +1,31 @@
+name: TestChecker
+on:
+   # События, которые запускают jobs
+    push:
+      branches: [ "main" ]
+    pull_request:
+      branches: [ "main" ]
+
+# jobs запускаются параллельно, если не указана последовательность
+
+jobs:
+    # Название job вы можете назвать как угодно
+   check_all_test:
+      # Операционная система в виртуальной машине, в которой запускаются процессы
+      strategy:
+         matrix:
+            python-version: [ '3.10', '3.11', '3.12']
+            os: [ubuntu-latest, windows-latest]
+      runs-on: ${{ matrix.os }}
+        # Шаги
+      steps: 
+          # Actions от github: проверяет репозиторий, гит и т.д.
+          - uses: actions/checkout@v4
+
+          - uses: actions/setup-python@v4
+            with:
+                python-version: ${{ matrix.python-version }}
+         
+          
+          - name: Run all test
+            run: python3 -m unittest
