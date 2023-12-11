@@ -4,32 +4,22 @@ on:
   push:
 
 jobs:
-  build_ubuntu:
-    runs-on: ubuntu-latest
+  build:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [windows-latest, ubuntu-latest]
+        python-version: ["3.12"]
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Set up Python 3.12
+      - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v2
         with:
-          python-version: "3.12"
+          python-version: ${{ matrix.python-version }}
 
-      - name: Run tests on Ubuntu
-        run: python3 -m unittest
-
-  build_windows:
-    runs-on: windows-latest
-
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v3
-
-      - name: Set up Python 3.12
-        uses: actions/setup-python@v2
-        with:
-          python-version: "3.12"
-
-      - name: Run tests on Windows
+      - name: Run tests
         run: python -m unittest
