@@ -15,6 +15,7 @@ def area(r):
         raise(TypeError)
     return math.pi * r * r
 #check
+#check
 def perimeter(r):
     '''
     Вычисление периметра
