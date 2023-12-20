@@ -19,4 +19,4 @@ jobs:
       with:
         python-version: "3.11"
     - name: Run Tests
-      run: python.exe -m unittest
+      run: python -m unittest
