@@ -14,7 +14,7 @@ def area(r):
     if(type(r) == str):
         raise(TypeError)
     return math.pi * r * r
-
+#check
 def perimeter(r):
     '''
     Вычисление периметра
