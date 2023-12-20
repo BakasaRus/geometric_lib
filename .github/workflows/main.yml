@@ -1,0 +1,22 @@
+name: Run Tests
+
+on:
+  push:
+    branches: [ "lab-5" ]
+  pull_request:
+    branches: [ "lab-5" ]
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    steps:
+    - uses: actions/checkout@v4
+    - name: SetUp Python 3.11
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.11"
+    - name: Run Tests
+      run: python.exe -m unittest
