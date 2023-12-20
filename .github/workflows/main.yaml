@@ -1,0 +1,32 @@
+name: Run Unit Tests
+
+# Определяем ветки, в которые можно запушить, чтобы запустилось это действие. В данном случае в любую ветку
+on:
+  push:
+    branches:
+      - [main, lab_5]
+    tags:
+      - 'v*'
+
+jobs:
+  test:
+    # Определяем на каких операционных системах будут запущены тесты
+    runs-on: ${{ matrix.os }}
+    # Определяем матрицу(список переменных), указываем все операционные системы и версия пайтона
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python-version: [3.8]
+    # Клонируем рабочий репозиторий, в котором будет выполняться действие
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+    # Устанавливаем нужную версия пайтона, которую определили в матрице
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+    # Запускаем тесты командой
+    - name: Run Tests
+      run: |
+        python -m unittest discover -s "UnitTests" -p "*.py"
