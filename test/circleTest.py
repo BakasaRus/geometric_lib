@@ -1,6 +1,5 @@
 import unittest
-from circle import *
-
+from lib.circle import *
 
 class CircleTestCase(unittest.TestCase):
 
@@ -20,7 +19,7 @@ class CircleTestCase(unittest.TestCase):
 
     def test_circle_large_area(self):
         res = area(700)
-        self.assertEqual(res, 700 *700 * math.pi)
+        self.assertEqual(res,   math.pi*700 *700)
 
 
     def test_circle_zero_perimeter(self):
@@ -37,4 +36,4 @@ class CircleTestCase(unittest.TestCase):
 
     def test_circle_large_perimeter(self):
         res = perimeter(700)
-        self.assertEqual(res, 2 * math.pi * 700)
+        self.assertEqual(res, 2 *math.pi * 700)

@@ -1,5 +1,5 @@
 import unittest
-from triangle import *
+from lib.triangle import *
 
 
 class TriangleTestCase(unittest.TestCase):
@@ -35,7 +35,7 @@ class TriangleTestCase(unittest.TestCase):
 
     def test_triangle_little_perimeter(self):
         res = perimeter(1, 7, 7)
-        self.assertEqual(res, 12)
+        self.assertEqual(res, 15)
 
     def test_triangle_large_perimeter(self):
         res = perimeter(600, 700, 800)
