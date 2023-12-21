@@ -71,7 +71,7 @@ print(area(7, 4))
 ```
 Вывод: 14<br>
 ```python
-print(perimeter(4, 4, 4))
+print(perimeter(4, 5, 4))
 ```
 Вывод: 12<br>
 
