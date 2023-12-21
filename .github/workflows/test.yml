@@ -1,9 +1,12 @@
 name: Run unittest on push
 on: 
-  push:
-    branches:
-      - main
-
+  workflow_run:
+    workflows: ["Pylint"]
+    branches: [main]
+    types: 
+      - completed
+      - requested
+      
   workflow_dispatch:
 
 jobs:
