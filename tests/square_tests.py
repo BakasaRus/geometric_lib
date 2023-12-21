@@ -2,9 +2,6 @@ import unittest
 import square
 
 
-"""
-test string
-"""
 class SquareTestCase(unittest.TestCase):
     def test_zero_area(self):
         res = square.area(0)
