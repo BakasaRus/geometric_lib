@@ -1,0 +1,21 @@
+name: Test geometric_lib
+on:
+    push:
+      branches: [ "main" ]
+    pull_request:
+      branches: [ "main" ]
+
+jobs:
+    tests:
+      strategy:
+        matrix:
+          version: [ '3.9', '3.10', '3.11', '3.12' ]
+          os: [ ubuntu-latest, windows-latest ]
+      runs-on: ${{ matrix.os }}
+      steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.version }}
+      - name: Run tests
+        run: python3 -m unittest test.py

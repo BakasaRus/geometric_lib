@@ -1,0 +1,4 @@
+from tests.test_rectangle import RectangleTestCase
+from tests.test_square import SquareTestCase
+from tests.test_circle import CircleTestCase
+from tests.test_triangle import TriangleTestCase
