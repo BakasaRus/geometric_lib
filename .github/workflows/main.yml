@@ -1,0 +1,20 @@
+name: CI
+
+on:
+  push:
+    paths:
+      - '**.py'
+
+jobs:
+  test:
+    runs-on: ${{ matrix.runner }}
+    strategy:
+      matrix:
+        runner: [ ubuntu-latest, windows-latest ]
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Run all tests
+        run: python -m unittest
